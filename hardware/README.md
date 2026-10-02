@@ -7,6 +7,6 @@ Start with the development board: an onboard RP2350B, AFE7071 DAC/IQ modulator, 
 | [Initial dev board](devboard/README.md) | Detailed architecture, component references, interfaces and bring-up requirements; KiCad sources come next |
 | [Transmitter board](transmitter/) | Empty workspace for the later integrated IREC/mission board |
 
-Shared [link-budget](simulations/link_budget.py) and [LO-loop](simulations/reference_lo_loop_screen.py) models live in `simulations/`. They record analytical assumptions; device-level simulations and measured results will follow the board work.
+Shared [link-budget](simulations/link_budget.py), [LO-loop](simulations/reference_lo_loop_screen.py) and [DAC-clock timing](simulations/dac_clock_budget.py) models live in `simulations/`. They record analytical assumptions; device-level simulations and measured results will follow the board work.
 
 The dev board provides USB-C, SPI, external regulated 5 V, test access and a removable shield option. The later transmitter board can reuse qualified circuit blocks on its own PCB. Yapling will likely live in a separate repository.

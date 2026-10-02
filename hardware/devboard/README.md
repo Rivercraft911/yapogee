@@ -6,6 +6,8 @@ Onboard RP2350B generates interleaved I/Q for AFE7071. A shared 12 MHz reference
 
 [Editable architecture](architecture/architecture.drawio) · [Clock diagram](architecture/reference-clocks.svg) · [Power/interfaces](architecture/power-interfaces.svg)
 
+The [clock interface contract](clock-interface.md) defines the proposed modes, pin connections, timing and remaining receiver qualification. Start schematic capture with its conditional frontend status explicit.
+
 ## Components and references
 
 | Function | Proposed part / reference |
@@ -23,7 +25,7 @@ Exact passives, connector/shield MPNs and populated variants await the schematic
 
 ## Interfaces
 
-- **Power:** regulated 5 V, 4.75–5.25 V. Current all-LDO core/driver allocation ≈0.81 A / 4 W. USB-only full operation needs hardware source admission, provisionally ≥1.5 A Type-C advertisement; external 5 V supports USB data/programming from other hosts. Proposed CC detection and mux are [TUSB320LAI](https://www.ti.com/lit/ds/symlink/tusb320lai.pdf) and [TPS2116](https://www.ti.com/lit/ds/symlink/tps2116.pdf), with independent bias and reviewed admission control. Automatic priority alone is insufficient.
+- **Power:** regulated 5 V, 4.75–5.25 V. Enlarged all-LDO core/driver planning screen ≈0.90 A / 4.5 W at 5 V, using 150 mA LO allowance; actual startup and corner currents remain unmeasured. Main LDO dissipation is approximately 1.7 W at 5 V / 1.9 W at 5.25 V in this case. USB-only full operation needs hardware source admission, provisionally ≥1.5 A Type-C advertisement; external 5 V supports USB data/programming from other hosts. Proposed CC detection and mux are [TUSB320LAI](https://www.ti.com/lit/ds/symlink/tusb320lai.pdf) and [TPS2116](https://www.ti.com/lit/ds/symlink/tps2116.pdf), with independent bias and reviewed admission control. Automatic priority alone is insufficient.
 - **Host:** SPI SCK/MOSI/CS into module, READY outward, separate host I/O reference and default-off translation. Final pad numbers/timing are not released.
 - **LO_OUT / LO_IN:** local LO → removable filter adapter → LO_IN, or an exclusively selected external generator. Isolate the inactive route at both roots. AFE-plane drive is −5 to +5 dBm; target +4 dBm and verify it at the AFE input. Common CMOS REF_IN is a separate 12 MHz interface.
 - **RF:** exclusive raw-AFE or GRF2013 route with input-pad options. IREC evaluation PA is [GRF5613 EVB184](https://www.guerrilla-rf.com/includes/prodFiles/5613/GRF5613%20EVB184%201240-1420%20MHz.pdf); satellite low-power evaluation is [GRF5526 tune #180](https://www.guerrilla-rf.com/includes/prodFiles/5526/GRF5526%202200-2500MHz.pdf). Multi-watt video PA is separate. Each final PA has its own output filter, supply/bias, READY and local faults.
@@ -33,15 +35,20 @@ Exact passives, connector/shield MPNs and populated variants await the schematic
 
 `board/` is reserved for KiCad sources; none are released. Shared hardware models are in `../simulations/`: [link/payload budget](../simulations/link_budget.py) and [ideal LO-loop screen](../simulations/reference_lo_loop_screen.py). They are analytical planning models, not SPICE/RF validation. Real stackup, device models and measurements will accompany later SI, power, PLL and RF-network studies.
 
-Run from the repository root with Python 3; both use the standard library:
+The [DAC clock budget](../simulations/dac_clock_budget.py) computes nominal launch margins and relative-frequency drift; it does not establish loaded receiver timing or jitter.
+
+Run from the repository root with Python 3; all three use the standard library:
 
 ```sh
 python3 hardware/simulations/link_budget.py
 python3 hardware/simulations/reference_lo_loop_screen.py
+python3 hardware/simulations/dac_clock_budget.py
 ```
 
-The link model writes local `hardware/simulations/output/` tables/JSON. The loop screen prints JSON. Inputs and assumptions are recorded in the source and results.
+The link model writes local `hardware/simulations/output/` tables/JSON. The loop screen and clock budget print JSON. Inputs and assumptions are recorded in the source and results.
 
 Before fabrication: resolve AFE clock swing/bias/partial-power behavior; export/verify clock and PLL settings; close rail/USB/reset/watchdog corners; audit pins/footprints; define stackup/shield/carrier thermal bonding; and verify procurement. Keep clocks/reference hardware-on for boot. Clock OE is independent of PA arm/readiness. PA request precedes READY; LO CE powers calibration after path readiness, with RF muted until configuration is valid. RESET1 alone drives RUN/permission; independent monitor faults feed MR.
+
+Use TPS386 CT1 pulled to DIG3V3 through 100 kΩ for the specified 225/300/375 ms boot delay; voltage permission still does not establish clock presence. Use three destination-powered SN74LVC1G125DBVR singles for LO SPI isolation, with default-disabled OE. The earlier quad SN74LVC125A lacks an Ioff specification at VCC=0. [Supervisor](https://www.ti.com/lit/ds/symlink/tps386000.pdf), [single buffer](https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf), [quad buffer](https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf).
 
 Rough 2026-10-02 component allowance: **$215–285 one-off / $170–230 at ten-board pricing**, before PCB, assembly, tax, lab hardware and external adapters/PAs. This is a planning estimate, not a released BOM or delivered quote.
