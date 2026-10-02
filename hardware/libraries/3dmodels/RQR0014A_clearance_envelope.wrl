@@ -1,0 +1,9 @@
+#VRML V2.0 utf8
+# Drawing-derived MAXIMUM CLEARANCE ENVELOPE, not manufacturer model.
+# RQR0014A; 4225624/B, February 2020; body [2.4, 2.8, 1.0] mm.
+# No terminal, seating-gap, molding, thermal, electrical or radiation model.
+# KiCad unit is 2.54 mm. Origin at package center on PCB top surface.
+Transform { translation 0 0 0.19685039370078738 children [
+ Shape { appearance Appearance { material Material { diffuseColor .16 .17 .19 } }
+ geometry Box { size 0.9448818897637795 1.1023622047244093 0.39370078740157477 } }
+] }

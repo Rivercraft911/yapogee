@@ -1,0 +1,4018 @@
+{
+  "schema": "yapogee-component-library-1",
+  "status": "Draft native CAD assets; no connected schematic or manufacturing release",
+  "symbol_library": "Yapogee.kicad_sym",
+  "footprint_library": "Yapogee.pretty",
+  "symbol_library_sha256": "95c08d72cd0c0d25291381f1848b96e4a84ec7341d274eb6a7cb5dea93c19e44",
+  "components": [
+    {
+      "symbol": "RP2350B_SC1510_A4",
+      "mpn": "SC1510-A4",
+      "group": "base",
+      "footprint": "RP2350B_QFN80_R4S1_Lands",
+      "status": "draft CAD asset; assembled device/package and layout review required",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "Drawing_RP2350B_QFN80_MaxBody.wrl",
+          "kind": "drawing-derived mechanical envelope; not manufacturer STEP",
+          "sha256": "8e12592c8cb649b81c7b13ad41370410ae5c1e7f3b05e4e45db80dfd5c250f4a"
+        }
+      ],
+      "pins": [
+        {
+          "number": "13",
+          "name": "GPIO14",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "14",
+          "name": "GPIO15",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "16",
+          "name": "GPIO16",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "77",
+          "name": "GPIO0",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "78",
+          "name": "GPIO1",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "79",
+          "name": "GPIO2",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "80",
+          "name": "GPIO3",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "1",
+          "name": "GPIO4",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "2",
+          "name": "GPIO5",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "3",
+          "name": "GPIO6",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "4",
+          "name": "GPIO7",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "6",
+          "name": "GPIO8",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "7",
+          "name": "GPIO9",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "8",
+          "name": "GPIO10",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "9",
+          "name": "GPIO11",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "11",
+          "name": "GPIO12",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "12",
+          "name": "GPIO13",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_1_1"
+        },
+        {
+          "number": "17",
+          "name": "GPIO17",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "18",
+          "name": "GPIO18",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "19",
+          "name": "GPIO19",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "20",
+          "name": "GPIO20",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "21",
+          "name": "GPIO21",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "22",
+          "name": "GPIO22",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "23",
+          "name": "GPIO23",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "25",
+          "name": "GPIO24",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "26",
+          "name": "GPIO25",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "27",
+          "name": "GPIO26",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "28",
+          "name": "GPIO27",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "36",
+          "name": "GPIO28",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "37",
+          "name": "GPIO29",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "38",
+          "name": "GPIO30",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "39",
+          "name": "GPIO31",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "40",
+          "name": "GPIO32",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "42",
+          "name": "GPIO33",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "43",
+          "name": "GPIO34",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "44",
+          "name": "GPIO35",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "45",
+          "name": "GPIO36",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "46",
+          "name": "GPIO37",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "47",
+          "name": "GPIO38",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "48",
+          "name": "GPIO39",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "49",
+          "name": "GPIO40/ADC0",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "52",
+          "name": "GPIO41/ADC1",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "53",
+          "name": "GPIO42/ADC2",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "54",
+          "name": "GPIO43/ADC3",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "55",
+          "name": "GPIO44/ADC4",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "56",
+          "name": "GPIO45/ADC5",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "57",
+          "name": "GPIO46/ADC6",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "58",
+          "name": "GPIO47/ADC7",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_2_1"
+        },
+        {
+          "number": "5",
+          "name": "IOVDD",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "15",
+          "name": "IOVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "24",
+          "name": "IOVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "29",
+          "name": "IOVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "41",
+          "name": "IOVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "50",
+          "name": "IOVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "60",
+          "name": "IOVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "76",
+          "name": "IOVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "69",
+          "name": "QSPI_IOVDD",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "68",
+          "name": "USB_OTP_VDD",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "59",
+          "name": "ADC_AVDD",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "64",
+          "name": "VREG_VIN",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "61",
+          "name": "VREG_AVDD",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "62",
+          "name": "VREG_PGND",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "63",
+          "name": "VREG_LX",
+          "erc_type": "power_out",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "65",
+          "name": "VREG_FB",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "10",
+          "name": "DVDD",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "32",
+          "name": "DVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "51",
+          "name": "DVDD",
+          "erc_type": "passive",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "81",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "RP2350B_SC1510_A4_3_1"
+        },
+        {
+          "number": "30",
+          "name": "XIN",
+          "erc_type": "input",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "31",
+          "name": "XOUT",
+          "erc_type": "output",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "35",
+          "name": "RUN",
+          "erc_type": "input",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "33",
+          "name": "SWCLK",
+          "erc_type": "input",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "34",
+          "name": "SWDIO",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "66",
+          "name": "USB_DM",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "67",
+          "name": "USB_DP",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "71",
+          "name": "QSPI_SCLK",
+          "erc_type": "output",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "75",
+          "name": "~{QSPI_SS}",
+          "erc_type": "output",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "72",
+          "name": "QSPI_SD0",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "74",
+          "name": "QSPI_SD1",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "73",
+          "name": "QSPI_SD2",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        },
+        {
+          "number": "70",
+          "name": "QSPI_SD3",
+          "erc_type": "bidirectional",
+          "unit": "RP2350B_SC1510_A4_4_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/MCU_RaspberryPi.kicad_sym",
+        "symbol_source_sha256": "a6ea29ff3c34f185ede18429bded247d6ab3cc567f85df407aa8de599c58c370",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Package_DFN_QFN.pretty/QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm.kicad_mod",
+        "footprint_source_sha256": "9dc4266d5e5939c0f6a89beae370f4f4e29207308d02d02977c2c541af6fffb5",
+        "datasheet": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
+      },
+      "notes": "81 pin-number/name pairs independently matched to official RP2350B Minimal R4-S1 symbol, allowing ADC and active-low label formatting differences. Regrouped into waveform, host/control, power and timing/USB/flash units; all pads visible. Stock footprint adapted to R4-S1 perimeter-land centers +/-4.9mm and0.8x0.23mm pads; EP3.4mm unchanged. Nine reference-board thermal vias deliberately not embedded: board/stencil/via process still needs review.",
+      "footprint_sha256": "c5ab305b624cee96a1d62f91e0d2b3da471238011be5e5d02b6022f19c2eaca5"
+    },
+    {
+      "symbol": "W25Q128JVSIQ",
+      "mpn": "W25Q128JVSIQ",
+      "group": "base",
+      "footprint": "SOIC-8_5.3x5.3mm_P1.27mm",
+      "status": "draft CAD asset; assembled device/package and layout review required",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Package_SO_SOIC-8_5.3x5.3mm_P1.27mm.step",
+          "kind": "generic KiCad package model",
+          "sha256": "121aee742692bb7bc9ef49972786ecb89d1b2d62ab089ed278651a884c800331"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "~{CS}",
+          "erc_type": "input",
+          "unit": "W25Q128JVSIQ_1_1"
+        },
+        {
+          "number": "2",
+          "name": "IO1 / DO",
+          "erc_type": "bidirectional",
+          "unit": "W25Q128JVSIQ_1_1"
+        },
+        {
+          "number": "3",
+          "name": "IO2 / ~{WP}",
+          "erc_type": "bidirectional",
+          "unit": "W25Q128JVSIQ_1_1"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "W25Q128JVSIQ_1_1"
+        },
+        {
+          "number": "5",
+          "name": "IO0 / DI",
+          "erc_type": "bidirectional",
+          "unit": "W25Q128JVSIQ_1_1"
+        },
+        {
+          "number": "6",
+          "name": "CLK",
+          "erc_type": "input",
+          "unit": "W25Q128JVSIQ_1_1"
+        },
+        {
+          "number": "7",
+          "name": "IO3 / ~{HOLD}",
+          "erc_type": "bidirectional",
+          "unit": "W25Q128JVSIQ_1_1"
+        },
+        {
+          "number": "8",
+          "name": "VCC",
+          "erc_type": "power_in",
+          "unit": "W25Q128JVSIQ_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Memory_Flash.kicad_sym",
+        "symbol_source_sha256": "1c605ebbd1b1bb0bb024afca87e07b5e64fe296a24173fd8c9a0cca251d845c6",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Package_SO.pretty/SOIC-8_5.3x5.3mm_P1.27mm.kicad_mod",
+        "footprint_source_sha256": "cc86a7083c9df1c1bf808dfa469e913d446455fd7ab7a7941e18681b80e8b9b5",
+        "datasheet": "https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf"
+      },
+      "notes": "Winbond Rev F p5 eight-pin S-package mapping checked. SOIC-8 208 mil body. IO0/IO1/IO2/IO3 all bidirectional in QSPI mode; footprint/package mechanical tolerance review remains.",
+      "footprint_sha256": "8c790fbcefa7fedca03a9132362115d771434d837b60bcee67141d29c6b8ad38"
+    },
+    {
+      "symbol": "R_0402",
+      "mpn": null,
+      "group": "base",
+      "footprint": "R_0402_1005Metric",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Resistor_SMD_R_0402_1005Metric.step",
+          "kind": "generic KiCad package model",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "R_0402_1_1"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "R_0402_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym",
+        "symbol_source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Resistor_SMD.pretty/R_0402_1005Metric.kicad_mod",
+        "footprint_source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "26fe883345a1bfb957dab9a1dea17b28edda48b7a19bb101f8715af3c6a68a42"
+    },
+    {
+      "symbol": "R_0603",
+      "mpn": null,
+      "group": "base",
+      "footprint": "R_0603_1608Metric",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Resistor_SMD_R_0603_1608Metric.step",
+          "kind": "generic KiCad package model",
+          "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "R_0603_1_1"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "R_0603_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym",
+        "symbol_source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod",
+        "footprint_source_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "cf4e6c14f374d2d1edafe35f4b4407cee828e5833c77f38ad0bff0bf28bd4bcf"
+    },
+    {
+      "symbol": "C_0402",
+      "mpn": null,
+      "group": "base",
+      "footprint": "C_0402_1005Metric",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Capacitor_SMD_C_0402_1005Metric.step",
+          "kind": "generic KiCad package model",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_0402_1_1"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_0402_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym",
+        "symbol_source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Capacitor_SMD.pretty/C_0402_1005Metric.kicad_mod",
+        "footprint_source_sha256": "0403382fc4583ed510b461b1fa4a36dfaec6f4c0d9b1a67e6b0027837a54e1b5",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "9b53d673422a15eff5f7328367d4cadcde73319073554759144eaf93c186c2e4"
+    },
+    {
+      "symbol": "C_0603",
+      "mpn": null,
+      "group": "base",
+      "footprint": "C_0603_1608Metric",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Capacitor_SMD_C_0603_1608Metric.step",
+          "kind": "generic KiCad package model",
+          "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_0603_1_1"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_0603_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym",
+        "symbol_source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod",
+        "footprint_source_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "9d57d02f9ba80967b87ee57deca33c075dba7fcd2e6a094244554200e8c1c310"
+    },
+    {
+      "symbol": "C_0805",
+      "mpn": null,
+      "group": "base",
+      "footprint": "C_0805_2012Metric",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Capacitor_SMD_C_0805_2012Metric.step",
+          "kind": "generic KiCad package model",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_0805_1_1"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_0805_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym",
+        "symbol_source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod",
+        "footprint_source_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "e303d4708927a1681686f0ffc535ce570369c20b06849258b990f97d536409a8"
+    },
+    {
+      "symbol": "C_1206",
+      "mpn": null,
+      "group": "base",
+      "footprint": "C_1206_3216Metric",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Capacitor_SMD_C_1206_3216Metric.step",
+          "kind": "generic KiCad package model",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_1206_1_1"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_1206_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym",
+        "symbol_source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Capacitor_SMD.pretty/C_1206_3216Metric.kicad_mod",
+        "footprint_source_sha256": "b2e4a08e3aaf40bc587090190c0e3969e962d7ae962c172cce0581ae8327651c",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "f7669f42f00cb8a583ddd2e8cb96ce26f99ec664addca7bac2eb35d0bb1d74b4"
+    },
+    {
+      "symbol": "C_1210",
+      "mpn": null,
+      "group": "base",
+      "footprint": "C_1210_3225Metric",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Capacitor_SMD_C_1210_3225Metric.step",
+          "kind": "generic KiCad package model",
+          "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_1210_1_1"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "C_1210_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym",
+        "symbol_source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Capacitor_SMD.pretty/C_1210_3225Metric.kicad_mod",
+        "footprint_source_sha256": "e1dae516e079b70c4736d001fb81bfb4ef5f9c2a37c8175223a44f83a04ff75f",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "9e92d170c248b4bfba557a07705bf4dfb371ffd7226d0aba7b6073af5a209e03"
+    },
+    {
+      "symbol": "Debug_Header_2x20_P2_54",
+      "mpn": null,
+      "group": "base",
+      "footprint": "PinHeader_2x20_P2.54mm_Vertical",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Connector_PinHeader_2.54mm_PinHeader_2x20_P2.54mm_Vertical.step",
+          "kind": "generic KiCad package model",
+          "sha256": "3e3ee5e050716acbc8e6e4fc2778dce66ea1c9b17bdf6583ec399dabef67e264"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "6",
+          "name": "Pin_6",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "7",
+          "name": "Pin_7",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "8",
+          "name": "Pin_8",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "9",
+          "name": "Pin_9",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "10",
+          "name": "Pin_10",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "11",
+          "name": "Pin_11",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "12",
+          "name": "Pin_12",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "13",
+          "name": "Pin_13",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "14",
+          "name": "Pin_14",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "15",
+          "name": "Pin_15",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "16",
+          "name": "Pin_16",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "17",
+          "name": "Pin_17",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "18",
+          "name": "Pin_18",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "19",
+          "name": "Pin_19",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "20",
+          "name": "Pin_20",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "21",
+          "name": "Pin_21",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "22",
+          "name": "Pin_22",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "23",
+          "name": "Pin_23",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "24",
+          "name": "Pin_24",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "25",
+          "name": "Pin_25",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "26",
+          "name": "Pin_26",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "27",
+          "name": "Pin_27",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "28",
+          "name": "Pin_28",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "29",
+          "name": "Pin_29",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "30",
+          "name": "Pin_30",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "31",
+          "name": "Pin_31",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "32",
+          "name": "Pin_32",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "33",
+          "name": "Pin_33",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "34",
+          "name": "Pin_34",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "35",
+          "name": "Pin_35",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "36",
+          "name": "Pin_36",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "37",
+          "name": "Pin_37",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "38",
+          "name": "Pin_38",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "39",
+          "name": "Pin_39",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        },
+        {
+          "number": "40",
+          "name": "Pin_40",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x20_P2_54_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector_Generic.kicad_sym",
+        "symbol_source_sha256": "b40057d620867e58e8c3d1be9ab822bba6955e76ccfc566fd0945eedcf527fd3",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Connector_PinHeader_2.54mm.pretty/PinHeader_2x20_P2.54mm_Vertical.kicad_mod",
+        "footprint_source_sha256": "0d860de8c4c7b7413ad8b13cf4f1aa389bafeec053f4004834c98c1b95582cd0",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "2a156f87f01b66461e69fa756a9812cf500e730a80899e1d37b47ace9e3fa623"
+    },
+    {
+      "symbol": "Debug_Header_2x05_P1_27",
+      "mpn": null,
+      "group": "base",
+      "footprint": "PinHeader_2x05_P1.27mm_Vertical",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Connector_PinHeader_1.27mm_PinHeader_2x05_P1.27mm_Vertical.step",
+          "kind": "generic KiCad package model",
+          "sha256": "b5cabcd3e700ee74a3d8f64c687e718a0bc892653ead74bc00e8d4f534ffa575"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "6",
+          "name": "Pin_6",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "7",
+          "name": "Pin_7",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "8",
+          "name": "Pin_8",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "9",
+          "name": "Pin_9",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        },
+        {
+          "number": "10",
+          "name": "Pin_10",
+          "erc_type": "passive",
+          "unit": "Debug_Header_2x05_P1_27_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector_Generic.kicad_sym",
+        "symbol_source_sha256": "b40057d620867e58e8c3d1be9ab822bba6955e76ccfc566fd0945eedcf527fd3",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Connector_PinHeader_1.27mm.pretty/PinHeader_2x05_P1.27mm_Vertical.kicad_mod",
+        "footprint_source_sha256": "d6a5a2be5abdc7704d0ed6c1217bb1e3cfe69fd380b42dc36f437eb9a76bcbb2",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "1888d11bcd6d64b53f20a3eff811cce788b1fa62db6a2dc17c4861166141a2eb"
+    },
+    {
+      "symbol": "TestPoint_Pad_1mm",
+      "mpn": null,
+      "group": "base",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "status": "generic template; not an exact purchasing part",
+      "electrical_candidate": false,
+      "models": [],
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "erc_type": "passive",
+          "unit": "TestPoint_Pad_1mm_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector.kicad_sym",
+        "symbol_source_sha256": "01a7f5a3dd140eac0742e82c08f7e928fba64d17075266b56b219697d4cf4025",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/TestPoint.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+        "footprint_source_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12",
+        "datasheet": ""
+      },
+      "notes": "Generic package/access template. Exact MPN, body height and mechanical fit need selection; connector pinout is not assigned by this symbol.",
+      "footprint_sha256": "6d602c576b4ab0de29fa4cc096f419a62e828ba45ceee30c1263d86b420b2b12"
+    },
+    {
+      "symbol": "AOTA_B201610S3R3_101_T",
+      "mpn": "AOTA-B201610S3R3-101-T",
+      "group": "base",
+      "footprint": "Abracon_AOTA_B201610S3R3_101_T",
+      "status": "draft exact-part asset; polarity/process review required",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "Drawing_Abracon_AOTA_B201610_MaxBody.wrl",
+          "kind": "drawing-derived maximum-body preview",
+          "sha256": "308633cb15ab04e643046052740320a39362773e1cb1370f747f9a452cb55856"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "erc_type": "passive",
+          "unit": "AOTA_B201610S3R3_101_T_1_1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "erc_type": "passive",
+          "unit": "AOTA_B201610S3R3_101_T_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Abracon datasheet Rev A2024-09-13 mechanical page4; official RP2350B Minimal R4-S1 polarity/net convention",
+        "datasheet": "https://abracon.com/datasheets/AOTA-B201610S3R3-101-T.pdf"
+      },
+      "notes": "Manufacturer recommended1.0x1.6mm pads with1.0mm gap differ from official R4-S1 narrower0.7x1.7mm lands. Confirm solder process and marked-end placement; this3.3uH part is for MCU internal SMPS, not TPS62441 outputs.",
+      "footprint_sha256": "52133189bc7f5d335e7a8277e6993e7c3047a051601b0323d8ce121522d38c38"
+    },
+    {
+      "symbol": "AFE7071IRGZT",
+      "mpn": "AFE7071IRGZT",
+      "group": "core",
+      "footprint": "TI_RGZ0048D_VQFN-48_7x7mm_P0.5mm_EP5.6x5.6mm",
+      "status": "draft_pin_map_and_drawing_checked",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "TI_RGZ0048D_mechanical-preview.wrl",
+          "kind": "Drawing-derived VRML mechanical envelope preview",
+          "sha256": "476675deb52d5233e41effc1d5fa75927beab42411ed2cbbc35da06af4d470b5"
+        }
+      ],
+      "pins": [
+        {
+          "number": "28",
+          "name": "D0",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "27",
+          "name": "D1",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "23",
+          "name": "D2",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "22",
+          "name": "D3",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "21",
+          "name": "D4",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "20",
+          "name": "D5",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "19",
+          "name": "D6",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "18",
+          "name": "D7",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "17",
+          "name": "D8",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "16",
+          "name": "D9",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "15",
+          "name": "D10",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "14",
+          "name": "D11",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "10",
+          "name": "D12",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "9",
+          "name": "D13",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "1",
+          "name": "DACCLKP",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "2",
+          "name": "DACCLKN",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "6",
+          "name": "IQ_FLAG",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "7",
+          "name": "SYNC_SLEEP",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "5",
+          "name": "CLK_IO",
+          "erc_type": "bidirectional",
+          "unit": "AFE7071IRGZT_1_1"
+        },
+        {
+          "number": "32",
+          "name": "LO_P",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "33",
+          "name": "LO_N",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "30",
+          "name": "SCLK",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "31",
+          "name": "SDENB",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "8",
+          "name": "RESETB",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "35",
+          "name": "TESTMODE",
+          "erc_type": "input",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "29",
+          "name": "SDIO",
+          "erc_type": "bidirectional",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "42",
+          "name": "RF_OUT",
+          "erc_type": "output",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "34",
+          "name": "ALARM_SDO",
+          "erc_type": "output",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "36",
+          "name": "ATEST",
+          "erc_type": "output",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "47",
+          "name": "BG_BYP",
+          "erc_type": "passive",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "44",
+          "name": "NC",
+          "erc_type": "no_connect",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "45",
+          "name": "NC",
+          "erc_type": "no_connect",
+          "unit": "AFE7071IRGZT_2_1"
+        },
+        {
+          "number": "3",
+          "name": "CLKVDD18",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "4",
+          "name": "DACVDD33",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "12",
+          "name": "DVDD18",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "13",
+          "name": "IOVDD",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "24",
+          "name": "IOVDD",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "25",
+          "name": "DVDD18",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "37",
+          "name": "DACVDD18",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "38",
+          "name": "MODVDD33",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "39",
+          "name": "MODVDD33",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "40",
+          "name": "FUSEVDD18",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "46",
+          "name": "MODVDD18",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "48",
+          "name": "DACVDD18",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "11",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "26",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "41",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "43",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        },
+        {
+          "number": "49",
+          "name": "EP_GND",
+          "erc_type": "power_in",
+          "unit": "AFE7071IRGZT_3_1"
+        }
+      ],
+      "sources": {
+        "pin_map_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/afe7071.pdf",
+          "section": "SLOS789C, pp. 2\u20133, pin diagram and terminal functions"
+        },
+        "package_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/afe7071.pdf",
+          "section": "SLOS789C appendix pp. 34\u201336, RGZ0048D, drawing 4219046/B 11/2019"
+        },
+        "source_pdf_sha256": "c1602d4a98dd72976d13e2bf02fa8d3fdf33401e2dde7d913f6c751edc0b8413"
+      },
+      "notes": [
+        "BG_BYP is a capacitor-only reference node, typed passive; ATEST is an output requiring a schematic NC marker for normal use.",
+        "NC44/45 are explicitly no_connect. TESTMODE must be tied to ground as required by the data sheet.",
+        "No footprint thermal vias: design their count, tenting and filling at board level. TI paste example is 16 \u00d7 1.13 mm windows (66% EP coverage), 0.125 mm stencil."
+      ],
+      "footprint_sha256": "9104014f7e728d017058d9c1a49c84dd6341fdb32a28a739ac51b65e5fa9fef7"
+    },
+    {
+      "symbol": "LMX2572RHAT",
+      "mpn": "LMX2572RHAT",
+      "group": "core",
+      "footprint": "TI_RHA0040H_VQFN-40_6x6mm_P0.5mm_EP4.5x4.5mm",
+      "status": "draft_pin_map_and_drawing_checked",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "TI_RHA0040H_mechanical-preview.wrl",
+          "kind": "Drawing-derived VRML mechanical envelope preview",
+          "sha256": "d6c2bdf1a51a30f4b03a7fabc3fd17225a2a121815b853b517700b05d1925bc1"
+        }
+      ],
+      "pins": [
+        {
+          "number": "8",
+          "name": "OSCinP",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "9",
+          "name": "OSCinM",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "16",
+          "name": "SCK",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "17",
+          "name": "SDI",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "24",
+          "name": "CSB",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "1",
+          "name": "CE",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "5",
+          "name": "SYNC",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "28",
+          "name": "SysRefReq",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "30",
+          "name": "RampClk",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "32",
+          "name": "RampDir",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "35",
+          "name": "Vtune",
+          "erc_type": "input",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "23",
+          "name": "RFoutAP",
+          "erc_type": "output",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "22",
+          "name": "RFoutAM",
+          "erc_type": "output",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "19",
+          "name": "RFoutBP",
+          "erc_type": "output",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "18",
+          "name": "RFoutBM",
+          "erc_type": "output",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "20",
+          "name": "MUXout",
+          "erc_type": "output",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "12",
+          "name": "CPout",
+          "erc_type": "output",
+          "unit": "LMX2572RHAT_1_1"
+        },
+        {
+          "number": "7",
+          "name": "VccDIG",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "11",
+          "name": "VccCP",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "15",
+          "name": "VccMASH",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "21",
+          "name": "VccBUF",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "26",
+          "name": "VccVCO2",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "37",
+          "name": "VccVCO",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "6",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "13",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "14",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "25",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "31",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "34",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "39",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "40",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "41",
+          "name": "EP_GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "3",
+          "name": "VbiasVCO",
+          "erc_type": "power_out",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "10",
+          "name": "VregIN",
+          "erc_type": "power_out",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "27",
+          "name": "VbiasVCO2",
+          "erc_type": "power_out",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "29",
+          "name": "VrefVCO2",
+          "erc_type": "power_out",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "33",
+          "name": "VbiasVARAC",
+          "erc_type": "power_out",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "36",
+          "name": "VrefVCO",
+          "erc_type": "power_out",
+          "unit": "LMX2572RHAT_2_1"
+        },
+        {
+          "number": "38",
+          "name": "VregVCO",
+          "erc_type": "power_out",
+          "unit": "LMX2572RHAT_2_1"
+        }
+      ],
+      "sources": {
+        "pin_map_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/lmx2572.pdf",
+          "section": "SNAS740B pp. 4\u20135, pin configuration and functions"
+        },
+        "package_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/lmx2572.pdf",
+          "section": "SNAS740B appendix pp. 87\u201389, RHA0040H, drawing 4219055/B 08/22/2019"
+        },
+        "source_pdf_sha256": "b984e699b503618c8e12d39a638f7b2f3eecb22003ba91f8b6b3e9d2cf238632"
+      },
+      "notes": [
+        "Internal regulator/reference/bias bypass nodes are power_out to catch accidental connection to external supply outputs.",
+        "TI paste example: 9 \u00d7 1.26 mm windows (70% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design."
+      ],
+      "footprint_sha256": "852392091f3f13f4494a1cf2067c557fe145e69790ac3fdd7889003b67a13fee"
+    },
+    {
+      "symbol": "ECS-TXO-2520MV-120-AN-TR",
+      "mpn": "ECS-TXO-2520MV-120-AN-TR",
+      "group": "core",
+      "footprint": "ECS_TXO-2520MV_4Pin_2.5x2.0mm",
+      "status": "draft_pin_map_and_drawing_checked",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "ECS_TXO-2520MV_mechanical-preview.wrl",
+          "kind": "Drawing-derived VRML mechanical envelope preview",
+          "sha256": "44df599592657b6e8541bc0e1a71393385dbe43fa2d7e00bdf0eb288dd070a04"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "OE",
+          "erc_type": "input",
+          "unit": "ECS-TXO-2520MV-120-AN-TR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "OUT",
+          "erc_type": "tri_state",
+          "unit": "ECS-TXO-2520MV-120-AN-TR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "VDD",
+          "erc_type": "power_in",
+          "unit": "ECS-TXO-2520MV-120-AN-TR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "ECS-TXO-2520MV-120-AN-TR_1_1"
+        }
+      ],
+      "sources": {
+        "pin_map_source": {
+          "url": "https://ecsxtal.com/store/pdf/ECS-TXO-2520MV.pdf",
+          "section": "ECS-TXO-2520MV data sheet p. 2, CONNECTIONS/top view"
+        },
+        "package_source": {
+          "url": "https://ecsxtal.com/store/pdf/ECS-TXO-2520MV.pdf",
+          "section": "ECS-TXO-2520MV data sheet p. 2, package dimensions and suggested land pattern"
+        },
+        "source_pdf_sha256": "70bacff9b2792bba82071ae604f64b83b71f3ed24efff4f20001495e5c8b4b97"
+      },
+      "notes": [
+        "Pin 1 is lower-left in the manufacturer top-view diagram; pin 3 is upper-right. Output is High-Z with OE low.",
+        "TCXO XY dimensions are nominal \u00b10.1 mm, maximum height is 1.0 mm (0.9 \u00b10.1). Exact AN frequency/stability option remains a purchasing check."
+      ],
+      "footprint_sha256": "303a18b3a8d1e7751978d270abe85f67c3dbc61c7d4676021a0c640823f3292e"
+    },
+    {
+      "symbol": "LMK1C1104PWR",
+      "mpn": "LMK1C1104PWR",
+      "group": "core",
+      "footprint": "TSSOP-8_4.4x3mm_P0.65mm",
+      "status": "draft_pin_map_and_drawing_checked",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "TSSOP-8_4.4x3mm_P0.65mm.step",
+          "kind": "Stock KiCad STEP (unmodified)",
+          "sha256": "2299fb3b85d686800712b24f5411cd4896ad7de29f3aab656d6dc1006211629b"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "CLKIN",
+          "erc_type": "input",
+          "unit": "LMK1C1104PWR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "1G",
+          "erc_type": "input",
+          "unit": "LMK1C1104PWR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "VDD",
+          "erc_type": "power_in",
+          "unit": "LMK1C1104PWR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMK1C1104PWR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "Y0",
+          "erc_type": "output",
+          "unit": "LMK1C1104PWR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "Y1",
+          "erc_type": "output",
+          "unit": "LMK1C1104PWR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "Y2",
+          "erc_type": "output",
+          "unit": "LMK1C1104PWR_1_1"
+        },
+        {
+          "number": "7",
+          "name": "Y3",
+          "erc_type": "output",
+          "unit": "LMK1C1104PWR_1_1"
+        }
+      ],
+      "sources": {
+        "pin_map_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/lmk1c1104.pdf",
+          "section": "SNAS791D pp. 3\u20134, pin functions; Table 9-1 p. 10 output-enable behavior"
+        },
+        "package_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/lmk1c1104.pdf",
+          "section": "SNAS791D pp. 24\u201326, PW0008A; KiCad stock TSSOP-8_4.4x3mm_P0.65mm IPC land pattern"
+        },
+        "source_pdf_sha256": "4403ce872cf979483288c8194b5036dd0369a55ed9b8a40614fc22c29467b0fd"
+      },
+      "notes": [
+        "Outputs are driven low when 1G is low; they are output rather than tri_state pins.",
+        "Stock KiCad lands 1.475 \u00d7 0.4 mm at \u00b12.8625 mm; TI example 1.5 \u00d7 0.45 at \u00b12.9 mm. Stock IPC land pattern retained as geometry-compatible; assembly team may choose TI example."
+      ],
+      "footprint_sha256": "ca2e321640359e364c04da33f742ab5d5681b0ab2454f0c244ff8471047f46be"
+    },
+    {
+      "symbol": "CDCE6214RGET",
+      "mpn": "CDCE6214RGET",
+      "group": "core",
+      "footprint": "TI_RGE0024P_VQFN-24_4x4mm_P0.5mm_EP2.7x2.7mm",
+      "status": "draft_pin_map_and_drawing_checked",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "TI_RGE0024P_mechanical-preview.wrl",
+          "kind": "Drawing-derived VRML mechanical envelope preview",
+          "sha256": "189d8839ef5715a4819ba93ab9a396b28af0943773bde88e39ae068b84a0d5aa"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "SECREF_P",
+          "erc_type": "bidirectional",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "2",
+          "name": "SECREF_N",
+          "erc_type": "input",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "5",
+          "name": "PRIREF_P",
+          "erc_type": "input",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "6",
+          "name": "PRIREF_N",
+          "erc_type": "input",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "4",
+          "name": "REFSEL",
+          "erc_type": "input",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "23",
+          "name": "HW_SW_CTRL",
+          "erc_type": "input",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "8",
+          "name": "PDN/SYNCN",
+          "erc_type": "input",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "12",
+          "name": "SCL/GPIO3",
+          "erc_type": "input",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "19",
+          "name": "SDA/GPIO2",
+          "erc_type": "bidirectional",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "20",
+          "name": "GPIO1",
+          "erc_type": "bidirectional",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "11",
+          "name": "GPIO4",
+          "erc_type": "bidirectional",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "7",
+          "name": "OUT0",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "22",
+          "name": "OUT1_P",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "21",
+          "name": "OUT1_N",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "18",
+          "name": "OUT2_P",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "17",
+          "name": "OUT2_N",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "14",
+          "name": "OUT3_P",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "13",
+          "name": "OUT3_N",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "10",
+          "name": "OUT4_P",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "9",
+          "name": "OUT4_N",
+          "erc_type": "output",
+          "unit": "CDCE6214RGET_1_1"
+        },
+        {
+          "number": "3",
+          "name": "VDD_REF",
+          "erc_type": "power_in",
+          "unit": "CDCE6214RGET_2_1"
+        },
+        {
+          "number": "24",
+          "name": "VDD_VCO",
+          "erc_type": "power_in",
+          "unit": "CDCE6214RGET_2_1"
+        },
+        {
+          "number": "16",
+          "name": "VDDO_12",
+          "erc_type": "power_in",
+          "unit": "CDCE6214RGET_2_1"
+        },
+        {
+          "number": "15",
+          "name": "VDDO_34",
+          "erc_type": "power_in",
+          "unit": "CDCE6214RGET_2_1"
+        },
+        {
+          "number": "25",
+          "name": "EP_GND",
+          "erc_type": "power_in",
+          "unit": "CDCE6214RGET_2_1"
+        }
+      ],
+      "sources": {
+        "pin_map_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/cdce6214.pdf",
+          "section": "SNAS811A pp. 4\u20136, pin diagram and Table 4-1"
+        },
+        "package_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/cdce6214.pdf",
+          "section": "SNAS811A pp. 56\u201358, RGE0024P, drawing 4224751/A 01/2019"
+        },
+        "source_pdf_sha256": "a49bcfe0ec31d74090228e6333c57864f3feb6f24af55c8a81e16cfe336b7664"
+      },
+      "notes": [
+        "SECREF_P is bidirectional because this pad is XOUT in crystal mode, even though the generic function-table direction is I. Use normal input operation with a TCXO.",
+        "Four 0.25 \u00d7 0.25 mm mechanical corner lands A1\u2013A4 shown by TI are present as unnumbered pads; they are not signal terminals in Table 4-1. Do not assign a functional net without package-vendor confirmation.",
+        "TI paste example: 4 \u00d7 1.19 mm windows, centers \u00b10.695 mm (78% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design."
+      ],
+      "footprint_sha256": "7ec7c8c7bc2370a2b28f8164a514daa4bc14bad8eacab985a6756425fa6c1ee1"
+    },
+    {
+      "symbol": "LMK1D1204PRHDT",
+      "mpn": "LMK1D1204PRHDT",
+      "group": "core",
+      "footprint": "TI_RHD0028B_VQFN-28_5x5mm_P0.5mm_EP3.15x3.15mm",
+      "status": "draft_pin_map_and_drawing_checked",
+      "electrical_candidate": true,
+      "models": [
+        {
+          "file": "TI_RHD0028B_mechanical-preview.wrl",
+          "kind": "Drawing-derived VRML mechanical envelope preview",
+          "sha256": "f4fce694d191b001d42a1b3e1bbdcddc8275a86ef3b8cb8cce5fcd3eefb8c43c"
+        }
+      ],
+      "pins": [
+        {
+          "number": "9",
+          "name": "IN0_P",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "10",
+          "name": "IN0_N",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "5",
+          "name": "IN1_P",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "6",
+          "name": "IN1_N",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "2",
+          "name": "IN_SEL",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "13",
+          "name": "OE0",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "19",
+          "name": "OE1",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "24",
+          "name": "OE2",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "3",
+          "name": "OE3",
+          "erc_type": "input",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "16",
+          "name": "OUT0_P",
+          "erc_type": "tri_state",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "17",
+          "name": "OUT0_N",
+          "erc_type": "tri_state",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "20",
+          "name": "OUT1_P",
+          "erc_type": "tri_state",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "21",
+          "name": "OUT1_N",
+          "erc_type": "tri_state",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "22",
+          "name": "OUT2_P",
+          "erc_type": "tri_state",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "23",
+          "name": "OUT2_N",
+          "erc_type": "tri_state",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "26",
+          "name": "OUT3_P",
+          "erc_type": "tri_state",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "27",
+          "name": "OUT3_N",
+          "erc_type": "tri_state",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "11",
+          "name": "VAC_REF0",
+          "erc_type": "power_out",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "7",
+          "name": "VAC_REF1",
+          "erc_type": "power_out",
+          "unit": "LMK1D1204PRHDT_1_1"
+        },
+        {
+          "number": "8",
+          "name": "VDD",
+          "erc_type": "power_in",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "15",
+          "name": "VDD",
+          "erc_type": "power_in",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "28",
+          "name": "VDD",
+          "erc_type": "power_in",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "1",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "14",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "29",
+          "name": "EP_GND",
+          "erc_type": "power_in",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "4",
+          "name": "NC",
+          "erc_type": "no_connect",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "12",
+          "name": "NC",
+          "erc_type": "no_connect",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "18",
+          "name": "NC",
+          "erc_type": "no_connect",
+          "unit": "LMK1D1204PRHDT_2_1"
+        },
+        {
+          "number": "25",
+          "name": "NC",
+          "erc_type": "no_connect",
+          "unit": "LMK1D1204PRHDT_2_1"
+        }
+      ],
+      "sources": {
+        "pin_map_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/lmk1d1204p.pdf",
+          "section": "SNAS830A pp. 4\u20135, pin functions"
+        },
+        "package_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/lmk1d1204p.pdf",
+          "section": "SNAS830A pp. 29\u201331, RHD0028B, drawing 4226146/A 08/2020"
+        },
+        "source_pdf_sha256": "b3d91e990e79b0003e6eb5bb9c9db29364231a140c8286d06e281063cd037ad1"
+      },
+      "notes": [
+        "Candidate DAC differential-clock frontend; input swing/common-mode, AFE load, power sequencing and output partial-power behavior are not electrically approved.",
+        "Individual disabled LVDS output pairs are High-Z: tri_state pin type. VAC_REFx internal bias outputs are power_out.",
+        "TI paste example: 4 \u00d7 1.37 mm windows, centers \u00b10.785 mm (76% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design."
+      ],
+      "footprint_sha256": "ccb49708315373ce753603d43106bae62b9e2a2c0997b185bfe3197784b221e9"
+    },
+    {
+      "symbol": "GRF2013",
+      "mpn": "GRF2013",
+      "group": "core",
+      "footprint": "GRF_DFN-6_1.5x1.5mm_P0.5mm_EP0.6x1.1mm",
+      "status": "draft_pin_map_and_drawing_checked",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "GRF2013_DFN6_mechanical-preview.wrl",
+          "kind": "Drawing-derived VRML mechanical envelope preview",
+          "sha256": "c79d1573b420dc14acf88bd14e8eedd11b36804571de7d00af3b2f123bc3813a"
+        }
+      ],
+      "pins": [
+        {
+          "number": "3",
+          "name": "RF_IN",
+          "erc_type": "input",
+          "unit": "GRF2013_1_1"
+        },
+        {
+          "number": "1",
+          "name": "VENABLE",
+          "erc_type": "input",
+          "unit": "GRF2013_1_1"
+        },
+        {
+          "number": "4",
+          "name": "RF_OUT/VDD",
+          "erc_type": "passive",
+          "unit": "GRF2013_1_1"
+        },
+        {
+          "number": "2",
+          "name": "GND/NC",
+          "erc_type": "passive",
+          "unit": "GRF2013_1_1"
+        },
+        {
+          "number": "5",
+          "name": "GND/NC",
+          "erc_type": "passive",
+          "unit": "GRF2013_1_1"
+        },
+        {
+          "number": "6",
+          "name": "GND/NC",
+          "erc_type": "passive",
+          "unit": "GRF2013_1_1"
+        },
+        {
+          "number": "7",
+          "name": "EP_GND",
+          "erc_type": "power_in",
+          "unit": "GRF2013_1_1"
+        }
+      ],
+      "sources": {
+        "pin_map_source": {
+          "url": "https://www.guerrilla-rf.com/includes/prodFiles/2013/GRF2013DS.pdf",
+          "section": "GRF2013 Release A 2025-12-18 pp. 2\u20133, top-view pinout and pin assignments; p. 15, package drawing"
+        },
+        "package_source": {
+          "url": "https://www.guerrilla-rf.com/includes/prodFiles/2013/GRF2013DS.pdf",
+          "section": "GRF2013 Release A 2025-12-18 p. 15, package dimensions/recommended land pattern"
+        },
+        "source_pdf_sha256": "4095c664b936edec0e6b6f83acd80ea21744d699112548b12b091342ea1d70be"
+      },
+      "notes": [
+        "The exposed base has no manufacturer pin number; local library convention is pin/pad 7 = EP_GND. This convention is explicit in the symbol and footprint.",
+        "RF_OUT/VDD is one mixed RF/DC terminal, typed passive. A separate invented supply pin is not used.",
+        "GND/NC pins 2/5/6 have no internal die connection and may be grounded; typed passive rather than no_connect.",
+        "0.5 \u00d7 0.95 mm EP paste aperture (~72%) is a provisional authored stencil choice, not a manufacturer recommendation. Review assembly/stencil with vendor before fabrication."
+      ],
+      "footprint_sha256": "1f9ab5512739f5a48143b8fa053e119567446bf4511de6903efd09ac9a320802"
+    },
+    {
+      "symbol": "TPS62441QWRQRRQ1",
+      "mpn": "TPS62441QWRQRRQ1",
+      "group": "power",
+      "footprint": "TI_RQR0014A_VQFN-HR-14_2.3x2.7mm",
+      "status": "candidate; ANALOG_PRE headroom/accuracy closure open",
+      "electrical_candidate": true,
+      "models": [
+        {
+          "file": "RQR0014A_clearance_envelope.wrl",
+          "kind": "Original maximum-body VRML envelope from TI package-outline limits.",
+          "sha256": "3bf296572c6d17f55b9797acfbf683913327ff35e91dfc4da03ed5c084ef35fb"
+        }
+      ],
+      "pins": [
+        {
+          "number": "7",
+          "name": "VIN1",
+          "erc_type": "power_in",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "11",
+          "name": "VIN2",
+          "erc_type": "power_in",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "8",
+          "name": "EN1",
+          "erc_type": "input",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "10",
+          "name": "EN2",
+          "erc_type": "input",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "5",
+          "name": "MODE/SYNC",
+          "erc_type": "input",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "14",
+          "name": "COMP/FSET",
+          "erc_type": "input",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "6",
+          "name": "SW1",
+          "erc_type": "power_out",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "3",
+          "name": "FB1",
+          "erc_type": "input",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "4",
+          "name": "PG1",
+          "erc_type": "open_collector",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "12",
+          "name": "SW2",
+          "erc_type": "power_out",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "1",
+          "name": "FB2",
+          "erc_type": "input",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "13",
+          "name": "PG2",
+          "erc_type": "open_collector",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        },
+        {
+          "number": "9",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS62441QWRQRRQ1_1_1"
+        }
+      ],
+      "sources": {
+        "source": "https://www.ti.com/lit/ds/symlink/tps62441-q1.pdf",
+        "source_revision": "SLUSDN9B, July 2022",
+        "source_pdf_pages": [
+          3,
+          33,
+          34,
+          35
+        ],
+        "source_sha256": "6c3ce296359cb4c7f19defd3362a24b7372b23bd5f9b443c686b58ceeabb7606",
+        "package": "RQR0014A",
+        "drawing": "4225624/B, February 2020",
+        "qualification": "Exact order code appears in official datasheet orderable addendum; family is AEC-Q100 automotive.",
+        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work."
+      },
+      "notes": [
+        "No exposed central pad: 14 numbered terminals only.",
+        "SW pins are switched power outputs, not regulated DC rails.",
+        "COMP/FSET is an analog configuration input; input ERC type matches TI pin table.",
+        "Forced PWM accuracy condition requires VIN >= VOUT + 1 V.",
+        "Existing 2.2 uH examples are incompatible with 0.32-0.9 uH effective L."
+      ],
+      "footprint_sha256": "3488dd248e41f18abd4a45a54636b518299e2126f7ba5074c4d06ed867d8e639"
+    },
+    {
+      "symbol": "TPS7A8801QRTJRQ1",
+      "mpn": "TPS7A8801QRTJRQ1",
+      "group": "power",
+      "footprint": "TI_RTJ0020J_WQFN-20-1EP_4x4mm",
+      "status": "working automotive AFE dual-LDO selection; not board-qualified",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "RTJ0020J_clearance_envelope.wrl",
+          "kind": "Original maximum-body VRML envelope from TI package-outline limits.",
+          "sha256": "766b749f65b4c3e078ffd7900100701a3e88cb49219d964aa4d224aed63eb691"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "IN1",
+          "erc_type": "power_in",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "2",
+          "name": "IN1",
+          "erc_type": "power_in",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "20",
+          "name": "EN1",
+          "erc_type": "input",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "18",
+          "name": "SS_CTRL1",
+          "erc_type": "input",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "19",
+          "name": "NR/SS1",
+          "erc_type": "passive",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "4",
+          "name": "IN2",
+          "erc_type": "power_in",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "5",
+          "name": "IN2",
+          "erc_type": "power_in",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "6",
+          "name": "EN2",
+          "erc_type": "input",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "8",
+          "name": "SS_CTRL2",
+          "erc_type": "input",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "7",
+          "name": "NR/SS2",
+          "erc_type": "passive",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "15",
+          "name": "OUT1",
+          "erc_type": "power_out",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "14",
+          "name": "OUT1",
+          "erc_type": "passive",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "16",
+          "name": "FB1",
+          "erc_type": "input",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "17",
+          "name": "PG1",
+          "erc_type": "open_collector",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "12",
+          "name": "OUT2",
+          "erc_type": "power_out",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "11",
+          "name": "OUT2",
+          "erc_type": "passive",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "10",
+          "name": "FB2",
+          "erc_type": "input",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "9",
+          "name": "PG2",
+          "erc_type": "open_collector",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "13",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        },
+        {
+          "number": "21",
+          "name": "EP_GND",
+          "erc_type": "power_in",
+          "unit": "TPS7A8801QRTJRQ1_1_1"
+        }
+      ],
+      "sources": {
+        "source": "https://www.ti.com/lit/ds/symlink/tps7a88-q1.pdf",
+        "source_revision": "SBVS289A, September 2017",
+        "source_pdf_pages": [
+          3,
+          36,
+          37,
+          38
+        ],
+        "source_sha256": "a59e368d90fededc368b044db7da0258728094c2c3f5a8597a32b066bf0a6777",
+        "package": "RTJ0020J",
+        "drawing": "4223320/A, November 2016",
+        "qualification": "Exact order code appears in official datasheet orderable addendum; family is AEC-Q100 automotive.",
+        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work."
+      },
+      "notes": [
+        "All 20 numbered pins plus exposed pad 21 are visible.",
+        "OUT1 pins14/15 and OUT2 pins11/12 each internally share one output.",
+        "Duplicate output pad pins14/11 use passive ERC; pins15/12 are power_out, avoiding false multiple-source ERC conflicts when paired pins are connected.",
+        "Optional corner terminals A1-A4 are unnumbered mechanical solder pads; no electrical net or ground connection is inferred.",
+        "Thermal vias are not drilled in this base footprint; use reviewed filled/plugged/tented via implementation on the board.",
+        "Pin-table OUT1 capacitor sentence is internally inconsistent; use application section8.1.1.3 requirements."
+      ],
+      "footprint_sha256": "7275e4d0333773551a8894567fefa2d153f1e480a1048e62a7f9ff90cb36f933"
+    },
+    {
+      "symbol": "TPS7A2133PQWDRBRQ1",
+      "mpn": "TPS7A2133PQWDRBRQ1",
+      "group": "power",
+      "footprint": "TI_DRB0008J_VSON-8-1EP_3x3mm",
+      "status": "working low-cost automotive LO/reference LDO comparison; RF suitability unmeasured",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "DRB0008J_clearance_envelope.wrl",
+          "kind": "Original maximum-body VRML envelope from TI package-outline limits.",
+          "sha256": "84235120f04607d869299c9a63c6b1e83ede0895afef47881572eb0f2e18ce25"
+        }
+      ],
+      "pins": [
+        {
+          "number": "8",
+          "name": "IN",
+          "erc_type": "power_in",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        },
+        {
+          "number": "5",
+          "name": "EN",
+          "erc_type": "input",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        },
+        {
+          "number": "1",
+          "name": "OUT",
+          "erc_type": "power_out",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        },
+        {
+          "number": "2",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        },
+        {
+          "number": "3",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        },
+        {
+          "number": "6",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        },
+        {
+          "number": "7",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        },
+        {
+          "number": "9",
+          "name": "EP_GND",
+          "erc_type": "power_in",
+          "unit": "TPS7A2133PQWDRBRQ1_1_1"
+        }
+      ],
+      "sources": {
+        "source": "https://www.ti.com/lit/ds/symlink/tps7a21-q1.pdf",
+        "source_revision": "SBVS437D, June 2025",
+        "source_pdf_pages": [
+          3,
+          35,
+          36,
+          37
+        ],
+        "source_sha256": "689403ed8098c98e7c602d073944429e5bbc35643741e8564dc7cc59180fe1b3",
+        "package": "DRB0008J",
+        "drawing": "4225036/A, June 2019",
+        "qualification": "Exact order code appears in official datasheet orderable addendum; family is AEC-Q100 automotive.",
+        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work."
+      },
+      "notes": [
+        "This is the fixed DRB map, not either incompatible DSG map.",
+        "NC pins2/3/6/7 have no internal connection; manufacturer explicitly permits grounding for thermal performance. They are passive, not no_connect ERC.",
+        "Exposed pad9 is internally grounded and must be tied to ground.",
+        "Thermal vias are not drilled in the base footprint; board fabrication must close the via/paste plan."
+      ],
+      "footprint_sha256": "c32a924171b173936c83559cd909403b1b37056f24d6beea480719b839f6be64"
+    },
+    {
+      "symbol": "TPS386000RGPT",
+      "mpn": "TPS386000RGPT",
+      "group": "io",
+      "footprint": "TPS386000RGPT",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_TPS386000RGPT-body-envelope.wrl",
+          "kind": "Drawing-derived body envelope; no leads/EP detail",
+          "sha256": "42fd65617522fbba8d5a0434f3c82047bd8f441acc24dea16ed9f0b93a756bd0"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "~{MR}",
+          "erc_type": "input",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "2",
+          "name": "CT4",
+          "erc_type": "passive",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "3",
+          "name": "CT3",
+          "erc_type": "passive",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "4",
+          "name": "CT2",
+          "erc_type": "passive",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "5",
+          "name": "CT1",
+          "erc_type": "passive",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "6",
+          "name": "SENSE4H",
+          "erc_type": "input",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "7",
+          "name": "SENSE4L",
+          "erc_type": "input",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "8",
+          "name": "SENSE3",
+          "erc_type": "input",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "9",
+          "name": "SENSE2",
+          "erc_type": "input",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "10",
+          "name": "SENSE1",
+          "erc_type": "input",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "20",
+          "name": "WDI",
+          "erc_type": "input",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "11",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "12",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "13",
+          "name": "VREF",
+          "erc_type": "output",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "14",
+          "name": "VDD",
+          "erc_type": "power_in",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "15",
+          "name": "~{RESET1}",
+          "erc_type": "open_collector",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "16",
+          "name": "~{RESET2}",
+          "erc_type": "open_collector",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "17",
+          "name": "~{RESET3}",
+          "erc_type": "open_collector",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "18",
+          "name": "~{RESET4}",
+          "erc_type": "open_collector",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "19",
+          "name": "~{WDO}",
+          "erc_type": "open_collector",
+          "unit": "TPS386000RGPT_1_1"
+        },
+        {
+          "number": "21",
+          "name": "EP(GND)",
+          "erc_type": "power_in",
+          "unit": "TPS386000RGPT_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tps386000.pdf",
+          "sha256": "02e788626e1d8d546ada465dc63703635834e41ee109d6c9fc6970a26fb62e98"
+        },
+        "package": "RGP S-PVQFN-N20, 4x4mm, EP2.15mm"
+      },
+      "notes": [],
+      "footprint_sha256": "52f34814303ba88c0e9b959f9cc41fe51478bb272402fd8ec2cc22a18db6e082"
+    },
+    {
+      "symbol": "TPS389001DSER",
+      "mpn": "TPS389001DSER",
+      "group": "io",
+      "footprint": "TPS389001DSER",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_TPS389001DSER-body-envelope.wrl",
+          "kind": "Drawing-derived body envelope; no leads",
+          "sha256": "164488a64a943ca1b920eb1249846ccf377ac42dab2c38e13e65054b1a864797"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "SENSE",
+          "erc_type": "input",
+          "unit": "TPS389001DSER_1_1"
+        },
+        {
+          "number": "3",
+          "name": "~{MR}",
+          "erc_type": "input",
+          "unit": "TPS389001DSER_1_1"
+        },
+        {
+          "number": "5",
+          "name": "CT",
+          "erc_type": "passive",
+          "unit": "TPS389001DSER_1_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS389001DSER_1_1"
+        },
+        {
+          "number": "4",
+          "name": "VDD",
+          "erc_type": "power_in",
+          "unit": "TPS389001DSER_1_1"
+        },
+        {
+          "number": "6",
+          "name": "~{RESET}",
+          "erc_type": "open_collector",
+          "unit": "TPS389001DSER_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tps3890.pdf",
+          "sha256": "ee79599730e7606ba9718d9820b411020e3dcd9ff7d44572f8ee63fead15b9d0"
+        },
+        "package": "DSE0006A WSON-6 1.5x1.5mm, no EP"
+      },
+      "notes": [],
+      "footprint_sha256": "d1d94f10dc9634867fcafb0d783d090bfe1528c911d72c63e57c874846433622"
+    },
+    {
+      "symbol": "TPS259470LRPWR",
+      "mpn": "TPS259470LRPWR",
+      "group": "io",
+      "footprint": "TPS259470LRPWR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_TPS259470LRPWR-body-envelope.wrl",
+          "kind": "Drawing-derived body envelope; no irregular lead geometry",
+          "sha256": "13a884761c7a31eec826a37db62bb18019810ec4a71d9f3196dee15bd324ebc9"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "EN/UVLO",
+          "erc_type": "input",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "OVLO",
+          "erc_type": "input",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "IN",
+          "erc_type": "power_in",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "7",
+          "name": "DVDT",
+          "erc_type": "passive",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "9",
+          "name": "ILM",
+          "erc_type": "passive",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "10",
+          "name": "ITIMER",
+          "erc_type": "passive",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "AUXOFF",
+          "erc_type": "open_collector",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "~{FLT}",
+          "erc_type": "open_collector",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "OUT",
+          "erc_type": "power_out",
+          "unit": "TPS259470LRPWR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS259470LRPWR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+          "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4"
+        },
+        "package": "RPW0010A VQFN-HR-10 2x2mm, no extra EP"
+      },
+      "notes": [],
+      "footprint_sha256": "a8f46dad00ba8d6a34adccd02420913750a789eb174559e5fa68818bf85af39e"
+    },
+    {
+      "symbol": "TPS22918DBVR",
+      "mpn": "TPS22918DBVR",
+      "group": "io",
+      "footprint": "TPS22918DBVR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_SOT-23-6.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "VIN",
+          "erc_type": "power_in",
+          "unit": "TPS22918DBVR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "ON",
+          "erc_type": "input",
+          "unit": "TPS22918DBVR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS22918DBVR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "CT",
+          "erc_type": "passive",
+          "unit": "TPS22918DBVR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "QOD",
+          "erc_type": "passive",
+          "unit": "TPS22918DBVR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "VOUT",
+          "erc_type": "power_out",
+          "unit": "TPS22918DBVR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+          "sha256": "1b28eb58003d28b18bf919a15734056f296a499bebee2bd493a1e4358c4dfb1c"
+        },
+        "package": "DBV0006A SOT23-6"
+      },
+      "notes": [],
+      "footprint_sha256": "c083538776522b70f8ea41cc4cc8730f59f0eb2296de8253ea71dc9a6b75bcf9"
+    },
+    {
+      "symbol": "SN74AXC4T774PWR",
+      "mpn": "SN74AXC4T774PWR",
+      "group": "io",
+      "footprint": "SN74AXC4T774PWR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_TSSOP-16_4.4x5mm_P0.65mm.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "DIR1",
+          "erc_type": "input",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "DIR2",
+          "erc_type": "input",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "A1",
+          "erc_type": "bidirectional",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "A2",
+          "erc_type": "bidirectional",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "A3",
+          "erc_type": "bidirectional",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "A4",
+          "erc_type": "bidirectional",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "7",
+          "name": "DIR3",
+          "erc_type": "input",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "DIR4",
+          "erc_type": "input",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "9",
+          "name": "~{OE}",
+          "erc_type": "input",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "16",
+          "name": "VCCA",
+          "erc_type": "power_in",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "10",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "11",
+          "name": "B4",
+          "erc_type": "bidirectional",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "12",
+          "name": "B3",
+          "erc_type": "bidirectional",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "13",
+          "name": "B2",
+          "erc_type": "bidirectional",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "14",
+          "name": "B1",
+          "erc_type": "bidirectional",
+          "unit": "SN74AXC4T774PWR_1_1"
+        },
+        {
+          "number": "15",
+          "name": "VCCB",
+          "erc_type": "power_in",
+          "unit": "SN74AXC4T774PWR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/sn74axc4t774.pdf",
+          "sha256": "f45cd62a9675b9f6071519d149a060d4124f49944f3c3af44160a76796f3bf20"
+        },
+        "package": "PW0016A TSSOP16 4.4x5mm, no EP"
+      },
+      "notes": [],
+      "footprint_sha256": "66105d74884c6ec92dc61ac528dfb238e3cd0888035816de23dc8107b861834d"
+    },
+    {
+      "symbol": "TCA9517ADGKR",
+      "mpn": "TCA9517ADGKR",
+      "group": "io",
+      "footprint": "TCA9517ADGKR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_VSSOP-8_3x3mm_P0.65mm.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "0af17c38f7022ea10ff245f82773c9b00d4163a407490c6b2d91869a0861df56"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "VCCA",
+          "erc_type": "power_in",
+          "unit": "TCA9517ADGKR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "SCLA",
+          "erc_type": "bidirectional",
+          "unit": "TCA9517ADGKR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "SDAA",
+          "erc_type": "bidirectional",
+          "unit": "TCA9517ADGKR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TCA9517ADGKR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "EN",
+          "erc_type": "input",
+          "unit": "TCA9517ADGKR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "SDAB",
+          "erc_type": "bidirectional",
+          "unit": "TCA9517ADGKR_1_1"
+        },
+        {
+          "number": "7",
+          "name": "SCLB",
+          "erc_type": "bidirectional",
+          "unit": "TCA9517ADGKR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "VCCB",
+          "erc_type": "power_in",
+          "unit": "TCA9517ADGKR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tca9517a.pdf",
+          "sha256": "ad2d7dc5994583006aa21b67ee9f18507a2698ad9366285dff56816f065790c6"
+        },
+        "package": "DGK0008A VSSOP8 3x3mm, no EP"
+      },
+      "notes": [],
+      "footprint_sha256": "638e235fa338c16df52fe09700a8062cba89e9c2e2de8c8879411b02b6c1a33c"
+    },
+    {
+      "symbol": "SN74LVC1G125DBVR",
+      "mpn": "SN74LVC1G125DBVR",
+      "group": "io",
+      "footprint": "SN74LVC1G125DBVR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_SOT-23-5.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "~{OE}",
+          "erc_type": "input",
+          "unit": "SN74LVC1G125DBVR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "erc_type": "input",
+          "unit": "SN74LVC1G125DBVR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "SN74LVC1G125DBVR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "Y",
+          "erc_type": "tri_state",
+          "unit": "SN74LVC1G125DBVR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "erc_type": "power_in",
+          "unit": "SN74LVC1G125DBVR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf",
+          "sha256": "1098d46e4565695e9823a08309bc581e2c9ead26b19e99a43a011a38642b27ca"
+        },
+        "package": "DBV0005A SOT23-5"
+      },
+      "notes": [],
+      "footprint_sha256": "d8cd015b453fb8a4d910acc4a0e04fd77094d292392e1cc9c1e8c016b323ae7e"
+    },
+    {
+      "symbol": "SN74LVC1G11DCKR",
+      "mpn": "SN74LVC1G11DCKR",
+      "group": "io",
+      "footprint": "SN74LVC1G11DCKR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_SOT-363_SC-70-6.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "045cc95e18ee7a13d1623c3ce6604fc833049bdb4f952f68c26e3c5767d122e4"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "erc_type": "input",
+          "unit": "SN74LVC1G11DCKR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "SN74LVC1G11DCKR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "B",
+          "erc_type": "input",
+          "unit": "SN74LVC1G11DCKR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "Y",
+          "erc_type": "output",
+          "unit": "SN74LVC1G11DCKR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "erc_type": "power_in",
+          "unit": "SN74LVC1G11DCKR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "C",
+          "erc_type": "input",
+          "unit": "SN74LVC1G11DCKR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+          "sha256": "ffd953703273b43844eae23cfbf31cfc801a3b9443f2c863d49dde62f5a9232b"
+        },
+        "package": "DCK0006A SC70-6"
+      },
+      "notes": [],
+      "footprint_sha256": "534dfb9a77d19ae17be287018db0fd5588be968d3b57ec20151027235439562c"
+    },
+    {
+      "symbol": "SN74LVC1G17DBVR",
+      "mpn": "SN74LVC1G17DBVR",
+      "group": "io",
+      "footprint": "SN74LVC1G17DBVR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_SOT-23-5.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "NC",
+          "erc_type": "no_connect",
+          "unit": "SN74LVC1G17DBVR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "erc_type": "input",
+          "unit": "SN74LVC1G17DBVR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "SN74LVC1G17DBVR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "Y",
+          "erc_type": "output",
+          "unit": "SN74LVC1G17DBVR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "erc_type": "power_in",
+          "unit": "SN74LVC1G17DBVR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+          "sha256": "c76fa723fac4502423967a1aa087dd669106b52b8de620c024b26e56f5d59309"
+        },
+        "package": "DBV0005A SOT23-5"
+      },
+      "notes": [],
+      "footprint_sha256": "1c2d442a76482c374fc47dd9d169e46f2e50c87b3ee9f8b403b788ab776432ff"
+    },
+    {
+      "symbol": "SN74LVC1G14DBVR",
+      "mpn": "SN74LVC1G14DBVR",
+      "group": "io",
+      "footprint": "SN74LVC1G14DBVR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_SOT-23-5.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "NC",
+          "erc_type": "no_connect",
+          "unit": "SN74LVC1G14DBVR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "erc_type": "input",
+          "unit": "SN74LVC1G14DBVR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "SN74LVC1G14DBVR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "Y",
+          "erc_type": "output",
+          "unit": "SN74LVC1G14DBVR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "erc_type": "power_in",
+          "unit": "SN74LVC1G14DBVR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf",
+          "sha256": "d64e41f0a267e8c5f73873058561642c57e093a2b7ecb4715d7ab62f0ef31a4f"
+        },
+        "package": "DBV0005A SOT23-5"
+      },
+      "notes": [],
+      "footprint_sha256": "32523ad226087838b1976330e957d3d7ffeb294a2c438e47a934a46032449ce9"
+    },
+    {
+      "symbol": "TUSB320LAIRWBR",
+      "mpn": "TUSB320LAIRWBR",
+      "group": "io",
+      "footprint": "TUSB320LAIRWBR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_TUSB320LAIRWBR-body-envelope.wrl",
+          "kind": "Drawing-derived body envelope; installed STEP unavailable; no exact leads/plug detail",
+          "sha256": "d2a76be98cde7a5b561c699e515c64741a5e62960d34219d2f37019e630c935f"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "CC1",
+          "erc_type": "bidirectional",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "CC2",
+          "erc_type": "bidirectional",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "PORT",
+          "erc_type": "input",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "VBUS_DET",
+          "erc_type": "input",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "ADDR",
+          "erc_type": "input",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "~{INT}/OUT3",
+          "erc_type": "open_collector",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "7",
+          "name": "SDA/OUT1",
+          "erc_type": "bidirectional",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "SCL/OUT2",
+          "erc_type": "bidirectional",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "9",
+          "name": "ID",
+          "erc_type": "open_collector",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "10",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "11",
+          "name": "~{EN}",
+          "erc_type": "input",
+          "unit": "TUSB320LAIRWBR_1_1"
+        },
+        {
+          "number": "12",
+          "name": "VDD",
+          "erc_type": "power_in",
+          "unit": "TUSB320LAIRWBR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+          "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d"
+        },
+        "package": "RWB0012A X2QFN12 1.6x1.6mm, no EP"
+      },
+      "notes": [],
+      "footprint_sha256": "a07aecba1f211e41e60b44fe4e6f078b1082650432412524a026e76a9ed5a9d8"
+    },
+    {
+      "symbol": "TPS2116DRLR",
+      "mpn": "TPS2116DRLR",
+      "group": "io",
+      "footprint": "TPS2116DRLR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_SOT-583-8.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "34d40dd5a4b023474c893715ba83608c48ba22a44d91723fb6791db21a0f63bb"
+        }
+      ],
+      "pins": [
+        {
+          "number": "7",
+          "name": "VOUT",
+          "erc_type": "power_out",
+          "unit": "TPS2116DRLR_1_0"
+        },
+        {
+          "number": "1",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS2116DRLR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "VOUT",
+          "erc_type": "power_out",
+          "unit": "TPS2116DRLR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "VIN1",
+          "erc_type": "power_in",
+          "unit": "TPS2116DRLR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "PR1",
+          "erc_type": "input",
+          "unit": "TPS2116DRLR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "MODE",
+          "erc_type": "input",
+          "unit": "TPS2116DRLR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "VIN2",
+          "erc_type": "power_in",
+          "unit": "TPS2116DRLR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "ST",
+          "erc_type": "open_collector",
+          "unit": "TPS2116DRLR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tps2116.pdf",
+          "sha256": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5"
+        },
+        "package": "DRL0008A SOT583-8 1.6x2.1mm, no EP"
+      },
+      "notes": [],
+      "footprint_sha256": "9130cb50f01050e39f6e6416fb30f8634a9cd06f4e8e69f02655bef990ef446a"
+    },
+    {
+      "symbol": "TPD2EUSB30DRTR",
+      "mpn": "TPD2EUSB30DRTR",
+      "group": "io",
+      "footprint": "TPD2EUSB30DRTR",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_Texas_DRT-3.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "826a53de4a90e738d560e4a906235ba95541b3da40b62f22d8f9e30fd9f39744"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "D+",
+          "erc_type": "passive",
+          "unit": "TPD2EUSB30DRTR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "D-",
+          "erc_type": "passive",
+          "unit": "TPD2EUSB30DRTR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "TPD2EUSB30DRTR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tpd2eusb30.pdf",
+          "sha256": "a2c0dd845043a5bbfe610f673879c29e38649544385dea51dbe0a4c49df39136"
+        },
+        "package": "DRT R-PDSO-N3, 1.0x0.8mm body, 0.50mm maximum height"
+      },
+      "notes": [],
+      "footprint_sha256": "69788ef61dbfdbce5aa0fc5dbabf1f1c0f8b23ecf0c843548ee2cbde05c4b998"
+    },
+    {
+      "symbol": "USB4105-GF-A",
+      "mpn": "USB4105-GF-A",
+      "group": "io",
+      "footprint": "USB4105-GF-A",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0"
+        }
+      ],
+      "pins": [
+        {
+          "number": "A1",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A12",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B1",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B12",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A4",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A9",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B4",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B9",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "SH",
+          "name": "SHIELD",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A5",
+          "name": "CC1",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B5",
+          "name": "CC2",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A6",
+          "name": "D+",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B6",
+          "name": "D+",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A7",
+          "name": "D-",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B7",
+          "name": "D-",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A8",
+          "name": "SBU1",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B8",
+          "name": "SBU2",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://gct.co/files/drawings/usb4105.pdf",
+          "mirror_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5492/USB4105.pdf",
+          "sha256": "bcda0359d7dfbb087b448bce4dfe79f9e6fbfbcf1bbab78915d8fcb81d275ec6",
+          "drawing_revision": "B3, 2023-02-24"
+        },
+        "package": "GCT USB4105, 16 contacts / 12 PCB signal lands + shell"
+      },
+      "notes": [],
+      "footprint_sha256": "bded50b1effc30df197e1495e6eab07048a434af31ed269f4cc2e8cd182f9311"
+    }
+  ]
+}

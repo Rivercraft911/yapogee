@@ -1,0 +1,31 @@
+#VRML V2.0 utf8
+# Authored from manufacturer package dimensions for Yapogee.
+# Mechanical preview only. Nominal XY, maximum package Z; not a vendor solid model.
+# Units: 0.1 inch. No logo or proprietary CAD geometry. See manifest.json.
+Transform { translation 0 0 0.187008 children [ Shape { appearance Appearance { material Material { diffuseColor 0.12 0.12 0.12 } } geometry Box { size 1.574803 1.574803 0.334646 } } ] }
+Transform { translation -0.708661 0.492126 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation -0.708661 0.295276 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation -0.708661 0.098425 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation -0.708661 -0.098425 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation -0.708661 -0.295276 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation -0.708661 -0.492126 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation -0.492126 -0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation -0.295276 -0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation -0.098425 -0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation 0.098425 -0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation 0.295276 -0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation 0.492126 -0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation 0.708661 -0.492126 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation 0.708661 -0.295276 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation 0.708661 -0.098425 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation 0.708661 0.098425 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation 0.708661 0.295276 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation 0.708661 0.492126 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.15748 0.098425 0.019685 } } ] }
+Transform { translation 0.492126 0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation 0.295276 0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation 0.098425 0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation -0.098425 0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation -0.295276 0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation -0.492126 0.708661 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 0.098425 0.15748 0.019685 } } ] }
+Transform { translation 0 0 0.009843 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.68 } } geometry Box { size 1.062992 1.062992 0.019685 } } ] }
+Transform { translation -0.669291 0.649606 0.355512 children [ Shape { appearance Appearance { material Material { diffuseColor 0.75 0.75 0.75 } } geometry Box { size 0.055118 0.055118 0.002362 } } ] }

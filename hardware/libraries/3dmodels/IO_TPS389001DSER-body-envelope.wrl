@@ -1,0 +1,3 @@
+#VRML V2.0 utf8
+# Drawing-derived package body envelope only, no leads or exact molded detail.
+Transform { translation 0 0 0.15748031 children [ Shape { appearance Appearance { material Material { diffuseColor 0.12 0.12 0.14 } } geometry Box { size 0.59055118 0.59055118 0.31496063 } } ] }
