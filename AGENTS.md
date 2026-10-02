@@ -25,6 +25,7 @@ Yapogee is an RP2350B-based USB-C/SPI transmitter module. IREC development is th
 
 ## Files and changes
 
+- Keep repository documentation focused on how the system works: architecture, interfaces, derivations, reproducible models/plots and board/software artifacts. Keep working research, part comparisons, procurement observations, qualification investigations, session plans and schematic handoffs in the workspace notes folder outside this repository. State material design limitations concisely in the repository without importing the scratchpad.
 - Preserve existing work and user edits. Inspect dependencies before moving files; do not delete backups as incidental cleanup.
 - Keep generated previews and QA artifacts in their local `output/` directories. Keep published SVG previews beside editable diagram sources; regenerate both when changing a diagram.
 - Use repository-relative paths and scripts that work after moving or cloning the repo. Do not publish private workspace paths, personal notes, transcripts, credentials or unsupported vendor redistribution.

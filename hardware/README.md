@@ -4,7 +4,7 @@ Start with the development board: an onboard RP2350B, AFE7071 DAC/IQ modulator, 
 
 | Board | Contents / status |
 |---|---|
-| [Initial dev board](devboard/README.md) | Detailed architecture, component references, interfaces and bring-up requirements; KiCad sources come next |
+| [Initial dev board](devboard/README.md) | Architecture, component references, interfaces and models; KiCad sources are not yet published |
 | [Transmitter board](transmitter/) | Empty workspace for the later integrated IREC/mission board |
 
 Shared [link-budget](simulations/link_budget.py), [LO-loop](simulations/reference_lo_loop_screen.py) and [DAC-clock timing](simulations/dac_clock_budget.py) models live in `simulations/`. They record analytical assumptions; device-level simulations and measured results will follow the board work.
