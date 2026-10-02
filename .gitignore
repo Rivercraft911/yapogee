@@ -1,0 +1,11 @@
+**/output/
+__pycache__/
+*.pyc
+.DS_Store
+*.kicad_prl
+*.kicad_sch.lck
+*.kicad_pcb.lck
+*-backups/
+*.bak
+.env
+.env.*

@@ -1,0 +1,52 @@
+{
+  "domain": "digital LUT samples before analog reconstruction; not RF measurement",
+  "profiles": [
+    {
+      "samples_per_symbol": 4,
+      "L": 12,
+      "kaiser_beta": 1.0,
+      "headroom_db": 1.0,
+      "random_seed_hex": "0xDEADBEEF",
+      "random_symbols": 524288,
+      "mean_db_relative_full_scale_complex_CW": -3.2258352332026528,
+      "sampled_papr_1e_4_db": 4.953771173781282,
+      "sampled_max_papr_db": 5.216212705901465,
+      "exact_digital_sample_peak_re_exhaustive_mean_db": 5.235853873599119,
+      "max_axis_code": 7300
+    },
+    {
+      "samples_per_symbol": 8,
+      "L": 8,
+      "kaiser_beta": 1.0,
+      "headroom_db": 1.0,
+      "random_seed_hex": "0xDEADBEEF",
+      "random_symbols": 524288,
+      "mean_db_relative_full_scale_complex_CW": -3.1898503158698026,
+      "sampled_papr_1e_4_db": 4.901498118724777,
+      "sampled_max_papr_db": 5.199902083927633,
+      "exact_digital_sample_peak_re_exhaustive_mean_db": 5.199868956266269,
+      "max_axis_code": 7300
+    },
+    {
+      "samples_per_symbol": 8,
+      "L": 10,
+      "kaiser_beta": 1.0,
+      "headroom_db": 1.0,
+      "random_seed_hex": "0xDEADBEEF",
+      "random_symbols": 524288,
+      "mean_db_relative_full_scale_complex_CW": -3.3440237915299824,
+      "sampled_papr_1e_4_db": 5.008338524721245,
+      "sampled_max_papr_db": 5.354107989263923,
+      "exact_digital_sample_peak_re_exhaustive_mean_db": 5.354042431926449,
+      "max_axis_code": 7300
+    }
+  ],
+  "normalization": "A full-scale rotating complex CW has I=FS*cos(theta), Q=FS*sin(theta), hence total power FS^2. QPSK ensemble mean is 2*mean(axis^2). PAPR divides sample power by its sample mean; exact bound divides max sample power by exhaustive mean.",
+  "reference": "RP2350_IQ_Benchmark/reference/iqlut.py",
+  "planning_baseline_revision": "354ff2ddb0f83c0b7dc1d302e056a93b191298ec",
+  "reference_model_sha256": "78bc55061d73100a235248871d84c79569e9f5599620d57fc802ead2941c26df",
+  "runtime": {
+    "python": "3.13.2",
+    "numpy": "2.2.5"
+  }
+}
