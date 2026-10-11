@@ -6,7 +6,7 @@ The idea: an RP2350B does the DVB-S2 encoding and, through the power of PIO, sen
 
 ![System overview](hardware/architecture/system-overview.svg)
 
-Dashed lines and boxes are assembly options: an injected reference or LO, the CDCE6214 DAC clock in place of the PIO clock, and the raw AFE output in place of the driver. The [detailed dev-board diagrams](hardware/devboard/architecture/architecture.drawio) show how those paths connect.
+Dashed lines are assembly options: an injected reference or LO, and raw AFE output in place of the driver. PIO supplies the DAC clock through a differential driver; that input network still needs verification. The [dev-board diagrams](hardware/devboard/architecture/architecture.drawio) show the RF, clocks and power separately.
 
 For N samples per symbol, `f_IQ = N × R_s` and the interleaved bus runs at `f_bus = 2 × f_IQ`. At 8 Msym/s with N=4, that's 32 MS/s per I/Q channel and 64 Mwords/s on the bus. The proposed continuous PIO clock is `f_SYS / (2 × divider)`: 128 MHz / 2 = 64 MHz.
 

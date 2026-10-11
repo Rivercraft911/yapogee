@@ -14,7 +14,7 @@ Onboard RP2350B generates interleaved I/Q for AFE7071. A shared 12 MHz reference
 | Reference / fanout | ECS-TXO-2520MV-120-AN-TR, LMK1C1104PWR; [oscillator](https://ecsxtal.com/store/pdf/ECS-TXO-2520MV.pdf), [fanout](https://www.ti.com/lit/ds/symlink/lmk1c1104.pdf) |
 | DAC / IQ modulator | AFE7071IRGZT; [datasheet/IBIS](https://www.ti.com/product/AFE7071), [EVM guide](https://www.ti.com/lit/ug/slou337a/slou337a.pdf) |
 | LO | LMX2572RHAT; [datasheet](https://www.ti.com/lit/ds/symlink/lmx2572.pdf), [EVM schematic/BOM](https://www.ti.com/lit/ug/snau217b/snau217b.pdf) |
-| Clock comparison | GPIO28 dedicated PIO or CDCE6214RGET; conditional LMK1D1204PRHDT frontend; [CDCE](https://www.ti.com/product/CDCE6214), [exact P buffer](https://www.ti.com/lit/ds/symlink/lmk1d1204p.pdf) |
+| DAC clock | GPIO28 dedicated PIO; conditional LMK1D1204PRHDT differential driver; [driver datasheet](https://www.ti.com/lit/ds/symlink/lmk1d1204p.pdf) |
 | Driver | GRF2013; [reference circuit](https://www.guerrilla-rf.com/includes/prodFiles/2013/GRF2013DS.pdf) |
 | Power | Candidate TPS62441QWRQRRQ1 dual buck (3.3 V digital and 2.5 V AFE preregulator), TPS7A8801QRTJRQ1 dual AFE LDO, 2×TPS7A2133PQWDRBRQ1 LO/reference LDOs; [buck](https://www.ti.com/lit/ds/symlink/tps62441-q1.pdf), [AFE LDO](https://www.ti.com/lit/ds/symlink/tps7a88-q1.pdf), [LO/reference LDO](https://www.ti.com/lit/ds/symlink/tps7a21-q1.pdf) |
 | Input / reset | TUSB320LAIRWBR, TPS259470ARPW (auto-retry; same footprint as the library's TPS259470LRPWR), TPS386000RGPT, 2×TPS389001DSER; [USB-C CC](https://www.ti.com/lit/ds/symlink/tusb320lai.pdf), [eFuse](https://www.ti.com/lit/ds/symlink/tps25947.pdf), [supervisor](https://www.ti.com/lit/ds/symlink/tps386000.pdf), [AFE monitors](https://www.ti.com/lit/ds/symlink/tps389001.pdf) |
@@ -47,6 +47,6 @@ The link model writes tables/JSON to `hardware/simulations/output/`; the other t
 
 ## Clocking and control
 
-The 12 MHz reference supplies the MCU and clock/LO synthesizers. At MCU SYS128 MHz, the interleaved bus runs at 64/32/16 MHz for 32/16/8 MS/s per I/Q channel. A continuous PIO clock on GPIO28 or CDCE6214 supplies the separate, frequency-locked DAC conversion clock. The differential receiver interface still needs verification.
+The 12 MHz reference supplies the MCU and LO synthesizer. At MCU SYS128 MHz, the interleaved bus runs at 64/32/16 MHz for 32/16/8 MS/s per I/Q channel. A separate, continuous PIO loop on GPIO28 supplies the DAC conversion clock. Integer dividers keep the two clocks at the same nominal frequency. Screen the PIO source on existing hardware before layout; the differential receiver interface and final-board RF performance still need verification. There is no alternate DAC-clock input in this baseline.
 
 Rail supervision holds reset and RF permission until power is valid. Clock enable is separate from PA arm so the core can be configured with RF muted. Destination-powered buffers isolate separately powered control domains.

@@ -5,6 +5,104 @@
 	(uuid "111c3c71-9370-42b8-a37f-1eaf0b24b42b")
 	(paper "A4")
 	(lib_symbols)
+	(text "Yapogee Devboard"
+		(exclude_from_sim no)
+		(at 144.272 26.67 0)
+		(effects
+			(font
+				(face "Trebuchet MS")
+				(size 7 7)
+				(thickness 1.4)
+				(bold yes)
+			)
+		)
+		(uuid "098a4174-8d34-42f5-aae8-a1025534f880")
+	)
+	(text "Something witty about yapping from apogee\n"
+		(exclude_from_sim no)
+		(at 145.542 34.036 0)
+		(effects
+			(font
+				(face "Trebuchet MS")
+				(size 3 3)
+				(thickness 1.4)
+				(bold yes)
+			)
+		)
+		(uuid "5464a16d-3f27-482f-a6ad-19c44f912d56")
+	)
+	(text "I/Q generation and control"
+		(exclude_from_sim no)
+		(at 115.316 90.932 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "58281f89-6e59-4b4d-9042-630d6d7dd9db")
+	)
+	(text "A Rivercraft Creation\n\n"
+		(exclude_from_sim no)
+		(at 145.542 42.418 0)
+		(effects
+			(font
+				(face "Trebuchet MS")
+				(size 3 3)
+				(thickness 1.4)
+				(bold yes)
+			)
+		)
+		(uuid "de2764a5-e469-4abb-91ad-11fe0d8e7195")
+	)
+	(sheet
+		(at 85.725 86.995)
+		(size 60.96 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2eaeca55-4f39-45de-8b62-3a8994093720")
+		(property "Sheetname" "MCU"
+			(at 109.982 86.614 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 3 3)
+					(thickness 1)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 85.725 138.3796 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

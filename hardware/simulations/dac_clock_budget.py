@@ -10,8 +10,10 @@ https://github.com/Rivercraft911/RP2350_IQ_Benchmark
 
 Frequency-locked clocks never recover phase lost to a CLK_IO stall, so the
 four-cycle figure is also the total stall budget between SYNC events.
-CDCE6214 SNAS811A section 7.3.2.1: 24-bit numerator, programmable denominator
-(0 means 2^24); 64 MHz from 12 MHz uses a 2560 MHz VCO, N = 213 + 1/3 at 12 MHz PFD.
+Both baseline clocks derive from the same SYS clock using integer dividers.
+There is no deterministic frequency mismatch in this model. The optional
+differential-ppm input screens hypothetical mismatched clocks; it does not
+describe a fitted alternate source or predict drift between PIO state machines.
 
 128 MHz SYS and cpw 2/4/8 are adopted planning settings. The 3 ns observed
 setup/hold target is an engineering target, not a manufacturer requirement.
@@ -20,7 +22,6 @@ No package skew, pad delay, edge shape, probe error or RF noise is modeled.
 import argparse
 import json
 import math
-from fractions import Fraction
 
 
 def finite_nonnegative(value):
@@ -28,14 +29,6 @@ def finite_nonnegative(value):
     if not math.isfinite(number) or number < 0:
         raise argparse.ArgumentTypeError("must be finite and nonnegative")
     return number
-
-
-def cdce_ratio_error(denominator, vco_hz=2_560_000_000, pfd_hz=12_000_000):
-    """Relative output-frequency error when N = vco/pfd is rounded to the denominator."""
-    n_exact = Fraction(vco_hz, pfd_hz)
-    fraction = n_exact - math.floor(n_exact)
-    numerator = round(fraction * denominator)
-    return float(abs(Fraction(numerator, denominator) - fraction) / n_exact)
 
 
 def budget(sys_hz, cpw, differential_ppm):
@@ -67,23 +60,20 @@ def budget(sys_hz, cpw, differential_ppm):
         "four_cycle_drift_s_at_input_differential_ppm": four_cycle_drift_s,
         "cumulative_CLK_IO_stall_budget_SYS_cycles": 4 * cpw,
         "DACCLK_duty_40_60_percent_allowance_ns": 0.1 * 1e9 / clock_hz,
-        "four_cycle_drift_s_CDCE_denominator_2pow24": 4 / (clock_hz * cdce_ratio_error(2**24)),
-        "CDCE_denominator_3_or_integer_R3_N640_drift": "none (exact ratio)",
     }
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--differential-ppm", type=finite_nonnegative, default=10,
-                        help="relative frequency error of two clocks (default: 10 ppm)")
+    parser.add_argument("--differential-ppm", type=finite_nonnegative, default=0,
+                        help="hypothetical clock mismatch (default: 0 for shared-SYS PIO)")
     args = parser.parse_args()
     print(json.dumps({
         "status": "Nominal analytical budget; receiver timing and RF performance unverified",
         "SYS_Hz": 128_000_000,
+        "baseline_clock_source": "separate continuous PIO, shared SYS with CLK_IO",
         "differential_ppm_scenario": args.differential_ppm,
         "zero_ppm_drift_result": "null means no deterministic drift in this ideal model",
-        "CDCE_relative_error_denominator_3": cdce_ratio_error(3),
-        "CDCE_relative_error_denominator_2pow24": cdce_ratio_error(2**24),
         "sources": ["https://www.ti.com/lit/gpn/AFE7071",
                     "https://github.com/Rivercraft911/RP2350_IQ_Benchmark"],
         "profiles": {name: budget(128_000_000, cpw, args.differential_ppm)
