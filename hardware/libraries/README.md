@@ -1,7 +1,7 @@
 # Component library
 
-Project-local KiCad assets for schematic capture: **37 symbols, 37 footprints and
-34 model files**. The library includes 27 exact-part entries and ten generic
+Project-local KiCad assets for schematic capture: **38 symbols, 37 footprints and
+34 model files**. The library includes 28 exact-part entries and ten generic
 passive/debug templates. The MCU and larger RF devices use functional symbol
 units; supply pins and exposed pads remain explicit.
 
@@ -17,23 +17,28 @@ needs corresponding library/model paths. No global library installation is neede
 | `3dmodels/` | Matching-package KiCad STEP models and drawing-derived VRML previews |
 | [components.json](components.json) | Exact order codes, pin maps, source revisions/hashes, model provenance and package notes |
 
-These are draft component assets. Pin/function and package drawings were checked,
-symbol pin identifiers were matched to footprint pads, and KiCad 10 imports/exports
-were exercised. STEP package models are not manufacturer-certified solids. VRML
-previews use drawing dimensions; several represent only maximum body envelopes,
-without leads. Neither type establishes final assembled fit.
+Pin maps, package drawings, pin/pad matching and KiCad 10 imports/exports have been
+checked. The models are package previews, not guaranteed assembled-fit models;
+some show only the maximum body envelope. Package and exposed-pad details are in
+`components.json`. Thermal vias, paste/mask settings and assembly fit need review
+on the actual board.
 
-The AFE clock frontend remains conditional. TPS62441 analog-preregulator headroom,
-effective output passives and the complete USB power path remain circuit decisions.
-Generic capacitors/resistors have no selected value, voltage rating or order code.
-No shield outline, RF connector, output-buck inductor or final header pinout is
-frozen by this library. The Abracon 3.3 µH entry is for the MCU internal regulator.
+The main ICs are covered. RF filters, RF connectors, the dual-buck inductor and
+shield still need selections and footprints. Generic resistor/capacitor templates
+have no selected values, ratings or order codes; header templates have no final
+signal assignments. The Abracon 3.3 µH entry is for the MCU internal regulator.
 
-Package details recorded in the index include the AFE7071 and LMX2572 exposed-pad
-sizes, unnumbered CDCE6214/TPS7A88 corner lands, the local GRF2013 exposed-pad number,
-USB contact pairs sharing copper, and MCU/inductor land-pattern choices. Review
-these before connecting nets. Thermal vias, paste/mask process, circuit ERC, routed
-board DRC and mechanical/assembly review belong to the board design.
+Both LMX entries use TI's current RHA0040Y land
+([MPQF974](https://www.ti.com/lit/ml/mpqf974/mpqf974.pdf), 4233329/A): a 3.1 mm
+exposed pad with four 1.35 mm paste windows. The older RHA0040H drawing in the
+datasheet addenda has a 4.5 mm pad; the perimeter lands are identical. The smaller
+land also suits H parts, while the larger one could print paste close to the
+terminals of a Y part. Confirm the drawing for the purchased lot.
+
+LMX2572LPRHAT is an IREC-only alternate using the same footprint.
+Its 2 GHz output limit excludes 2.4 GHz satellite operation. Registers, loop filter,
+decoupling and output drive need checking for that variant. The full LMX2572 remains
+the shared-band choice; the alternate entry doesn't change the fitted part.
 
 Run the portable integrity check from the repository root:
 
@@ -41,6 +46,6 @@ Run the portable integrity check from the repository root:
 python3 hardware/libraries/check_assets.py
 ```
 
-It checks library/table/model resolution, indexed file hashes and pin/pad identity.
-It does not check circuit behavior. [Third-party provenance](THIRD_PARTY.md) covers
+It checks library/table/model resolution, indexed file hashes, pin/pad identity and
+that copper belonging to different pins doesn't overlap. It does not replace circuit ERC, board DRC or hardware testing. [Third-party provenance](THIRD_PARTY.md) covers
 reused KiCad data; source datasheet PDFs and local QA fixtures are not redistributed.

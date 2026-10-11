@@ -3,7 +3,7 @@
   "status": "Draft native CAD assets; no connected schematic or manufacturing release",
   "symbol_library": "Yapogee.kicad_sym",
   "footprint_library": "Yapogee.pretty",
-  "symbol_library_sha256": "95c08d72cd0c0d25291381f1848b96e4a84ec7341d274eb6a7cb5dea93c19e44",
+  "symbol_library_sha256": "0d9240e573dad4a2051e2f7267aa97ee349fc3349a652c77904cadcb5d3a0ad1",
   "components": [
     {
       "symbol": "RP2350B_SC1510_A4",
@@ -515,8 +515,8 @@
         "footprint_source_sha256": "9dc4266d5e5939c0f6a89beae370f4f4e29207308d02d02977c2c541af6fffb5",
         "datasheet": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
       },
-      "notes": "81 pin-number/name pairs independently matched to official RP2350B Minimal R4-S1 symbol, allowing ADC and active-low label formatting differences. Regrouped into waveform, host/control, power and timing/USB/flash units; all pads visible. Stock footprint adapted to R4-S1 perimeter-land centers +/-4.9mm and0.8x0.23mm pads; EP3.4mm unchanged. Nine reference-board thermal vias deliberately not embedded: board/stencil/via process still needs review.",
-      "footprint_sha256": "c5ab305b624cee96a1d62f91e0d2b3da471238011be5e5d02b6022f19c2eaca5"
+      "notes": "81 pin-number/name pairs independently matched to official RP2350B Minimal R4-S1 symbol, allowing ADC and active-low label formatting differences. Regrouped into waveform, host/control, power and timing/USB/flash units; all pads visible. Stock footprint adapted to R4-S1 perimeter-land centers +/-4.9mm and0.8 x 0.23 mm side-row and 0.23 x 0.8 mm top/bottom-row pads (orientation corrected 2026-10-07; the first build overlapped 38 top/bottom pad pairs); EP3.4mm unchanged. Nine reference-board thermal vias deliberately not embedded: board/stencil/via process still needs review.",
+      "footprint_sha256": "90b2b806c507a242acbeb8a965d5c745b9e0b994f096788ebbfd5765c2842cde"
     },
     {
       "symbol": "W25Q128JVSIQ",
@@ -1614,7 +1614,7 @@
       "symbol": "LMX2572RHAT",
       "mpn": "LMX2572RHAT",
       "group": "core",
-      "footprint": "TI_RHA0040H_VQFN-40_6x6mm_P0.5mm_EP4.5x4.5mm",
+      "footprint": "TI_RHA0040Y_VQFN-40_6x6mm_P0.5mm_EP3.1x3.1mm",
       "status": "draft_pin_map_and_drawing_checked",
       "electrical_candidate": false,
       "models": [
@@ -1878,16 +1878,18 @@
           "section": "SNAS740B pp. 4\u20135, pin configuration and functions"
         },
         "package_source": {
-          "url": "https://www.ti.com/lit/ds/symlink/lmx2572.pdf",
-          "section": "SNAS740B appendix pp. 87\u201389, RHA0040H, drawing 4219055/B 08/22/2019"
+          "url": "https://www.ti.com/lit/ml/mpqf974/mpqf974.pdf",
+          "section": "RHA0040Y, 4233329/A 07/2026: 3.1 +/-0.1 mm exposed pad; land 40 x (0.6 x 0.25) mm on 5.8 mm spans; stencil 4 x 1.35 mm at +/-0.775 mm, 76 %, 0.125 mm",
+          "superseded": "RHA0040H 4219055/B (4.5 mm EP) in the SNAS740B/SNAS764 package addenda dated 10-Nov-2025"
         },
         "source_pdf_sha256": "b984e699b503618c8e12d39a638f7b2f3eecb22003ba91f8b6b3e9d2cf238632"
       },
       "notes": [
         "Internal regulator/reference/bias bypass nodes are power_out to catch accidental connection to external supply outputs.",
-        "TI paste example: 9 \u00d7 1.26 mm windows (70% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design."
+        "TI paste example: 9 \u00d7 1.26 mm windows (70% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design.",
+        "2026-10-07: land changed from RHA0040H to RHA0040Y. Perimeter is identical; the 3.1 mm EP land and paste are safe for either lead frame, whereas the 4.5 mm land could print paste near the terminals of a Y-lot part. Confirm the lot drawing with the distributor; the 3D preview still shows the H body."
       ],
-      "footprint_sha256": "852392091f3f13f4494a1cf2067c557fe145e69790ac3fdd7889003b67a13fee"
+      "footprint_sha256": "c8d8853c3e2d206042026e54246b0b8ceb500e69a20bd0ad8e1823decccdd4da"
     },
     {
       "symbol": "ECS-TXO-2520MV-120-AN-TR",
@@ -3030,7 +3032,7 @@
         "package": "RGP S-PVQFN-N20, 4x4mm, EP2.15mm"
       },
       "notes": [],
-      "footprint_sha256": "52f34814303ba88c0e9b959f9cc41fe51478bb272402fd8ec2cc22a18db6e082"
+      "footprint_sha256": "b0745fbceffcc82402bf0208e87c1fb5a578a94b72a269d4b67a7b5fa3fce72a"
     },
     {
       "symbol": "TPS389001DSER",
@@ -3784,7 +3786,7 @@
         {
           "number": "7",
           "name": "VOUT",
-          "erc_type": "power_out",
+          "erc_type": "passive",
           "unit": "TPS2116DRLR_1_0"
         },
         {
@@ -3837,7 +3839,9 @@
         },
         "package": "DRL0008A SOT583-8 1.6x2.1mm, no EP"
       },
-      "notes": [],
+      "notes": [
+        "Pin 7 is passive (2026-10-07) so the two VOUT pins can be joined without an ERC power-output conflict; pin 2 remains power_out. Connect both."
+      ],
       "footprint_sha256": "9130cb50f01050e39f6e6416fb30f8634a9cd06f4e8e69f02655bef990ef446a"
     },
     {
@@ -4013,6 +4017,288 @@
       },
       "notes": [],
       "footprint_sha256": "bded50b1effc30df197e1495e6eab07048a434af31ed269f4cc2e8cd182f9311"
+    },
+    {
+      "symbol": "LMX2572LPRHAT",
+      "mpn": "LMX2572LPRHAT",
+      "group": "core",
+      "footprint": "TI_RHA0040Y_VQFN-40_6x6mm_P0.5mm_EP3.1x3.1mm",
+      "status": "IREC-only alternate; not adopted in full-band baseline",
+      "electrical_candidate": true,
+      "models": [
+        {
+          "file": "TI_RHA0040H_mechanical-preview.wrl",
+          "kind": "Drawing-derived VRML mechanical envelope preview",
+          "sha256": "d6c2bdf1a51a30f4b03a7fabc3fd17225a2a121815b853b517700b05d1925bc1"
+        }
+      ],
+      "pins": [
+        {
+          "number": "8",
+          "name": "OSCinP",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "9",
+          "name": "OSCinM",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "16",
+          "name": "SCK",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "17",
+          "name": "SDI",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "24",
+          "name": "CSB",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "1",
+          "name": "CE",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "5",
+          "name": "SYNC",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "28",
+          "name": "SysRefReq",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "30",
+          "name": "RampClk",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "32",
+          "name": "RampDir",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "35",
+          "name": "Vtune",
+          "erc_type": "input",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "23",
+          "name": "RFoutAP",
+          "erc_type": "output",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "22",
+          "name": "RFoutAM",
+          "erc_type": "output",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "19",
+          "name": "RFoutBP",
+          "erc_type": "output",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "18",
+          "name": "RFoutBM",
+          "erc_type": "output",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "20",
+          "name": "MUXout",
+          "erc_type": "output",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "12",
+          "name": "CPout",
+          "erc_type": "output",
+          "unit": "LMX2572LPRHAT_1_1"
+        },
+        {
+          "number": "7",
+          "name": "VccDIG",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "11",
+          "name": "VccCP",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "15",
+          "name": "VccMASH",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "21",
+          "name": "VccBUF",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "26",
+          "name": "VccVCO2",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "37",
+          "name": "VccVCO",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "6",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "13",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "14",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "25",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "31",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "34",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "39",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "40",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "41",
+          "name": "EP_GND",
+          "erc_type": "power_in",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "3",
+          "name": "VbiasVCO",
+          "erc_type": "power_out",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "10",
+          "name": "VregIN",
+          "erc_type": "power_out",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "27",
+          "name": "VbiasVCO2",
+          "erc_type": "power_out",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "29",
+          "name": "VrefVCO2",
+          "erc_type": "power_out",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "33",
+          "name": "VbiasVARAC",
+          "erc_type": "power_out",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "36",
+          "name": "VrefVCO",
+          "erc_type": "power_out",
+          "unit": "LMX2572LPRHAT_2_1"
+        },
+        {
+          "number": "38",
+          "name": "VregVCO",
+          "erc_type": "power_out",
+          "unit": "LMX2572LPRHAT_2_1"
+        }
+      ],
+      "sources": {
+        "pin_map_source": {
+          "url": "https://www.ti.com/lit/ds/symlink/lmx2572lp.pdf",
+          "section": "SNAS764, pp3\u20134; numbered pin assignments match full LMX2572"
+        },
+        "package_source": {
+          "url": "https://www.ti.com/lit/ml/mpqf974/mpqf974.pdf",
+          "section": "RHA0040Y, 4233329/A 07/2026: 3.1 +/-0.1 mm exposed pad; land 40 x (0.6 x 0.25) mm on 5.8 mm spans; stencil 4 x 1.35 mm at +/-0.775 mm, 76 %, 0.125 mm",
+          "superseded": "RHA0040H 4219055/B (4.5 mm EP) in the SNAS740B/SNAS764 package addenda dated 10-Nov-2025"
+        },
+        "source_pdf_sha256": "85310a983b42f5ada6dea83dad123b58cbb6c0c5d18eba0b3e3d0b1e06e8b80e"
+      },
+      "notes": [
+        "Supports direct IREC1.24\u20131.30GHz LO, not2.4GHz satellite LO. AFE7071 divide-by-two is in the DAC clock path, not LO.",
+        "Same numbered pin assignments; this asset implements the RHA0040Y land. Validate LP-specific loop, bypass capacitors, register/calibration profile and actual LO drive/loss before substitution.",
+        "Full-part output power codes and power curves are not transferable. No performance qualification or purchasing availability is implied.",
+        "2026-10-07: land changed from RHA0040H to RHA0040Y. Perimeter is identical; the 3.1 mm EP land and paste are safe for either lead frame, whereas the 4.5 mm land could print paste near the terminals of a Y-lot part. Confirm the lot drawing with the distributor; the 3D preview still shows the H body."
+      ],
+      "footprint_sha256": "c8d8853c3e2d206042026e54246b0b8ceb500e69a20bd0ad8e1823decccdd4da"
     }
   ]
 }

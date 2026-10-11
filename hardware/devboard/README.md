@@ -4,7 +4,7 @@ Onboard RP2350B generates interleaved I/Q for AFE7071. A shared 12 MHz reference
 
 ![RF architecture](architecture/core-rf.svg)
 
-[Editable architecture](architecture/architecture.drawio) · [Clock diagram](architecture/reference-clocks.svg) · [Earlier all-LDO power study](architecture/power-interfaces.svg)
+[Editable architecture](architecture/architecture.drawio) · [Clock diagram](architecture/reference-clocks.svg) · [Power diagram](architecture/power-interfaces.svg)
 
 ## Components and references
 
@@ -16,24 +16,24 @@ Onboard RP2350B generates interleaved I/Q for AFE7071. A shared 12 MHz reference
 | LO | LMX2572RHAT; [datasheet](https://www.ti.com/lit/ds/symlink/lmx2572.pdf), [EVM schematic/BOM](https://www.ti.com/lit/ug/snau217b/snau217b.pdf) |
 | Clock comparison | GPIO28 dedicated PIO or CDCE6214RGET; conditional LMK1D1204PRHDT frontend; [CDCE](https://www.ti.com/product/CDCE6214), [exact P buffer](https://www.ti.com/lit/ds/symlink/lmk1d1204p.pdf) |
 | Driver | GRF2013; [reference circuit](https://www.guerrilla-rf.com/includes/prodFiles/2013/GRF2013DS.pdf) |
-| Power | Candidate TPS62441QWRQRRQ1 dual buck, TPS7A8801QRTJRQ1 dual AFE LDO, 2×TPS7A2133PQWDRBRQ1 LO/reference LDOs; [buck](https://www.ti.com/lit/ds/symlink/tps62441-q1.pdf), [AFE LDO](https://www.ti.com/lit/ds/symlink/tps7a88-q1.pdf), [LO/reference LDO](https://www.ti.com/lit/ds/symlink/tps7a21-q1.pdf) |
-| Input / reset | TPS259470LRPWR, TPS386000RGPT, 2×TPS389001DSER; [input](https://www.ti.com/lit/ds/symlink/tps25947.pdf), [supervisor](https://www.ti.com/lit/ds/symlink/tps386000.pdf), [AFE monitors](https://www.ti.com/lit/ds/symlink/tps389001.pdf) |
+| Power | Candidate TPS62441QWRQRRQ1 dual buck (3.3 V digital and 2.5 V AFE preregulator), TPS7A8801QRTJRQ1 dual AFE LDO, 2×TPS7A2133PQWDRBRQ1 LO/reference LDOs; [buck](https://www.ti.com/lit/ds/symlink/tps62441-q1.pdf), [AFE LDO](https://www.ti.com/lit/ds/symlink/tps7a88-q1.pdf), [LO/reference LDO](https://www.ti.com/lit/ds/symlink/tps7a21-q1.pdf) |
+| Input / reset | TUSB320LAIRWBR, TPS259470ARPW (auto-retry; same footprint as the library's TPS259470LRPWR), TPS386000RGPT, 2×TPS389001DSER; [USB-C CC](https://www.ti.com/lit/ds/symlink/tusb320lai.pdf), [eFuse](https://www.ti.com/lit/ds/symlink/tps25947.pdf), [supervisor](https://www.ti.com/lit/ds/symlink/tps386000.pdf), [AFE monitors](https://www.ti.com/lit/ds/symlink/tps389001.pdf) |
 
-The board is in development; component choices describe the current design. Schematics, layout and a released BOM are not yet available.
+These are the current parts, with the DAC clock interface still being checked. There is no released BOM yet.
 
 ## Interfaces
 
-- **Power:** regulated 5 V, 4.75–5.25 V. The proposed dual buck supplies digital power and an analog preregulator; separate LDO outputs supply AFE 1.8/3.3 V, LO and reference domains. Analog-preregulator voltage, guaranteed input-path headroom, compensation/passives and complete input power remain under review. USB-C power admission uses advertised source current; external 5 V also permits USB data/programming from lower-current hosts. The source-control circuit is still under development.
-- **Host:** SPI SCK/MOSI/CS into module, READY outward, separate host I/O reference and default-off translation. Final pad numbers/timing are not released.
-- **LO_OUT / LO_IN:** local LO → removable filter adapter → LO_IN, or an exclusively selected external generator. Isolate the inactive route at both roots. AFE-plane drive is −5 to +5 dBm; target +4 dBm and verify it at the AFE input. Common CMOS REF_IN is a separate 12 MHz interface.
-- **RF:** exclusive raw-AFE or GRF2013 route with input-pad options. IREC evaluation PA is [GRF5613 EVB184](https://www.guerrilla-rf.com/includes/prodFiles/5613/GRF5613%20EVB184%201240-1420%20MHz.pdf); satellite low-power evaluation is [GRF5526 tune #180](https://www.guerrilla-rf.com/includes/prodFiles/5526/GRF5526%202200-2500MHz.pdf). Multi-watt video PA is separate. Each final PA has its own output filter, supply/bias, READY and local faults.
-- **Mounting/debug:** the first board provides bench access, SWD/BOOTSEL/RUN, LEDs, test points and DNP-isolated digital I/Q header positions. Solder-down module pads belong to the later compact form. Reserve a removable RF shield compartment; its outline and mechanics remain unselected. RF interfaces use controlled-impedance launches with mutually exclusive assembly links.
+- **Power:** USB-C 5 V. A CC controller admits only sources advertising at least 1.5 A, and one auto-retry eFuse limits inrush, current and overvoltage and blocks back-feed into the host. EXT_5V pads take bench or harness power through an exclusive link. A dual buck makes the 3.3 V digital rail and a 2.5 V preregulator for the AFE 1.8 V LDO; the 3.3 V AFE, LO and reference LDOs run from the protected 5 V.
+- **Host:** SPI SCK/MOSI/CS in, READY out, with a host I/O reference and default-off level translation. Pin assignments are not final.
+- **Reference / LO:** shared 12 MHz reference, with external-reference and external-LO injection options. An attenuator pad and onboard low-pass filter reduce LO harmonics before the AFE. Assembly links disconnect the unused source; the AFE LO input accepts −5 to +5 dBm.
+- **RF:** raw AFE or GRF2013 driver output, selected with assembly links. Populate one output SMA first. Mission PA and output filter stay external.
+- **Debug / mechanics:** SWD, BOOTSEL, RUN, LEDs, test points and DNP-isolated digital I/Q header positions. Leave room for a removable RF shield. Solder-down module pads come with the later compact board.
 
 ## Board and model status
 
-`board/` contains the initial KiCad project and project-local library tables. The [component library](../libraries/README.md) provides draft symbols, footprints and mechanical previews; no connected schematic, layout or manufacturing release is available. Shared hardware models are in `../simulations/`: [link/payload budget](../simulations/link_budget.py) and [ideal LO-loop screen](../simulations/reference_lo_loop_screen.py). They are analytical planning models, not SPICE/RF validation. Real stackup, device models and measurements will accompany later SI, power, PLL and RF-network studies.
+[Open the KiCad project](board/Yapogee-Devboard/Yapogee-Devboard.kicad_pro). Its local tables load the [component library](../libraries/README.md), including symbols, footprints and package previews. The schematic and PCB are blank.
 
-The [DAC clock budget](../simulations/dac_clock_budget.py) computes nominal launch margins and relative-frequency drift; it does not establish loaded receiver timing or jitter.
+Three Python models cover [link/payload budget](../simulations/link_budget.py), [ideal LO-loop behavior](../simulations/reference_lo_loop_screen.py) and [DAC-clock timing](../simulations/dac_clock_budget.py). These are analytical models; they don't establish RF performance, loaded clock timing or board fit.
 
 Run from the repository root with Python 3; all three use the standard library:
 
@@ -43,12 +43,10 @@ python3 hardware/simulations/reference_lo_loop_screen.py
 python3 hardware/simulations/dac_clock_budget.py
 ```
 
-The link model writes local `hardware/simulations/output/` tables/JSON. The loop screen and clock budget print JSON. Inputs and assumptions are recorded in the source and results.
+The link model writes tables/JSON to `hardware/simulations/output/`; the other two print JSON. Inputs and assumptions are in the source and results.
 
 ## Clocking and control
 
-The 12 MHz reference supplies the MCU and clock/LO synthesizers. At MCU SYS128 MHz, the interleaved data clock runs at 64/32/16 MHz for 32/16/8 MS/s per I/Q channel. A dedicated continuous PIO clock on GPIO28 is the proposed conversion-clock source; CDCE6214 provides a comparison source. The conversion clock is separate from the data strobe and remains frequency locked to it.
+The 12 MHz reference supplies the MCU and clock/LO synthesizers. At MCU SYS128 MHz, the interleaved bus runs at 64/32/16 MHz for 32/16/8 MS/s per I/Q channel. A continuous PIO clock on GPIO28 or CDCE6214 supplies the separate, frequency-locked DAC conversion clock. The differential receiver interface still needs verification.
 
-Rail supervision controls MCU reset and hardware permission. Clock enable operates independently of PA arm, allowing core configuration with RF muted. LO CE powers calibration; the RF path is enabled after configuration and path readiness. Destination-powered buffers isolate separately powered control domains.
-
-The AFE differential clock interface and loaded PIO clock/RF performance remain unqualified. The models describe analytical behavior; hardware measurements will accompany the board files.
+Rail supervision holds reset and RF permission until power is valid. Clock enable is separate from PA arm so the core can be configured with RF muted. Destination-powered buffers isolate separately powered control domains.

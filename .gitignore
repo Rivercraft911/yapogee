@@ -10,3 +10,5 @@ __pycache__/
 *.bak
 .env
 .env.*
+CLAUDE.md
+AGENTS.md
