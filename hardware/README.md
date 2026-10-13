@@ -1,12 +1,12 @@
 # Hardware
 
-Start with the development board: an onboard RP2350B, AFE7071 DAC/IQ modulator, shared reference, wideband LO and optional small driver. IREC comes first; the core also supports satellite development with a different external PA and output filter.
+The dev board puts RP2350B, AFE7071, the reference and LO on one PCB. USB-C handles power and programming; SPI takes data from the carrier. The optional small driver feeds an external PA and band filter.
 
 | Board | Contents / status |
 |---|---|
-| [Initial dev board](devboard/README.md) | Architecture, parts and models; blank KiCad project with a local component library |
+| [Initial dev board](devboard/README.md) | RF, clock and power diagrams, current parts and KiCad project; schematic capture underway |
 | [Transmitter board](transmitter/) | Empty workspace for the later integrated IREC/mission board |
 
-Shared [link-budget](simulations/link_budget.py), [LO-loop](simulations/reference_lo_loop_screen.py) and [DAC-clock timing](simulations/dac_clock_budget.py) models live in `simulations/`. They record analytical assumptions; device-level simulations and measured results will follow the board work.
+The [link budget](simulations/link_budget.py), [LO loop](simulations/reference_lo_loop_screen.py) and [DAC-clock timing](simulations/dac_clock_budget.py) models run with Python 3 and no extra packages. Inputs and assumptions live in the scripts. These are calculations; measured results will follow.
 
-The dev board provides USB-C, SPI, external regulated 5 V, test access and a removable shield option. The later transmitter board can reuse qualified circuit blocks on its own PCB. Yapling will likely live in a separate repository.
+IREC comes first. After validation, the dev board can run from the carrier's regulated 5 V; a compact transmitter PCB comes later. Satellite work can reuse tested blocks with its own PA and filter. Yapling will likely have its own repo.
