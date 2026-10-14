@@ -1,0 +1,4 @@
+#VRML V2.0 utf8
+# Manufacturer-drawing maximum body envelope; not manufacturer mechanical CAD.
+# Units: 0.1 inch. No termination details or solder standoff.
+Transform { translation 0 0 0.3543307086614173 children [ Shape { appearance Appearance { material Material { diffuseColor 0.52 0.48 0.38 } } geometry Box { size 1.3385826771653542 0.7086614173228346 0.7086614173228346 } } ] }

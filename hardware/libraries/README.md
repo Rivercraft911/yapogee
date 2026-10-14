@@ -1,7 +1,7 @@
 # Component library
 
-Project-local KiCad assets for schematic capture: **53 symbols, 48 footprints and
-44 model files**. The library includes 41 exact-part entries and twelve generic
+Project-local KiCad assets for schematic capture: **61 symbols, 54 footprints and
+50 model files**. The library includes 49 exact-part entries and twelve generic
 passive/debug/PCB-feature templates. The MCU and larger RF devices use functional symbol
 units; supply pins and exposed pads remain explicit.
 
@@ -27,6 +27,23 @@ The main ICs and connector options below are covered. RF filters, the dual-buck
 inductor and shield still need selections and footprints. Generic resistor/capacitor templates
 have no selected values, ratings or order codes; header templates have no final
 signal assignments. The Abracon 3.3 µH entry is for the MCU internal regulator.
+
+Capacitor symbols show the value, voltage, tolerance, dielectric and package in
+the JLC style. These exact parts have manufacturer reflow lands and body previews:
+
+| Part | Value | Rated voltage | Package |
+|---|---:|---:|---|
+| `GCM155R71H104KE02D` | 100 nF X7R | 50 V | 0402 |
+| `GCM188R71E105KA64D` | 1 µF X7R | 25 V | 0603 |
+| `KAM15AR71A225KT` | 2.2 µF X7R | 10 V | 0603 |
+| `CGA6P3X7R1E226M250AB` | 22 µF X7R | 25 V | 1210 |
+| `GCM1885C1H332JA16D` | 3.3 nF C0G | 50 V | 0603 |
+| `GCM1885C1H103JA16D` | 10 nF C0G | 50 V | 0603 |
+
+The 2.2 µF / 0603 option is for rails up to 5.5 V. Check effective capacitance
+against each circuit's minimum. `GCM21BR71E225KA73L` (2.2 µF / 25 V / 0805) and
+`CL31B106KAHVPNE` (10 µF / 25 V / 1206) are available alternatives. Exact source
+drawings, order codes and model details are in `components.json`.
 
 ## RF connectors and power jumper
 

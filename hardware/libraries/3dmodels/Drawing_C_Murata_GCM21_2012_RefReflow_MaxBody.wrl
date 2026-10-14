@@ -1,0 +1,5 @@
+#VRML V2.0 utf8
+# Murata GCM21BR71E225KA73L maximum ceramic body envelope.
+# Drawing-derived preview, not manufacturer CAD; no solder standoff or termination detail.
+# Units: 0.1 inch; source dimensions 2.15 x 1.4 x 1.4 mm.
+Transform { translation 0 0 0.275590551181 children [ Shape { appearance Appearance { material Material { diffuseColor 0.52 0.48 0.38 } } geometry Box { size 0.846456692913 0.551181102362 0.551181102362 } } ] }
