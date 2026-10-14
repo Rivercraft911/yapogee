@@ -23,6 +23,17 @@ Yapogee is an RP2350B-based USB-C/SPI transmitter module. IREC development is th
 - Avoid filler, sales language, forced enthusiasm and stock AI phrasing. Explain tradeoffs without inventing an inferior alternative to contrast against.
 - Cite the exact revision, section or page only when checked. Never invent a citation or imply a document was read in full when it was not.
 
+## Schematic presentation
+
+Follow SD-100001 Designing PCB Schematics (River Dowdy and Carson Lauer, updated 2026-09-12) for new schematic work:
+
+- Show the functional sheets and their interfaces on the top sheet. Keep feedback, compensation, protection and matching parts with the circuit they serve.
+- Use ALL_CAPS names with underscores, `_N` for active-low controls and `_P`/`_N` for differential pairs. Match child labels and parent sheet pins exactly.
+- Give purchased parts exact manufacturer, MPN, datasheet and footprint fields. Identify bare PCB features separately from purchased components.
+- Put brief operating limits, assembly choices and simple calculations next to the circuit. Keep longer derivations and editable models in the working notes or design calculations.
+- Identify which IC pin a decoupling group serves. Keep useful test points with their circuits; use short probe pads or isolated branches for RF and fast clocks.
+- Set DNP attributes and explain their purpose. Keep net classes, drawing information and documented ERC exceptions current. Preserve the brief, personal style of the public documentation.
+
 ## Files and changes
 
 - Keep repository documentation focused on how the system works: architecture, interfaces, derivations, reproducible models/plots and board/software artifacts. Keep working research, part comparisons, procurement observations, qualification investigations, session plans and schematic handoffs in the workspace notes folder outside this repository. State material design limitations concisely in the repository without importing the scratchpad.

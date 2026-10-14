@@ -28,13 +28,13 @@ These are the working parts, not a released BOM. The [KiCad project](board/Yapog
 
 **Power:** USB-C or EXT_5V → eFuse → protected 5 V. The dual buck makes DIG3V3 and PRE2V5; PRE2V5 feeds the AFE's 1.8 V LDO. The three quiet 3.3 V outputs come from protected 5 V. TPS386000 handles reset and watchdog recovery; AFE LDO power-good gives coarse fault detection. Rail test points and the eFuse current signal support bring-up.
 
-Use a verified 5 V / 3 A source for this eval board. Each CC pin has a 5.1 kΩ pull-down; available USB current is not detected. Assembly links select USB or EXT_5V exclusively.
+Use a verified 5 V / 3 A source for this eval board. Each CC pin has a 5.1 kΩ pull-down; available USB current is not detected. A removable solder bridge disconnects USB VBUS when EXT_5V powers the board.
 
 **MCU:** SPI carries payload data; USB handles programming and test access. SWD, BOOTSEL, RUN, LEDs and isolated DNP I/Q header positions make the first board easy to probe. Host pin assignments are still open.
 
 **LO and clocks:** the 12 MHz reference feeds the MCU and synthesizer. At SYS128 MHz, PIO supplies a continuous 64/32/16 MHz DAC clock for 32/16/8 MS/s per I/Q channel. External reference and LO injection use assembly links. An LO pad and low-pass filter set drive and suppress harmonics before the AFE. The differential DAC-clock interface still needs verification.
 
-**IQ and RF:** assembly links select raw AFE output or the GRF2013 driver. Populate one output SMA first. Leave space for a removable shield; solder-down pads come with the compact board.
+**IQ and RF:** assembly links select raw AFE output or the GRF2013 driver. Populate one top-mounted SMA first; the compact external-LO connector stays DNP. Leave space for a removable shield. A component-free underside helps the future solder-down carrier interface; its pad pattern is still open.
 
 ## Models
 

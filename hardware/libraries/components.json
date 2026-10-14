@@ -1,9 +1,9 @@
 {
   "schema": "yapogee-component-library-1",
-  "status": "Draft native CAD assets; no connected schematic or manufacturing release",
+  "status": "Native CAD assets; schematic capture in progress; no manufacturing release",
   "symbol_library": "Yapogee.kicad_sym",
   "footprint_library": "Yapogee.pretty",
-  "symbol_library_sha256": "0d9240e573dad4a2051e2f7267aa97ee349fc3349a652c77904cadcb5d3a0ad1",
+  "symbol_library_sha256": "3848e3bf1d6a1127a1a9cd3841a116c432ecb3c9549d135b0d17eefcfd8da12f",
   "components": [
     {
       "symbol": "RP2350B_SC1510_A4",
@@ -516,7 +516,11 @@
         "datasheet": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
       },
       "notes": "81 pin-number/name pairs independently matched to official RP2350B Minimal R4-S1 symbol, allowing ADC and active-low label formatting differences. Regrouped into waveform, host/control, power and timing/USB/flash units; all pads visible. Stock footprint adapted to R4-S1 perimeter-land centers +/-4.9mm and0.8 x 0.23 mm side-row and 0.23 x 0.8 mm top/bottom-row pads (orientation corrected 2026-10-07; the first build overlapped 38 top/bottom pad pairs); EP3.4mm unchanged. Nine reference-board thermal vias deliberately not embedded: board/stencil/via process still needs review.",
-      "footprint_sha256": "90b2b806c507a242acbeb8a965d5c745b9e0b994f096788ebbfd5765c2842cde"
+      "footprint_sha256": "90b2b806c507a242acbeb8a965d5c745b9e0b994f096788ebbfd5765c2842cde",
+      "supplier_codes": {
+        "JLCPCB": "C50090805",
+        "LCSC": "C50090805"
+      }
     },
     {
       "symbol": "W25Q128JVSIQ",
@@ -591,7 +595,11 @@
         "datasheet": "https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf"
       },
       "notes": "Winbond Rev F p5 eight-pin S-package mapping checked. SOIC-8 208 mil body. IO0/IO1/IO2/IO3 all bidirectional in QSPI mode; footprint/package mechanical tolerance review remains.",
-      "footprint_sha256": "8c790fbcefa7fedca03a9132362115d771434d837b60bcee67141d29c6b8ad38"
+      "footprint_sha256": "8c790fbcefa7fedca03a9132362115d771434d837b60bcee67141d29c6b8ad38",
+      "supplier_codes": {
+        "JLCPCB": "C97521",
+        "LCSC": "C97521"
+      }
     },
     {
       "symbol": "R_0402",
@@ -1280,7 +1288,11 @@
         "datasheet": "https://abracon.com/datasheets/AOTA-B201610S3R3-101-T.pdf"
       },
       "notes": "Manufacturer recommended1.0x1.6mm pads with1.0mm gap differ from official R4-S1 narrower0.7x1.7mm lands. Confirm solder process and marked-end placement; this3.3uH part is for MCU internal SMPS, not TPS62441 outputs.",
-      "footprint_sha256": "52133189bc7f5d335e7a8277e6993e7c3047a051601b0323d8ce121522d38c38"
+      "footprint_sha256": "52133189bc7f5d335e7a8277e6993e7c3047a051601b0323d8ce121522d38c38",
+      "supplier_codes": {
+        "JLCPCB": "C42411119",
+        "LCSC": "C42411119"
+      }
     },
     {
       "symbol": "AFE7071IRGZT",
@@ -1595,20 +1607,24 @@
       "sources": {
         "pin_map_source": {
           "url": "https://www.ti.com/lit/ds/symlink/afe7071.pdf",
-          "section": "SLOS789C, pp. 2\u20133, pin diagram and terminal functions"
+          "section": "SLOS789C, pp. 2–3, pin diagram and terminal functions"
         },
         "package_source": {
           "url": "https://www.ti.com/lit/ds/symlink/afe7071.pdf",
-          "section": "SLOS789C appendix pp. 34\u201336, RGZ0048D, drawing 4219046/B 11/2019"
+          "section": "SLOS789C appendix pp. 34–36, RGZ0048D, drawing 4219046/B 11/2019"
         },
         "source_pdf_sha256": "c1602d4a98dd72976d13e2bf02fa8d3fdf33401e2dde7d913f6c751edc0b8413"
       },
       "notes": [
         "BG_BYP is a capacitor-only reference node, typed passive; ATEST is an output requiring a schematic NC marker for normal use.",
         "NC44/45 are explicitly no_connect. TESTMODE must be tied to ground as required by the data sheet.",
-        "No footprint thermal vias: design their count, tenting and filling at board level. TI paste example is 16 \u00d7 1.13 mm windows (66% EP coverage), 0.125 mm stencil."
+        "No footprint thermal vias: design their count, tenting and filling at board level. TI paste example is 16 × 1.13 mm windows (66% EP coverage), 0.125 mm stencil."
       ],
-      "footprint_sha256": "9104014f7e728d017058d9c1a49c84dd6341fdb32a28a739ac51b65e5fa9fef7"
+      "footprint_sha256": "9104014f7e728d017058d9c1a49c84dd6341fdb32a28a739ac51b65e5fa9fef7",
+      "supplier_codes": {
+        "JLCPCB": "C2871897",
+        "LCSC": "C2871897"
+      }
     },
     {
       "symbol": "LMX2572RHAT",
@@ -1875,7 +1891,7 @@
       "sources": {
         "pin_map_source": {
           "url": "https://www.ti.com/lit/ds/symlink/lmx2572.pdf",
-          "section": "SNAS740B pp. 4\u20135, pin configuration and functions"
+          "section": "SNAS740B pp. 4–5, pin configuration and functions"
         },
         "package_source": {
           "url": "https://www.ti.com/lit/ml/mpqf974/mpqf974.pdf",
@@ -1886,10 +1902,14 @@
       },
       "notes": [
         "Internal regulator/reference/bias bypass nodes are power_out to catch accidental connection to external supply outputs.",
-        "TI paste example: 9 \u00d7 1.26 mm windows (70% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design.",
+        "TI paste example: 9 × 1.26 mm windows (70% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design.",
         "2026-10-07: land changed from RHA0040H to RHA0040Y. Perimeter is identical; the 3.1 mm EP land and paste are safe for either lead frame, whereas the 4.5 mm land could print paste near the terminals of a Y-lot part. Confirm the lot drawing with the distributor; the 3D preview still shows the H body."
       ],
-      "footprint_sha256": "c8d8853c3e2d206042026e54246b0b8ceb500e69a20bd0ad8e1823decccdd4da"
+      "footprint_sha256": "c8d8853c3e2d206042026e54246b0b8ceb500e69a20bd0ad8e1823decccdd4da",
+      "supplier_codes": {
+        "JLCPCB": "C2651218",
+        "LCSC": "C2651218"
+      }
     },
     {
       "symbol": "ECS-TXO-2520MV-120-AN-TR",
@@ -1944,9 +1964,13 @@
       },
       "notes": [
         "Pin 1 is lower-left in the manufacturer top-view diagram; pin 3 is upper-right. Output is High-Z with OE low.",
-        "TCXO XY dimensions are nominal \u00b10.1 mm, maximum height is 1.0 mm (0.9 \u00b10.1). Exact AN frequency/stability option remains a purchasing check."
+        "TCXO XY dimensions are nominal ±0.1 mm, maximum height is 1.0 mm (0.9 ±0.1). Exact AN frequency/stability option remains a purchasing check."
       ],
-      "footprint_sha256": "303a18b3a8d1e7751978d270abe85f67c3dbc61c7d4676021a0c640823f3292e"
+      "footprint_sha256": "303a18b3a8d1e7751978d270abe85f67c3dbc61c7d4676021a0c640823f3292e",
+      "supplier_codes": {
+        "JLCPCB": "C2602137",
+        "LCSC": "C2602137"
+      }
     },
     {
       "symbol": "LMK1C1104PWR",
@@ -2015,19 +2039,23 @@
       "sources": {
         "pin_map_source": {
           "url": "https://www.ti.com/lit/ds/symlink/lmk1c1104.pdf",
-          "section": "SNAS791D pp. 3\u20134, pin functions; Table 9-1 p. 10 output-enable behavior"
+          "section": "SNAS791D pp. 3–4, pin functions; Table 9-1 p. 10 output-enable behavior"
         },
         "package_source": {
           "url": "https://www.ti.com/lit/ds/symlink/lmk1c1104.pdf",
-          "section": "SNAS791D pp. 24\u201326, PW0008A; KiCad stock TSSOP-8_4.4x3mm_P0.65mm IPC land pattern"
+          "section": "SNAS791D pp. 24–26, PW0008A; KiCad stock TSSOP-8_4.4x3mm_P0.65mm IPC land pattern"
         },
         "source_pdf_sha256": "4403ce872cf979483288c8194b5036dd0369a55ed9b8a40614fc22c29467b0fd"
       },
       "notes": [
         "Outputs are driven low when 1G is low; they are output rather than tri_state pins.",
-        "Stock KiCad lands 1.475 \u00d7 0.4 mm at \u00b12.8625 mm; TI example 1.5 \u00d7 0.45 at \u00b12.9 mm. Stock IPC land pattern retained as geometry-compatible; assembly team may choose TI example."
+        "Stock KiCad lands 1.475 × 0.4 mm at ±2.8625 mm; TI example 1.5 × 0.45 at ±2.9 mm. Stock IPC land pattern retained as geometry-compatible; assembly team may choose TI example."
       ],
-      "footprint_sha256": "ca2e321640359e364c04da33f742ab5d5681b0ab2454f0c244ff8471047f46be"
+      "footprint_sha256": "ca2e321640359e364c04da33f742ab5d5681b0ab2454f0c244ff8471047f46be",
+      "supplier_codes": {
+        "JLCPCB": "C1855734",
+        "LCSC": "C1855734"
+      }
     },
     {
       "symbol": "CDCE6214RGET",
@@ -2198,18 +2226,18 @@
       "sources": {
         "pin_map_source": {
           "url": "https://www.ti.com/lit/ds/symlink/cdce6214.pdf",
-          "section": "SNAS811A pp. 4\u20136, pin diagram and Table 4-1"
+          "section": "SNAS811A pp. 4–6, pin diagram and Table 4-1"
         },
         "package_source": {
           "url": "https://www.ti.com/lit/ds/symlink/cdce6214.pdf",
-          "section": "SNAS811A pp. 56\u201358, RGE0024P, drawing 4224751/A 01/2019"
+          "section": "SNAS811A pp. 56–58, RGE0024P, drawing 4224751/A 01/2019"
         },
         "source_pdf_sha256": "a49bcfe0ec31d74090228e6333c57864f3feb6f24af55c8a81e16cfe336b7664"
       },
       "notes": [
         "SECREF_P is bidirectional because this pad is XOUT in crystal mode, even though the generic function-table direction is I. Use normal input operation with a TCXO.",
-        "Four 0.25 \u00d7 0.25 mm mechanical corner lands A1\u2013A4 shown by TI are present as unnumbered pads; they are not signal terminals in Table 4-1. Do not assign a functional net without package-vendor confirmation.",
-        "TI paste example: 4 \u00d7 1.19 mm windows, centers \u00b10.695 mm (78% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design."
+        "Four 0.25 × 0.25 mm mechanical corner lands A1–A4 shown by TI are present as unnumbered pads; they are not signal terminals in Table 4-1. Do not assign a functional net without package-vendor confirmation.",
+        "TI paste example: 4 × 1.19 mm windows, centers ±0.695 mm (78% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design."
       ],
       "footprint_sha256": "7ec7c8c7bc2370a2b28f8164a514daa4bc14bad8eacab985a6756425fa6c1ee1"
     },
@@ -2406,20 +2434,24 @@
       "sources": {
         "pin_map_source": {
           "url": "https://www.ti.com/lit/ds/symlink/lmk1d1204p.pdf",
-          "section": "SNAS830A pp. 4\u20135, pin functions"
+          "section": "SNAS830A pp. 4–5, pin functions"
         },
         "package_source": {
           "url": "https://www.ti.com/lit/ds/symlink/lmk1d1204p.pdf",
-          "section": "SNAS830A pp. 29\u201331, RHD0028B, drawing 4226146/A 08/2020"
+          "section": "SNAS830A pp. 29–31, RHD0028B, drawing 4226146/A 08/2020"
         },
         "source_pdf_sha256": "b3d91e990e79b0003e6eb5bb9c9db29364231a140c8286d06e281063cd037ad1"
       },
       "notes": [
         "Candidate DAC differential-clock frontend; input swing/common-mode, AFE load, power sequencing and output partial-power behavior are not electrically approved.",
         "Individual disabled LVDS output pairs are High-Z: tri_state pin type. VAC_REFx internal bias outputs are power_out.",
-        "TI paste example: 4 \u00d7 1.37 mm windows, centers \u00b10.785 mm (76% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design."
+        "TI paste example: 4 × 1.37 mm windows, centers ±0.785 mm (76% EP coverage), 0.125 mm stencil. Thermal vias remain board-level design."
       ],
-      "footprint_sha256": "ccb49708315373ce753603d43106bae62b9e2a2c0997b185bfe3197784b221e9"
+      "footprint_sha256": "ccb49708315373ce753603d43106bae62b9e2a2c0997b185bfe3197784b221e9",
+      "supplier_codes": {
+        "JLCPCB": "C3613400",
+        "LCSC": "C3613400"
+      }
     },
     {
       "symbol": "GRF2013",
@@ -2482,7 +2514,7 @@
       "sources": {
         "pin_map_source": {
           "url": "https://www.guerrilla-rf.com/includes/prodFiles/2013/GRF2013DS.pdf",
-          "section": "GRF2013 Release A 2025-12-18 pp. 2\u20133, top-view pinout and pin assignments; p. 15, package drawing"
+          "section": "GRF2013 Release A 2025-12-18 pp. 2–3, top-view pinout and pin assignments; p. 15, package drawing"
         },
         "package_source": {
           "url": "https://www.guerrilla-rf.com/includes/prodFiles/2013/GRF2013DS.pdf",
@@ -2494,7 +2526,7 @@
         "The exposed base has no manufacturer pin number; local library convention is pin/pad 7 = EP_GND. This convention is explicit in the symbol and footprint.",
         "RF_OUT/VDD is one mixed RF/DC terminal, typed passive. A separate invented supply pin is not used.",
         "GND/NC pins 2/5/6 have no internal die connection and may be grounded; typed passive rather than no_connect.",
-        "0.5 \u00d7 0.95 mm EP paste aperture (~72%) is a provisional authored stencil choice, not a manufacturer recommendation. Review assembly/stencil with vendor before fabrication."
+        "0.5 × 0.95 mm EP paste aperture (~72%) is a provisional authored stencil choice, not a manufacturer recommendation. Review assembly/stencil with vendor before fabrication."
       ],
       "footprint_sha256": "1f9ab5512739f5a48143b8fa053e119567446bf4511de6903efd09ac9a320802"
     },
@@ -2503,8 +2535,8 @@
       "mpn": "TPS62441QWRQRRQ1",
       "group": "power",
       "footprint": "TI_RQR0014A_VQFN-HR-14_2.3x2.7mm",
-      "status": "candidate; ANALOG_PRE headroom/accuracy closure open",
-      "electrical_candidate": true,
+      "status": "working dual buck for DIG3V3/PRE2V5; passives, startup and thermal review pending",
+      "electrical_candidate": false,
       "models": [
         {
           "file": "RQR0014A_clearance_envelope.wrl",
@@ -2611,7 +2643,12 @@
         "package": "RQR0014A",
         "drawing": "4225624/B, February 2020",
         "qualification": "Exact order code appears in official datasheet orderable addendum; family is AEC-Q100 automotive.",
-        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work."
+        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work.",
+        "manufacturer_review": {
+          "date": "2026-10-11",
+          "datasheet_revision": "SLUSDN9B, July 2022",
+          "datasheet_sha256_matches_asset_source": true
+        }
       },
       "notes": [
         "No exposed central pad: 14 numbered terminals only.",
@@ -2620,7 +2657,11 @@
         "Forced PWM accuracy condition requires VIN >= VOUT + 1 V.",
         "Existing 2.2 uH examples are incompatible with 0.32-0.9 uH effective L."
       ],
-      "footprint_sha256": "3488dd248e41f18abd4a45a54636b518299e2126f7ba5074c4d06ed867d8e639"
+      "footprint_sha256": "3488dd248e41f18abd4a45a54636b518299e2126f7ba5074c4d06ed867d8e639",
+      "supplier_codes": {
+        "JLCPCB": "C5219273",
+        "LCSC": "C5219273"
+      }
     },
     {
       "symbol": "TPS7A8801QRTJRQ1",
@@ -2777,7 +2818,12 @@
         "package": "RTJ0020J",
         "drawing": "4223320/A, November 2016",
         "qualification": "Exact order code appears in official datasheet orderable addendum; family is AEC-Q100 automotive.",
-        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work."
+        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work.",
+        "manufacturer_review": {
+          "date": "2026-10-11",
+          "datasheet_revision": "SBVS289A, September 2017",
+          "datasheet_sha256_matches_asset_source": true
+        }
       },
       "notes": [
         "All 20 numbered pins plus exposed pad 21 are visible.",
@@ -2787,14 +2833,18 @@
         "Thermal vias are not drilled in this base footprint; use reviewed filled/plugged/tented via implementation on the board.",
         "Pin-table OUT1 capacitor sentence is internally inconsistent; use application section8.1.1.3 requirements."
       ],
-      "footprint_sha256": "7275e4d0333773551a8894567fefa2d153f1e480a1048e62a7f9ff90cb36f933"
+      "footprint_sha256": "7275e4d0333773551a8894567fefa2d153f1e480a1048e62a7f9ff90cb36f933",
+      "supplier_codes": {
+        "JLCPCB": "C2863278",
+        "LCSC": "C2863278"
+      }
     },
     {
       "symbol": "TPS7A2133PQWDRBRQ1",
       "mpn": "TPS7A2133PQWDRBRQ1",
       "group": "power",
       "footprint": "TI_DRB0008J_VSON-8-1EP_3x3mm",
-      "status": "working low-cost automotive LO/reference LDO comparison; RF suitability unmeasured",
+      "status": "working fixed LO/reference LDO selection; two-dual-LDO alternative under comparison; RF suitability unmeasured",
       "electrical_candidate": false,
       "models": [
         {
@@ -2872,7 +2922,12 @@
         "package": "DRB0008J",
         "drawing": "4225036/A, June 2019",
         "qualification": "Exact order code appears in official datasheet orderable addendum; family is AEC-Q100 automotive.",
-        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work."
+        "independent_radiation_evidence": "No exact-part independent irradiation evidence established in this work.",
+        "manufacturer_review": {
+          "date": "2026-10-11",
+          "datasheet_revision": "SBVS437D, June 2025",
+          "datasheet_sha256_matches_asset_source": true
+        }
       },
       "notes": [
         "This is the fixed DRB map, not either incompatible DSG map.",
@@ -2880,14 +2935,18 @@
         "Exposed pad9 is internally grounded and must be tied to ground.",
         "Thermal vias are not drilled in the base footprint; board fabrication must close the via/paste plan."
       ],
-      "footprint_sha256": "c32a924171b173936c83559cd909403b1b37056f24d6beea480719b839f6be64"
+      "footprint_sha256": "c32a924171b173936c83559cd909403b1b37056f24d6beea480719b839f6be64",
+      "supplier_codes": {
+        "JLCPCB": "C21285173",
+        "LCSC": "C21285173"
+      }
     },
     {
       "symbol": "TPS386000RGPT",
       "mpn": "TPS386000RGPT",
       "group": "io",
       "footprint": "TPS386000RGPT",
-      "status": "draft CAD asset; circuit review pending",
+      "status": "working quad-supervisor/watchdog selection; thresholds and connected circuit review pending",
       "electrical_candidate": false,
       "models": [
         {
@@ -3029,17 +3088,28 @@
           "url": "https://www.ti.com/lit/ds/symlink/tps386000.pdf",
           "sha256": "02e788626e1d8d546ada465dc63703635834e41ee109d6c9fc6970a26fb62e98"
         },
-        "package": "RGP S-PVQFN-N20, 4x4mm, EP2.15mm"
+        "package": "RGP S-PVQFN-N20, 4x4mm, EP2.15mm",
+        "manufacturer_review": {
+          "date": "2026-10-11",
+          "datasheet_revision": "SBVS105F, October 2018",
+          "datasheet_sha256_matches_asset_source": true
+        }
       },
-      "notes": [],
-      "footprint_sha256": "b0745fbceffcc82402bf0208e87c1fb5a578a94b72a269d4b67a7b5fa3fce72a"
+      "notes": [
+        "TI lists TPS386000RGPR as the same device/package in a 3000-piece reel instead of RGPT 250-piece reel; set exact MPN and supplier fields together if using that procurement alternate."
+      ],
+      "footprint_sha256": "b0745fbceffcc82402bf0208e87c1fb5a578a94b72a269d4b67a7b5fa3fce72a",
+      "supplier_codes": {
+        "JLCPCB": "C702222",
+        "LCSC": "C702222"
+      }
     },
     {
       "symbol": "TPS389001DSER",
       "mpn": "TPS389001DSER",
       "group": "io",
       "footprint": "TPS389001DSER",
-      "status": "draft CAD asset; circuit review pending",
+      "status": "reusable precision AFE UV-supervisor asset; omitted from dev/IREC baseline 2026-10-13",
       "electrical_candidate": false,
       "models": [
         {
@@ -3091,17 +3161,26 @@
           "url": "https://www.ti.com/lit/ds/symlink/tps3890.pdf",
           "sha256": "ee79599730e7606ba9718d9820b411020e3dcd9ff7d44572f8ee63fead15b9d0"
         },
-        "package": "DSE0006A WSON-6 1.5x1.5mm, no EP"
+        "package": "DSE0006A WSON-6 1.5x1.5mm, no EP",
+        "manufacturer_review": {
+          "date": "2026-10-11",
+          "datasheet_revision": "SLVSD65A, May 2016",
+          "datasheet_sha256_matches_asset_source": true
+        }
       },
       "notes": [],
-      "footprint_sha256": "d1d94f10dc9634867fcafb0d783d090bfe1528c911d72c63e57c874846433622"
+      "footprint_sha256": "d1d94f10dc9634867fcafb0d783d090bfe1528c911d72c63e57c874846433622",
+      "supplier_codes": {
+        "JLCPCB": "C1509297",
+        "LCSC": "C1509297"
+      }
     },
     {
       "symbol": "TPS259470LRPWR",
       "mpn": "TPS259470LRPWR",
       "group": "io",
       "footprint": "TPS259470LRPWR",
-      "status": "draft CAD asset; circuit review pending",
+      "status": "optional latch-off eFuse reference; omitted from current eval baseline",
       "electrical_candidate": false,
       "models": [
         {
@@ -3177,7 +3256,12 @@
           "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
           "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4"
         },
-        "package": "RPW0010A VQFN-HR-10 2x2mm, no extra EP"
+        "package": "RPW0010A VQFN-HR-10 2x2mm, no extra EP",
+        "manufacturer_review": {
+          "date": "2026-10-11",
+          "datasheet_revision": "SLVSFC9C, May 2026",
+          "datasheet_sha256_matches_asset_source": true
+        }
       },
       "notes": [],
       "footprint_sha256": "a8f46dad00ba8d6a34adccd02420913750a789eb174559e5fa68818bf85af39e"
@@ -3187,7 +3271,7 @@
       "mpn": "TPS22918DBVR",
       "group": "io",
       "footprint": "TPS22918DBVR",
-      "status": "draft CAD asset; circuit review pending",
+      "status": "working RF-driver load-switch selection; connected circuit review pending",
       "electrical_candidate": false,
       "models": [
         {
@@ -3239,10 +3323,19 @@
           "url": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
           "sha256": "1b28eb58003d28b18bf919a15734056f296a499bebee2bd493a1e4358c4dfb1c"
         },
-        "package": "DBV0006A SOT23-6"
+        "package": "DBV0006A SOT23-6",
+        "manufacturer_review": {
+          "date": "2026-10-11",
+          "datasheet_revision": "SLVSD76C, July 2017",
+          "datasheet_sha256_matches_asset_source": true
+        }
       },
       "notes": [],
-      "footprint_sha256": "c083538776522b70f8ea41cc4cc8730f59f0eb2296de8253ea71dc9a6b75bcf9"
+      "footprint_sha256": "c083538776522b70f8ea41cc4cc8730f59f0eb2296de8253ea71dc9a6b75bcf9",
+      "supplier_codes": {
+        "JLCPCB": "C131941",
+        "LCSC": "C131941"
+      }
     },
     {
       "symbol": "SN74AXC4T774PWR",
@@ -3364,7 +3457,11 @@
         "package": "PW0016A TSSOP16 4.4x5mm, no EP"
       },
       "notes": [],
-      "footprint_sha256": "66105d74884c6ec92dc61ac528dfb238e3cd0888035816de23dc8107b861834d"
+      "footprint_sha256": "66105d74884c6ec92dc61ac528dfb238e3cd0888035816de23dc8107b861834d",
+      "supplier_codes": {
+        "JLCPCB": "C1849453",
+        "LCSC": "C1849453"
+      }
     },
     {
       "symbol": "TCA9517ADGKR",
@@ -3494,7 +3591,11 @@
         "package": "DBV0005A SOT23-5"
       },
       "notes": [],
-      "footprint_sha256": "d8cd015b453fb8a4d910acc4a0e04fd77094d292392e1cc9c1e8c016b323ae7e"
+      "footprint_sha256": "d8cd015b453fb8a4d910acc4a0e04fd77094d292392e1cc9c1e8c016b323ae7e",
+      "supplier_codes": {
+        "JLCPCB": "C23654",
+        "LCSC": "C23654"
+      }
     },
     {
       "symbol": "SN74LVC1G11DCKR",
@@ -3556,7 +3657,11 @@
         "package": "DCK0006A SC70-6"
       },
       "notes": [],
-      "footprint_sha256": "534dfb9a77d19ae17be287018db0fd5588be968d3b57ec20151027235439562c"
+      "footprint_sha256": "534dfb9a77d19ae17be287018db0fd5588be968d3b57ec20151027235439562c",
+      "supplier_codes": {
+        "JLCPCB": "C529281",
+        "LCSC": "C529281"
+      }
     },
     {
       "symbol": "SN74LVC1G17DBVR",
@@ -3612,7 +3717,11 @@
         "package": "DBV0005A SOT23-5"
       },
       "notes": [],
-      "footprint_sha256": "1c2d442a76482c374fc47dd9d169e46f2e50c87b3ee9f8b403b788ab776432ff"
+      "footprint_sha256": "1c2d442a76482c374fc47dd9d169e46f2e50c87b3ee9f8b403b788ab776432ff",
+      "supplier_codes": {
+        "JLCPCB": "C7836",
+        "LCSC": "C7836"
+      }
     },
     {
       "symbol": "SN74LVC1G14DBVR",
@@ -3668,14 +3777,18 @@
         "package": "DBV0005A SOT23-5"
       },
       "notes": [],
-      "footprint_sha256": "32523ad226087838b1976330e957d3d7ffeb294a2c438e47a934a46032449ce9"
+      "footprint_sha256": "32523ad226087838b1976330e957d3d7ffeb294a2c438e47a934a46032449ce9",
+      "supplier_codes": {
+        "JLCPCB": "C7835",
+        "LCSC": "C7835"
+      }
     },
     {
       "symbol": "TUSB320LAIRWBR",
       "mpn": "TUSB320LAIRWBR",
       "group": "io",
       "footprint": "TUSB320LAIRWBR",
-      "status": "draft CAD asset; circuit review pending",
+      "status": "optional reference asset; omitted from controlled eval baseline",
       "electrical_candidate": false,
       "models": [
         {
@@ -3765,15 +3878,21 @@
         },
         "package": "RWB0012A X2QFN12 1.6x1.6mm, no EP"
       },
-      "notes": [],
-      "footprint_sha256": "a07aecba1f211e41e60b44fe4e6f078b1082650432412524a026e76a9ed5a9d8"
+      "notes": [
+        "2026-10-11 user decision: eval board uses two independent 5.1k CC Rd resistors and a verified 5V/3A source. Omit this controller, its bias regulator, inverter and FORCE_ADMIT from the fitted eval circuit."
+      ],
+      "footprint_sha256": "a07aecba1f211e41e60b44fe4e6f078b1082650432412524a026e76a9ed5a9d8",
+      "supplier_codes": {
+        "JLCPCB": "C132554",
+        "LCSC": "C132554"
+      }
     },
     {
       "symbol": "TPS2116DRLR",
       "mpn": "TPS2116DRLR",
       "group": "io",
       "footprint": "TPS2116DRLR",
-      "status": "draft CAD asset; circuit review pending",
+      "status": "optional source-mux reference; omitted from current eval baseline",
       "electrical_candidate": false,
       "models": [
         {
@@ -3886,7 +4005,11 @@
         "package": "DRT R-PDSO-N3, 1.0x0.8mm body, 0.50mm maximum height"
       },
       "notes": [],
-      "footprint_sha256": "69788ef61dbfdbce5aa0fc5dbabf1f1c0f8b23ecf0c843548ee2cbde05c4b998"
+      "footprint_sha256": "69788ef61dbfdbce5aa0fc5dbabf1f1c0f8b23ecf0c843548ee2cbde05c4b998",
+      "supplier_codes": {
+        "JLCPCB": "C97502",
+        "LCSC": "C97502"
+      }
     },
     {
       "symbol": "USB4105-GF-A",
@@ -3910,6 +4033,42 @@
           "unit": "USB4105-GF-A_1_1"
         },
         {
+          "number": "A4",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A5",
+          "name": "CC1",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A6",
+          "name": "D+",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A7",
+          "name": "D-",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A8",
+          "name": "SBU1",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "A9",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
           "number": "A12",
           "name": "GND",
           "erc_type": "passive",
@@ -3922,56 +4081,14 @@
           "unit": "USB4105-GF-A_1_1"
         },
         {
-          "number": "B12",
-          "name": "GND",
-          "erc_type": "passive",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
-          "number": "A4",
-          "name": "VBUS",
-          "erc_type": "passive",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
-          "number": "A9",
-          "name": "VBUS",
-          "erc_type": "passive",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
           "number": "B4",
           "name": "VBUS",
           "erc_type": "passive",
           "unit": "USB4105-GF-A_1_1"
         },
         {
-          "number": "B9",
-          "name": "VBUS",
-          "erc_type": "passive",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
-          "number": "SH",
-          "name": "SHIELD",
-          "erc_type": "passive",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
-          "number": "A5",
-          "name": "CC1",
-          "erc_type": "bidirectional",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
           "number": "B5",
           "name": "CC2",
-          "erc_type": "bidirectional",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
-          "number": "A6",
-          "name": "D+",
           "erc_type": "bidirectional",
           "unit": "USB4105-GF-A_1_1"
         },
@@ -3982,20 +4099,8 @@
           "unit": "USB4105-GF-A_1_1"
         },
         {
-          "number": "A7",
-          "name": "D-",
-          "erc_type": "bidirectional",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
           "number": "B7",
           "name": "D-",
-          "erc_type": "bidirectional",
-          "unit": "USB4105-GF-A_1_1"
-        },
-        {
-          "number": "A8",
-          "name": "SBU1",
           "erc_type": "bidirectional",
           "unit": "USB4105-GF-A_1_1"
         },
@@ -4003,6 +4108,24 @@
           "number": "B8",
           "name": "SBU2",
           "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B9",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "B12",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A_1_1"
+        },
+        {
+          "number": "SH",
+          "name": "SHIELD",
+          "erc_type": "passive",
           "unit": "USB4105-GF-A_1_1"
         }
       ],
@@ -4013,10 +4136,24 @@
           "sha256": "bcda0359d7dfbb087b448bce4dfe79f9e6fbfbcf1bbab78915d8fcb81d275ec6",
           "drawing_revision": "B3, 2023-02-24"
         },
-        "package": "GCT USB4105, 16 contacts / 12 PCB signal lands + shell"
+        "package": "GCT USB4105, 16 contacts / 12 PCB signal lands + shell",
+        "symbol": {
+          "type": "KiCad Connector library derivative",
+          "file": "symbols/Connector.kicad_sym",
+          "symbol": "USB_C_Receptacle_USB2.0_16P",
+          "installed_version": "10.0.0",
+          "sha256": "01a7f5a3dd140eac0742e82c08f7e928fba64d17075266b56b219697d4cf4025",
+          "upstream_url": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector.kicad_sym"
+        }
       },
-      "notes": [],
-      "footprint_sha256": "bded50b1effc30df197e1495e6eab07048a434af31ed269f4cc2e8cd182f9311"
+      "notes": [
+        "KiCad USB-C graphics adapted to a compact single-side layout. VBUS A4/A9/B4/B9, GND A1/A12/B1/B12, D+ A6/B6 and D- A7/B7 are stacked at their respective connection points. CC1, CC2, SBU1, SBU2 and SHIELD remain separate. All 17 logical pin numbers, pin types and the footprint mapping are retained."
+      ],
+      "footprint_sha256": "bded50b1effc30df197e1495e6eab07048a434af31ed269f4cc2e8cd182f9311",
+      "supplier_codes": {
+        "JLCPCB": "C3020560",
+        "LCSC": "C3020560"
+      }
     },
     {
       "symbol": "LMX2572LPRHAT",
@@ -4283,7 +4420,7 @@
       "sources": {
         "pin_map_source": {
           "url": "https://www.ti.com/lit/ds/symlink/lmx2572lp.pdf",
-          "section": "SNAS764, pp3\u20134; numbered pin assignments match full LMX2572"
+          "section": "SNAS764, pp3–4; numbered pin assignments match full LMX2572"
         },
         "package_source": {
           "url": "https://www.ti.com/lit/ml/mpqf974/mpqf974.pdf",
@@ -4293,12 +4430,1013 @@
         "source_pdf_sha256": "85310a983b42f5ada6dea83dad123b58cbb6c0c5d18eba0b3e3d0b1e06e8b80e"
       },
       "notes": [
-        "Supports direct IREC1.24\u20131.30GHz LO, not2.4GHz satellite LO. AFE7071 divide-by-two is in the DAC clock path, not LO.",
+        "Supports direct IREC1.24–1.30GHz LO, not2.4GHz satellite LO. AFE7071 divide-by-two is in the DAC clock path, not LO.",
         "Same numbered pin assignments; this asset implements the RHA0040Y land. Validate LP-specific loop, bypass capacitors, register/calibration profile and actual LO drive/loss before substitution.",
         "Full-part output power codes and power curves are not transferable. No performance qualification or purchasing availability is implied.",
         "2026-10-07: land changed from RHA0040H to RHA0040Y. Perimeter is identical; the 3.1 mm EP land and paste are safe for either lead frame, whereas the 4.5 mm land could print paste near the terminals of a Y-lot part. Confirm the lot drawing with the distributor; the 3D preview still shows the H body."
       ],
       "footprint_sha256": "c8d8853c3e2d206042026e54246b0b8ceb500e69a20bd0ad8e1823decccdd4da"
+    },
+    {
+      "symbol": "TPS259470ARPWR",
+      "mpn": "TPS259470ARPWR",
+      "group": "io",
+      "footprint": "TPS259470LRPWR",
+      "status": "working auto-retry input eFuse selection; connected circuit and transient review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_TPS259470LRPWR-body-envelope.wrl",
+          "kind": "Drawing-derived body envelope; no irregular lead geometry",
+          "sha256": "13a884761c7a31eec826a37db62bb18019810ec4a71d9f3196dee15bd324ebc9"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "EN/UVLO",
+          "erc_type": "input",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "OVLO",
+          "erc_type": "input",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "IN",
+          "erc_type": "power_in",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "7",
+          "name": "DVDT",
+          "erc_type": "passive",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "9",
+          "name": "ILM",
+          "erc_type": "passive",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "10",
+          "name": "ITIMER",
+          "erc_type": "passive",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "AUXOFF",
+          "erc_type": "open_collector",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "~{FLT}",
+          "erc_type": "open_collector",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "OUT",
+          "erc_type": "power_out",
+          "unit": "TPS259470ARPWR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPS259470ARPWR_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+          "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4"
+        },
+        "package": "RPW0010A VQFN-HR-10 2x2mm, no extra EP",
+        "manufacturer_review": {
+          "date": "2026-10-11",
+          "datasheet_revision": "SLVSFC9C, May 2026",
+          "datasheet_sha256_matches_asset_source": true
+        }
+      },
+      "notes": [
+        "Auto-retry TPS259470A and latch-off TPS259470L share the RPW0010A pin map and land pattern; their fault response differs. TI SLVSFC9C device comparison table and pin-function table checked.",
+        "Uses the existing TPS259470LRPWR-named package footprint and shared body-envelope preview. Pin 3 is AUXOFF, pin 4 is FLT; there is no extra exposed-pad pin."
+      ],
+      "footprint_sha256": "a8f46dad00ba8d6a34adccd02420913750a789eb174559e5fa68818bf85af39e",
+      "supplier_codes": {
+        "JLCPCB": "C3662799",
+        "LCSC": "C3662799"
+      }
+    },
+    {
+      "symbol": "USB4105-GF-A-060",
+      "mpn": "USB4105-GF-A-060",
+      "group": "io",
+      "footprint": "USB4105-GF-A",
+      "status": "draft CAD asset; circuit review pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "IO_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+          "kind": "KiCad matching package STEP; not manufacturer solid model",
+          "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0"
+        }
+      ],
+      "pins": [
+        {
+          "number": "A1",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "A4",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "A5",
+          "name": "CC1",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "A6",
+          "name": "D+",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "A7",
+          "name": "D-",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "A8",
+          "name": "SBU1",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "A9",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "A12",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "B1",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "B4",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "B5",
+          "name": "CC2",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "B6",
+          "name": "D+",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "B7",
+          "name": "D-",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "B8",
+          "name": "SBU2",
+          "erc_type": "bidirectional",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "B9",
+          "name": "VBUS",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "B12",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        },
+        {
+          "number": "SH",
+          "name": "SHIELD",
+          "erc_type": "passive",
+          "unit": "USB4105-GF-A-060_1_1"
+        }
+      ],
+      "sources": {
+        "datasheet": {
+          "url": "https://gct.co/files/drawings/usb4105.pdf",
+          "mirror_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5492/USB4105.pdf",
+          "sha256": "bcda0359d7dfbb087b448bce4dfe79f9e6fbfbcf1bbab78915d8fcb81d275ec6",
+          "drawing_revision": "B3, 2023-02-24"
+        },
+        "package": "GCT USB4105, 16 contacts / 12 PCB signal lands + shell",
+        "symbol": {
+          "type": "KiCad Connector library derivative",
+          "file": "symbols/Connector.kicad_sym",
+          "symbol": "USB_C_Receptacle_USB2.0_16P",
+          "installed_version": "10.0.0",
+          "sha256": "01a7f5a3dd140eac0742e82c08f7e928fba64d17075266b56b219697d4cf4025",
+          "upstream_url": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector.kicad_sym"
+        }
+      },
+      "notes": [
+        "USB4105-GF-A-060 uses 0.60 mm shell stakes; the unsuffixed USB4105-GF-A uses 0.95 mm. GCT B3 provides one common PCB land pattern.",
+        "Connect coincident A1/B12 and A12/B1 pad pairs to GND, and A4/B9 and A9/B4 to VBUS. Four SH pads share one shield net.",
+        "Shared KiCad family STEP is a package preview; the 0.60 mm stake geometry is not independently verified in this model. Check board thickness, shell soldering and plug/edge clearance.",
+        "KiCad USB-C graphics adapted to a compact single-side layout. VBUS A4/A9/B4/B9, GND A1/A12/B1/B12, D+ A6/B6 and D- A7/B7 are stacked at their respective connection points. CC1, CC2, SBU1, SBU2 and SHIELD remain separate. All 17 logical pin numbers, pin types and the footprint mapping are retained."
+      ],
+      "footprint_sha256": "bded50b1effc30df197e1495e6eab07048a434af31ed269f4cc2e8cd182f9311",
+      "supplier_codes": {
+        "JLCPCB": "C3025063",
+        "LCSC": "C3025063"
+      }
+    },
+    {
+      "symbol": "TPD1E05U06DYAR",
+      "mpn": "TPD1E05U06DYAR",
+      "group": "io",
+      "footprint": "TI_DYA0002A_SOD523_TPD1E05U06",
+      "status": "reusable carrier asset; circuit selection pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "TI_DYA0002A_TPD1E05U06_ENVELOPE.step",
+          "kind": "drawing-derived envelope; nominal plan, maximum height; not detailed manufacturer CAD",
+          "sha256": "940f75eea8140b8cd465f3a2f7bf36a6667801fe9b5006930f641dad0251bffb"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "I/O",
+          "erc_type": "passive",
+          "unit": "TPD1E05U06DYAR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "erc_type": "passive",
+          "unit": "TPD1E05U06DYAR_1_1"
+        }
+      ],
+      "sources": {
+        "carrier": {
+          "repository": "https://github.com/stanford-ssi/PigeonVision",
+          "commit": "5f18f65819614a4c84aacd40479237420e670fcd",
+          "symbol": {
+            "file": "hardware/libraries/PigeonVision.kicad_sym",
+            "symbol": "TPD1E05U06DYAR",
+            "source_sha256": "3b9d6ed394ffb4d1d4adc77d5e43d75c892b9d6d95dc882a98f612d428484c3c"
+          },
+          "footprint": "hardware/libraries/PigeonVision.pretty/TI_DYA0002A_SOD523_TPD1E05U06.kicad_mod",
+          "footprint_sha256": "c730d8b14a8dae0dda8af7088b0569725539360e601c6343f0ecd04d5e02e85d"
+        },
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tpd1e05u06.pdf",
+          "sha256": "c167cf1e72a5473a4d2c59b6a3c0251498701da05b7785919b9ceaae3b3e02c6"
+        }
+      },
+      "notes": [
+        "ESD protection option; not a precision clamp for cable hot-plug ringing."
+      ],
+      "footprint_sha256": "2987864fb6e178836de432c1b39c69c3286e27f01f396564ff15858fde7e0997",
+      "supplier_codes": {
+        "JLCPCB": "C3702980",
+        "LCSC": "C3702980"
+      }
+    },
+    {
+      "symbol": "TPD4E05U06DQAR",
+      "mpn": "TPD4E05U06DQAR",
+      "group": "io",
+      "footprint": "TI_DQA0010A_USON-10_1x2.5mm_P0.5mm",
+      "status": "reusable carrier asset; circuit selection pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Package_SON_USON-10_2.5x1.0mm_P0.5mm.step",
+          "kind": "KiCad representative USON-10 package STEP; not manufacturer CAD",
+          "sha256": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "D1+",
+          "erc_type": "passive",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "D1-",
+          "erc_type": "passive",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "D2+",
+          "erc_type": "passive",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "D2-",
+          "erc_type": "passive",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "7",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "9",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPD4E05U06DQAR_1_1"
+        },
+        {
+          "number": "10",
+          "name": "NC",
+          "erc_type": "passive",
+          "unit": "TPD4E05U06DQAR_1_1"
+        }
+      ],
+      "sources": {
+        "carrier": {
+          "repository": "https://github.com/stanford-ssi/PigeonVision",
+          "commit": "5f18f65819614a4c84aacd40479237420e670fcd",
+          "symbol": {
+            "file": "hardware/libraries/PigeonVision.kicad_sym",
+            "symbol": "TPD4E05U06DQAR",
+            "source_sha256": "3b9d6ed394ffb4d1d4adc77d5e43d75c892b9d6d95dc882a98f612d428484c3c"
+          },
+          "footprint": "hardware/libraries/PigeonVision.pretty/TI_DQA0010A_USON-10_1x2.5mm_P0.5mm.kicad_mod",
+          "footprint_sha256": "4c20f80825e6b8bffc495e549653aec0d565302676d3dc30b3d423075d283cf3"
+        },
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf",
+          "sha256": "c167cf1e72a5473a4d2c59b6a3c0251498701da05b7785919b9ceaae3b3e02c6"
+        }
+      },
+      "notes": [
+        "Pads 6, 7, 9 and 10 are internally NC, intentionally passive in this symbol so external through-routing can connect 5-6, 4-7, 2-9 and 1-10. No internal straight-through connection exists.",
+        "Protection residual voltage and powered-off behavior need checking against each protected receiver."
+      ],
+      "footprint_sha256": "01569708814034822e4da3dd78128475e209f5c6f24426a923ce246e81945330",
+      "supplier_codes": {
+        "JLCPCB": "C138714",
+        "LCSC": "C138714"
+      }
+    },
+    {
+      "symbol": "PTS636_SK25_SMTR_LFS",
+      "mpn": "PTS636 SK25 SMTR LFS",
+      "group": "io",
+      "footprint": "CK_PTS636_SK25_SMTR_LFS_GullWing_SMD",
+      "status": "reusable carrier asset; circuit selection pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "CK_PTS636_SK25_SMTR_LFS_KiCad.step",
+          "kind": "KiCad detailed nominal PTS636 gull-wing 2.5 mm model; not tolerance envelope",
+          "sha256": "2c973c7ce924c16f5fac1f8c2724eb5ce12a68288c15ff61a05b44230f9e18f6"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "erc_type": "passive",
+          "unit": "PTS636_SK25_SMTR_LFS_0_1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "erc_type": "passive",
+          "unit": "PTS636_SK25_SMTR_LFS_0_1"
+        }
+      ],
+      "sources": {
+        "carrier": {
+          "repository": "https://github.com/stanford-ssi/PigeonVision",
+          "commit": "5f18f65819614a4c84aacd40479237420e670fcd",
+          "symbol": {
+            "file": "hardware/libraries/PigeonVision.kicad_sym",
+            "symbol": "PTS636_SK25_SMTR_LFS",
+            "source_sha256": "3b9d6ed394ffb4d1d4adc77d5e43d75c892b9d6d95dc882a98f612d428484c3c"
+          },
+          "footprint": "hardware/libraries/PigeonVision.pretty/CK_PTS636_SK25_SMTR_LFS_GullWing_SMD.kicad_mod",
+          "footprint_sha256": "4b2159be367a9f1c7a81d15379630947cbb63f60cdb31bd0f4b636d8fac84ccf",
+          "review_manifest": "hardware/libraries/review/service-controls-library-manifest.json"
+        },
+        "datasheet": {
+          "url": "https://www.littelfuse.com/assetdocs/littelfuse-ck-tactile-pts636-series-datasheet?assetguid=8a16fd39-1f87-4545-ab06-9e057a0fe304",
+          "revision": "MI09/02/26; land dimensions from carrier current-source review"
+        }
+      },
+      "notes": [
+        "Normally open two-terminal switch; use for BOOT/RUN access as the circuit requires.",
+        "Current manufacturer lands: two 1.25 x 1.00 mm pads at x = +/-3.875 mm. Nominal 2.5 mm body height, +/-0.2 mm tolerance."
+      ],
+      "footprint_sha256": "38261625d660349a1ccaef3d9cc6b57c654666311d7ab6b876de7932f6a132e2",
+      "supplier_codes": {
+        "JLCPCB": "C2689642",
+        "LCSC": "C2689642"
+      }
+    },
+    {
+      "symbol": "BSS138BK,215",
+      "mpn": "BSS138BK,215",
+      "group": "io",
+      "footprint": "Nexperia_SOT23_BSS138BK",
+      "status": "reusable carrier asset; circuit selection pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_SOT23_REPRESENTATIVE_BSS138BK.step",
+          "kind": "KiCad representative SOT-23 STEP; not exact manufacturer CAD",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "erc_type": "input",
+          "unit": "BSS138BK,215_1_1"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "erc_type": "passive",
+          "unit": "BSS138BK,215_1_1"
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "erc_type": "passive",
+          "unit": "BSS138BK,215_1_1"
+        }
+      ],
+      "sources": {
+        "carrier": {
+          "repository": "https://github.com/stanford-ssi/PigeonVision",
+          "commit": "5f18f65819614a4c84aacd40479237420e670fcd",
+          "symbol": {
+            "file": "hardware/libraries/PigeonVision.kicad_sym",
+            "symbol": "BSS138BK,215",
+            "source_sha256": "3b9d6ed394ffb4d1d4adc77d5e43d75c892b9d6d95dc882a98f612d428484c3c"
+          },
+          "footprint": "hardware/libraries/PigeonVision.pretty/Nexperia_SOT23_BSS138BK.kicad_mod",
+          "footprint_sha256": "a54eba63601192ddcbd8a424da694ff88ba17f806dd14cde03a83955f499abfc"
+        },
+        "datasheet": {
+          "url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+          "sha256": "7ee99c2ff94d07a981fa018ea9c1b86302d179fbff5a466d29e21bebd6eba617"
+        }
+      },
+      "notes": [
+        "G1, S2, D3; suitable functions depend on gate voltage, load current and power-off behavior."
+      ],
+      "footprint_sha256": "3ebeb5090b76a90e9d5672bb7503a60df31545472a27c6f24294820dba36cd9f",
+      "supplier_codes": {
+        "JLCPCB": "C282529",
+        "LCSC": "C282529"
+      }
+    },
+    {
+      "symbol": "Samtec_TSM-102-01-L-SV-P-TR",
+      "mpn": "TSM-102-01-L-SV-P-TR",
+      "group": "io",
+      "footprint": "Samtec_TSM-102-01_SV_1x02_P2.54mm_SMD",
+      "status": "reusable carrier asset; circuit selection pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "Samtec_TSM-102-01_SV_1x02_P2.54mm_SMD.step",
+          "kind": "drawing-derived nominal header envelope; not manufacturer CAD",
+          "sha256": "75b1f213e36a8ce7ff2941522e4393fbad3c3dc3c744fe9aa9a057576524731f"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "erc_type": "passive",
+          "unit": "Samtec_TSM-102-01-L-SV-P-TR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "erc_type": "passive",
+          "unit": "Samtec_TSM-102-01-L-SV-P-TR_1_1"
+        }
+      ],
+      "sources": {
+        "carrier": {
+          "repository": "https://github.com/stanford-ssi/PigeonVision",
+          "commit": "5f18f65819614a4c84aacd40479237420e670fcd",
+          "symbol": {
+            "file": "hardware/libraries/PigeonVision.kicad_sym",
+            "symbol": "Samtec_TSM-102-01-L-SV-P-TR",
+            "source_sha256": "3b9d6ed394ffb4d1d4adc77d5e43d75c892b9d6d95dc882a98f612d428484c3c"
+          },
+          "footprint": "hardware/libraries/PigeonVision.pretty/Samtec_TSM-102-01_SV_1x02_P2.54mm_SMD.kicad_mod",
+          "footprint_sha256": "5f63f313d625364ba083b696a2c4357fd375ca20b86602538eff81590a5bce29"
+        },
+        "datasheet": {
+          "url": "https://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-sv-xx-xxx-x-xx-mkt.pdf",
+          "sha256": "3664f69a0ee252eaefbb308fec804005f7a14be4142775bcdee26fa05be2417c"
+        }
+      },
+      "notes": [
+        "Shunt is separately purchased. Drawing-derived nominal model omits pick-and-place pad and detailed lead bends."
+      ],
+      "footprint_sha256": "97a270600410d49debd4a66e45475f9594791b6466b1fb4622f20bc5bc7dc968",
+      "supplier_codes": {
+        "JLCPCB": "C5266181",
+        "LCSC": "C5266181"
+      }
+    },
+    {
+      "symbol": "INA226AIDGSR",
+      "mpn": "INA226AIDGSR",
+      "group": "power",
+      "footprint": "TI_DGS0010A_VSSOP-10_3x3mm_P0.5mm",
+      "status": "reusable carrier asset; circuit selection pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_Package_SO_MSOP-10_3x3mm_P0.5mm.step",
+          "kind": "KiCad representative MSOP/VSSOP-10 STEP; not exact manufacturer CAD",
+          "sha256": "b8f88eac3ce221c2ccb0b5048f9ad49c2ef4af148f8ae50c4e232e357683f547"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "A1",
+          "erc_type": "input",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "2",
+          "name": "A0",
+          "erc_type": "input",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "3",
+          "name": "~{Alert}",
+          "erc_type": "open_collector",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "4",
+          "name": "SDA",
+          "erc_type": "bidirectional",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "5",
+          "name": "SCL",
+          "erc_type": "input",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "6",
+          "name": "VS",
+          "erc_type": "power_in",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "7",
+          "name": "GND",
+          "erc_type": "power_in",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "8",
+          "name": "Vbus",
+          "erc_type": "input",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "9",
+          "name": "Vin-",
+          "erc_type": "input",
+          "unit": "INA226AIDGSR_1_1"
+        },
+        {
+          "number": "10",
+          "name": "Vin+",
+          "erc_type": "input",
+          "unit": "INA226AIDGSR_1_1"
+        }
+      ],
+      "sources": {
+        "carrier": {
+          "repository": "https://github.com/stanford-ssi/PigeonVision",
+          "commit": "5f18f65819614a4c84aacd40479237420e670fcd",
+          "symbol": {
+            "file": "hardware/libraries/PigeonVision.kicad_sym",
+            "symbol": "INA226AIDGSR",
+            "source_sha256": "3b9d6ed394ffb4d1d4adc77d5e43d75c892b9d6d95dc882a98f612d428484c3c"
+          },
+          "footprint": "hardware/libraries/PigeonVision.pretty/TI_DGS0010A_VSSOP-10_3x3mm_P0.5mm.kicad_mod",
+          "footprint_sha256": "61f0f0c18fe68f7e2b447133f0681cba66dd6899ccd387acc8777cfe3dd9cb47"
+        },
+        "datasheet": {
+          "url": "https://www.ti.com/lit/ds/symlink/ina226.pdf",
+          "sha256": "c9b67f886d4a5241a5e070723f7b61867409eeb27eed768b9cdd9cb17e03ca2d"
+        }
+      },
+      "notes": [
+        "Optional library asset, not part of the fitted transmitter baseline. Select a shunt and Kelvin routing for the actual measurement range.",
+        "DGS0010A lands: 1.45 x 0.30 mm, row centres x = +/-2.2 mm, 0.50 mm pitch, R0.05 mm corners."
+      ],
+      "footprint_sha256": "eb4863551896067030afc809a2e272a0d61a46ebf3903079a9972900c8d28fa9",
+      "supplier_codes": {
+        "JLCPCB": "C49851",
+        "LCSC": "C49851"
+      }
+    },
+    {
+      "symbol": "LTST-C170KGKT",
+      "mpn": "LTST-C170KGKT",
+      "group": "io",
+      "footprint": "LiteOn_LTST-C170KGKT_0805",
+      "status": "reusable carrier asset; circuit selection pending",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "LiteOn_LTST-C170KGKT_KICAD_NOMINAL.step",
+          "kind": "KiCad representative nominal LED 2.0 x 1.25 x 1.10 mm STEP; not manufacturer CAD or tolerance envelope",
+          "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "erc_type": "passive",
+          "unit": "LTST-C170KGKT_1_1"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "erc_type": "passive",
+          "unit": "LTST-C170KGKT_1_1"
+        }
+      ],
+      "sources": {
+        "carrier": {
+          "repository": "https://github.com/stanford-ssi/PigeonVision",
+          "commit": "5f18f65819614a4c84aacd40479237420e670fcd",
+          "symbol": {
+            "source": "KiCad 10.0.0 Device:LED with carrier exact-part assignment",
+            "source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+            "upstream_url": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym"
+          },
+          "footprint": "hardware/libraries/PigeonVision.pretty/LiteOn_LTST-C170KGKT_0805.kicad_mod",
+          "footprint_sha256": "9b34a699d4325c999b63c2ad56f70d8ff1668e6eb1508fddee79666020b13ebf"
+        },
+        "datasheet": {
+          "url": "https://optoelectronics.liteon.com/upload/download/DS22-2000-073/LTST-C170KGKT.PDF",
+          "sha256": "706c101b5f58aeae74225d11e6b3b7ea4f0eb3755b2f560f83c9aee5961957a9",
+          "mirror_url": "https://www.datasheets.com/lite-on/ltst-c170kgkt/datasheet.pdf",
+          "revision": "DS22-2000-073 Rev H, effective 2017-11-28"
+        }
+      },
+      "notes": [
+        "Carrier audited alternate, not the carrier fitted KT-0805G/C2297. Do not use the C2297 supplier code for this part.",
+        "Pin 1 = cathode at -X; pin 2 = anode at +X. Manufacturer Rev H lands are 1.20 x 1.20 mm at x = +/-1.05 mm. Select a series resistor for the desired current."
+      ],
+      "footprint_sha256": "390290acb814e8827204200d9b1511498a9ee907bf0e9001610887e002dd3072"
+    },
+    {
+      "symbol": "0402,27Ω",
+      "mpn": "CRCW040227R0FKED",
+      "group": "passive",
+      "footprint": "R_0402_1005Metric",
+      "status": "selected 27 Ω ±1% USB series resistor; assembly/layout verification pending",
+      "electrical_candidate": true,
+      "models": [
+        {
+          "file": "KiCad_Resistor_SMD_R_0402_1005Metric.step",
+          "kind": "generic KiCad package model",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb"
+        }
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "0402,27Ω_1_1"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "erc_type": "passive",
+          "unit": "0402,27Ω_1_1"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Device.kicad_sym",
+        "symbol_source_sha256": "b7baf3f8561add51df277d49eb6267c4d149957c9888f238dbd6335f9bdf7764",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Resistor_SMD.pretty/R_0402_1005Metric.kicad_mod",
+        "footprint_source_sha256": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "datasheet": "https://www.vishay.com/doc?20035=",
+        "manufacturer_product": "https://www.vishay.com/en/product/20035/",
+        "supplier_listing": "https://jlcpcb.com/partdetail/VishayIntertech-CRCW040227R0FKED/C482122"
+      },
+      "notes": "KiCad Device:R geometry with JLC-style reference placement and 0.8 mm value text inside the rectangle. Hidden exact MPN/LCSC/JLCPCB fields; no cached inventory fields. Existing nominal 0402 footprint and generic KiCad STEP are reused. D/CRCW e3 is an AEC-Q200-qualified family; no radiation qualification is asserted.",
+      "footprint_sha256": "26fe883345a1bfb957dab9a1dea17b28edda48b7a19bb101f8715af3c6a68a42",
+      "supplier_codes": {
+        "JLCPCB": "C482122",
+        "LCSC": "C482122"
+      }
+    },
+    {
+      "symbol": "132134-10",
+      "mpn": "132134-10",
+      "manufacturer": "Amphenol RF",
+      "group": "rf",
+      "footprint": "SMA_Amphenol_132134-10_Vertical",
+      "status": "selected dev-board RF output; top-side SMT assembly; final launch/mechanical review pending",
+      "electrical_candidate": true,
+      "models": [
+        {
+          "file": "KiCad_SMA_Amphenol_132134-10.step",
+          "kind": "KiCad community nominal STEP; not manufacturer CAD",
+          "sha256": "7f87936c9952f2a5ff3bc564f94290e885e7435be20c414bf825e4a445fd27e3"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector.kicad_sym",
+        "symbol_source_sha256": "01a7f5a3dd140eac0742e82c08f7e928fba64d17075266b56b219697d4cf4025",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Connector_Coaxial.pretty/SMA_Amphenol_132134-10_Vertical.kicad_mod",
+        "footprint_source_sha256": "ba30dbca121fbc1e64d11933fd7bb76ddff346296d4f826a0214dd41eee81070",
+        "model_source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Connector_Coaxial.3dshapes/SMA_Amphenol_132134-10_Vertical.step",
+        "model_source_sha256": "7f87936c9952f2a5ff3bc564f94290e885e7435be20c414bf825e4a445fd27e3",
+        "manufacturer_product": "https://www.amphenolrf.com/en-us/part/132134-10/2817/",
+        "manufacturer_drawing": {
+          "url": "https://4donline.ihs.com/images/VipMasterIC/IC/AMPH/AMPHS06462/AMPHS06462-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0",
+          "sha256": "3a6c9503e0af8f8e3e7f1ae06d2b52e6d5573585b7f41f9583c93c37d05177e8"
+        }
+      },
+      "notes": [
+        "50 ohm vertical SMT SMA jack. Pin 1 is the center contact; pin 2 represents both shell/ground pads.",
+        "Manufacturer drawing 132134-10.DWG Rev NC, 2002-11-25: 6.35 mm square body, 8.84 mm overall height, 7.11 mm mounting pattern, 1.73 mm signal land.",
+        "All solder pads are on F.Cu. Supports a flat underside, but cable torque requires strain relief and assembled-fit review.",
+        "KiCad community STEP names the exact part; not manufacturer CAD. Its model is a nominal preview, not a tolerance envelope."
+      ],
+      "footprint_sha256": "282d2c10c2a6f0dddcabfb60886b35a989fc595303ca90ce445904d8f42eed8f",
+      "pins": [
+        {
+          "number": "1",
+          "name": "In",
+          "erc_type": "passive",
+          "unit": "132134-10_1_1"
+        },
+        {
+          "number": "2",
+          "name": "Ext",
+          "erc_type": "passive",
+          "unit": "132134-10_1_1"
+        }
+      ]
+    },
+    {
+      "symbol": "U.FL-R-SMT-1(10)",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "manufacturer": "Hirose Electric",
+      "group": "rf",
+      "footprint": "U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "status": "selected optional external-LO connector; mark DNP in first assembly; final launch/mechanical review pending",
+      "electrical_candidate": true,
+      "models": [
+        {
+          "file": "KiCad_UFL_Hirose_UFL_R_SMT_1.step",
+          "kind": "KiCad community nominal STEP; not manufacturer CAD",
+          "sha256": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector.kicad_sym",
+        "symbol_source_sha256": "01a7f5a3dd140eac0742e82c08f7e928fba64d17075266b56b219697d4cf4025",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Connector_Coaxial.pretty/U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+        "footprint_source_sha256": "8f227fecc7252e97f349d06841694c60e3df4c0cb58c6c59a5123f1cd631860c",
+        "model_source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step",
+        "model_source_sha256": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
+        "manufacturer_product": "https://www.hirose.com/en/product/series/U.FL",
+        "manufacturer_drawing": {
+          "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/HIROS08829-1.pdf",
+          "sha256": "27580d7e4b3c323ea916fa0421ac156e0be62e364cfd70498cf9dfb6ddb6a6c6"
+        }
+      },
+      "notes": [
+        "50 ohm top-side SMT microcoax receptacle. Pin 1 is the center contact; pin 2 represents both outer-contact lands.",
+        "Exact (10) drawing EDC3-302540-10 checked against the installed footprint: signal land 1.05 x 1.00 mm, ground lands 2.20 x 1.05 mm; installed geometry is rotated 90 degrees relative to the drawing.",
+        "Retain the footprint central F.Cu keepout. Isolate the optional connector branch with a DNP 0 ohm link at the LO junction.",
+        "About 3.0 x 3.1 mm body and 1.25 mm unmated height; allow mating plug/cable clearance and strain relief. Limited mating life makes this an occasional test port.",
+        "Base-family KiCad community STEP, checked against the exact (10) drawing; not manufacturer CAD. Do not silently substitute U.FL-R-SMT without -1."
+      ],
+      "footprint_sha256": "7f0234ab7a7155356e4d6e41e1b6d289b2aa81f54933b5490006bcce41b33d1f",
+      "pins": [
+        {
+          "number": "1",
+          "name": "In",
+          "erc_type": "passive",
+          "unit": "U.FL-R-SMT-1(10)_1_1"
+        },
+        {
+          "number": "2",
+          "name": "Ext",
+          "erc_type": "passive",
+          "unit": "U.FL-R-SMT-1(10)_1_1"
+        }
+      ]
+    },
+    {
+      "symbol": "132289",
+      "mpn": "132289",
+      "manufacturer": "Amphenol RF",
+      "group": "rf",
+      "footprint": "SMA_Amphenol_132289_EdgeMount",
+      "status": "mechanical alternate only; not the single-side-assembly baseline",
+      "electrical_candidate": false,
+      "models": [
+        {
+          "file": "KiCad_SMA_Amphenol_132289.step",
+          "kind": "KiCad community nominal STEP; not manufacturer CAD",
+          "sha256": "eab4ddd93a669662d28c0d8dcbc380584abc16b56d4afc77c31e75b579c82044"
+        }
+      ],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Connector.kicad_sym",
+        "symbol_source_sha256": "01a7f5a3dd140eac0742e82c08f7e928fba64d17075266b56b219697d4cf4025",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Connector_Coaxial.pretty/SMA_Amphenol_132289_EdgeMount.kicad_mod",
+        "footprint_source_sha256": "4890dc98cac7074fff096522cf9651c62208595f7007b3ce581fc4cf1df8a57c",
+        "model_source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Connector_Coaxial.3dshapes/SMA_Amphenol_132289_EdgeMount.step",
+        "model_source_sha256": "eab4ddd93a669662d28c0d8dcbc380584abc16b56d4afc77c31e75b579c82044",
+        "manufacturer_product": "https://www.amphenolrf.com/en-us/part/132289/1030/",
+        "manufacturer_drawing": {
+          "url": "https://www.farnell.com/datasheets/1510369.pdf",
+          "sha256": "3456bf4b332f2d98bcfc067d6ee9ba5cce049419ee66606831fd38340101ae07"
+        }
+      },
+      "notes": [
+        "50 ohm edge-launch bulkhead SMA; pin 1 is signal and pin 2 represents all shell/ground lands.",
+        "Manufacturer drawing specifies a .062 inch (1.57 mm) PCB; exact stackup and edge launch must be checked before selection.",
+        "Requires both top and bottom ground solder joints. Carrier cutout or edge overhang can provide clearance, but does not remove the bottom soldering requirement.",
+        "KiCad community STEP names the exact part; not manufacturer CAD."
+      ],
+      "footprint_sha256": "bf0df257ab97e6e897df9257d6fc9e2ae5a39200ba88636b4988a7465086556b",
+      "pins": [
+        {
+          "number": "1",
+          "name": "In",
+          "erc_type": "passive",
+          "unit": "132289_1_1"
+        },
+        {
+          "number": "2",
+          "name": "Ext",
+          "erc_type": "passive",
+          "unit": "132289_1_1"
+        }
+      ]
+    },
+    {
+      "symbol": "SolderJumper_2_Bridged",
+      "mpn": null,
+      "group": "passive",
+      "footprint": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "status": "PCB solder feature; manual assembly state must match schematic note; not a purchased component",
+      "electrical_candidate": true,
+      "models": [],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Jumper.kicad_sym",
+        "symbol_source_sha256": "6548a7155352ede1997c88e2fc104cb22078437a08bc7779552a8326ebc13e6b",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Jumper.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod",
+        "footprint_source_sha256": "583bdfa61b7b56e3df937aed02e98a6ff9507205cc10daf93b081b232b7c9b30"
+      },
+      "notes": [
+        "Two 1.0 x 1.5 mm copper pads, 1.3 mm center pitch and 0.3 mm open gap. No stencil paste; manual solder bridge. No 3D component model or purchase MPN applies.",
+        "Open PCB copper is deliberate even for the Bridged schematic symbol: normal USB operation requires a manual solder bridge, not a copper trace that must be cut.",
+        "For the adopted one-link input, put this between USB_VBUS and 5V_IN; EXT_5V remains connected to 5V_IN. Open the link before powering from EXT_5V with USB attached. EXT_5V is live during USB-powered operation.",
+        "Bare solder bridges have no manufacturer current rating. Board copper, actual bridge resistance, heating and rework quality must be checked at the intended board current. This large power jumper is not the RF LO selector; retain compact 0 ohm RF links."
+      ],
+      "footprint_sha256": "583bdfa61b7b56e3df937aed02e98a6ff9507205cc10daf93b081b232b7c9b30",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "erc_type": "passive",
+          "unit": "SolderJumper_2_Bridged_1_1"
+        },
+        {
+          "number": "2",
+          "name": "B",
+          "erc_type": "passive",
+          "unit": "SolderJumper_2_Bridged_1_1"
+        }
+      ]
+    },
+    {
+      "symbol": "SolderJumper_2_Open",
+      "mpn": null,
+      "group": "passive",
+      "footprint": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "status": "PCB solder feature; manual assembly state must match schematic note; not a purchased component",
+      "electrical_candidate": true,
+      "models": [],
+      "sources": {
+        "source": "Installed KiCad 10.0.0 library",
+        "symbol_source": "https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/Jumper.kicad_sym",
+        "symbol_source_sha256": "6548a7155352ede1997c88e2fc104cb22078437a08bc7779552a8326ebc13e6b",
+        "footprint_source": "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Jumper.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod",
+        "footprint_source_sha256": "583bdfa61b7b56e3df937aed02e98a6ff9507205cc10daf93b081b232b7c9b30"
+      },
+      "notes": [
+        "Two 1.0 x 1.5 mm copper pads, 1.3 mm center pitch and 0.3 mm open gap. No stencil paste; manual solder bridge. No 3D component model or purchase MPN applies.",
+        "Open PCB copper is deliberate even for the Bridged schematic symbol: normal USB operation requires a manual solder bridge, not a copper trace that must be cut.",
+        "For the adopted one-link input, put this between USB_VBUS and 5V_IN; EXT_5V remains connected to 5V_IN. Open the link before powering from EXT_5V with USB attached. EXT_5V is live during USB-powered operation.",
+        "Bare solder bridges have no manufacturer current rating. Board copper, actual bridge resistance, heating and rework quality must be checked at the intended board current. This large power jumper is not the RF LO selector; retain compact 0 ohm RF links."
+      ],
+      "footprint_sha256": "583bdfa61b7b56e3df937aed02e98a6ff9507205cc10daf93b081b232b7c9b30",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "erc_type": "passive",
+          "unit": "SolderJumper_2_Open_1_1"
+        },
+        {
+          "number": "2",
+          "name": "B",
+          "erc_type": "passive",
+          "unit": "SolderJumper_2_Open_1_1"
+        }
+      ]
     }
   ]
 }

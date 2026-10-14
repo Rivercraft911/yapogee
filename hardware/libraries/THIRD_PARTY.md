@@ -26,3 +26,20 @@ as such rather than presented as vendor solids.
 Original drawing-derived symbols, footprints and VRML envelopes use the factual
 pin/land/body dimensions of the cited manufacturer drawings. Manufacturer source
 PDFs, drawing screenshots and third-party web CAD downloads are not bundled.
+
+Seven support-part entries reuse reviewed CAD from the
+[Pigeon Vision carrier library](https://github.com/stanford-ssi/PigeonVision/tree/5f18f65819614a4c84aacd40479237420e670fcd/hardware/libraries).
+Their original KiCad-derived geometry and locally copied KiCad STEP models retain
+the terms above. Drawing-derived TVS/header envelopes are identified as previews.
+Changes here flatten inheritance, assign local footprint/model paths and preserve
+exact order codes. The LiteOn LED uses KiCad's `Device:LED` symbol with the carrier's
+audited LiteOn land pattern; it does not reuse the fitted Kento JLC-import asset.
+Per-entry source paths, commit and hashes are recorded in `components.json`.
+
+The RF connector symbols use KiCad's `Connector:Conn_Coaxial` geometry with exact
+part fields. Three coaxial footprints and their STEP previews are copied from
+KiCad 10.0.0; local model paths replace the global KiCad paths. The U.FL STEP is a
+base-family community model checked against the exact (10) drawing. The two
+solder-jumper symbols and shared open-pad footprint come from KiCad's Jumper
+libraries. These additions retain the library terms above; manufacturer drawings
+are referenced in the index and are not redistributed here.
