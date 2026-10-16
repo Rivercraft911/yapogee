@@ -27,6 +27,22 @@ Original drawing-derived symbols, footprints and VRML envelopes use the factual
 pin/land/body dimensions of the cited manufacturer drawings. Manufacturer source
 PDFs, drawing screenshots and third-party web CAD downloads are not bundled.
 
+The BLM15 ferrite entry uses KiCad's `Device:FerriteBead_Small` geometry and
+the unchanged KiCad StepUp `L_0402_1005Metric.step` nominal package model.
+Its reflow lands and hidden maximum-body envelope follow Murata's dimensional
+drawing. The model is a representative package solid, not manufacturer CAD;
+its embedded copyright and the KiCad terms above are retained.
+
+The exact capacitor entries reuse the existing KiCad StepUp capacitor STEP
+models for 0402, 0603, 0805, 1206 and 1210. The original © 2017 KiCad StepUp
+headers and model bytes are unchanged. Exact manufacturer reference dimensions
+were checked against the nominal body and colored termination faces; model
+links use unity scale. These are representative package solids, not
+manufacturer-authored CAD. The earlier drawing-derived maximum-body WRLs remain
+linked as hidden clearance alternatives. Per-entry dimensions, source links and
+hashes are recorded in `components.json`; the KiCad terms above apply to the
+reused STEP files.
+
 Seven support-part entries reuse reviewed CAD from the
 [Pigeon Vision carrier library](https://github.com/stanford-ssi/PigeonVision/tree/5f18f65819614a4c84aacd40479237420e670fcd/hardware/libraries).
 Their original KiCad-derived geometry and locally copied KiCad STEP models retain
@@ -43,3 +59,10 @@ base-family community model checked against the exact (10) drawing. The two
 solder-jumper symbols and shared open-pad footprint come from KiCad's Jumper
 libraries. These additions retain the library terms above; manufacturer drawings
 are referenced in the index and are not redistributed here.
+
+The dual-mount module/carrier rows and Samtec header preview are original
+drawing-derived assets. They use factual pitch, bore and body dimensions from
+the cited Samtec/JLC documents and the Pico mounting precedent; no vendor CAD
+or drawings are redistributed. The new RF choke/resistor VRML previews are
+also authored mechanical representations. The 100 pF capacitor reuses the
+licensed KiCad nominal model rather than adding another package solid.

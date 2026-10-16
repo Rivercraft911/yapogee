@@ -1,0 +1,6627 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "db3d25a7-b154-4afb-8504-11c890089af3")
+	(paper "A4")
+	(title_block
+		(title "AFE 1V8 / 3V3 LDO")
+		(date "2026-10-14")
+		(rev "A")
+		(company "Yapogee")
+	)
+	(lib_symbols
+		(symbol "PCM_SparkFun-PowerSymbol:GND"
+			(power global)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "SparkFun global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Yapogee:0402,24kΩ,0.1%"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "24kΩ"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "Yapogee:R_Vishay_TNPW0402_RefReflow"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "24kΩ ±0.1% thin film resistor, 25 ppm/K, 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TNPW040224K0BEED"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "TNPW040224K0BEED"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Resistance" "24kΩ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±0.1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Package" "0402 (1005 metric)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "TCR" "±25 ppm/K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Qualification" "AEC-Q200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Power" "0.070 W at 70°C, general mode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage rating" "75 V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0402,24kΩ,0.1%_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0402,24kΩ,0.1%_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Yapogee:0402,30kΩ,0.1%"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "30kΩ"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "Yapogee:R_Vishay_TNPW0402_RefReflow"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "30kΩ ±0.1% thin film resistor, 25 ppm/K, 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TNPW040230K0BEED"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "TNPW040230K0BEED"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Resistance" "30kΩ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±0.1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Package" "0402 (1005 metric)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "TCR" "±25 ppm/K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Qualification" "AEC-Q200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Power" "0.070 W at 70°C, general mode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage rating" "75 V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0402,30kΩ,0.1%_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0402,30kΩ,0.1%_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Yapogee:0402,75kΩ,0.1%"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "75kΩ"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "Yapogee:R_Vishay_TNPW0402_RefReflow"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "75kΩ ±0.1% thin film resistor, 25 ppm/K, 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "TNPW040275K0BEED"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "TNPW040275K0BEED"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Resistance" "75kΩ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±0.1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Package" "0402 (1005 metric)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "TCR" "±25 ppm/K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Qualification" "AEC-Q200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Power" "0.070 W at 70°C, general mode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage rating" "75 V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0402,75kΩ,0.1%_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0402,75kΩ,0.1%_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Yapogee:GCM155R71H104KE02D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.032 1.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100nF"
+				(at 2.032 -0.3782 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Yapogee:C_Murata_GCM15_1005_RefReflow"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H104KE02-01A-EN_PDF_CERAMICCAPACITORSMD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "100 nF ±10% 50 V X7R ceramic capacitor, 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Specifications" "50V ±10% X7R 0402"
+				(at 2.032 -2.0462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Manufacturer" "Murata"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "MPN" "GCM155R71H104KE02D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part" "GCM155R71H104KE02D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "LCSC" "C85858"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "LCSC Part #" "C85858"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "JLCPCB Part #" "C85858"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "DigiKey Part #" "490-10672-1-ND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Voltage Rated" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Capacitance" "100nF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Temperature Coefficient" "X7R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Qualification" "AEC-Q200; no exact-part flight/radiation qualification established"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Class" "Extended"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_fp_filters" "C_Murata_GCM15_1005_RefReflow"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GCM155R71H104KE02D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0.635) (xy 1.27 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GCM155R71H104KE02D_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Yapogee:GCM31CR71A226KE02L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.032 1.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "22uF"
+				(at 2.032 -0.3782 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Yapogee:C_Murata_GCM31_3216_RefReflow"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GCM31CR71A226KE02L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "22 µF ±10% 10 V X7R ceramic capacitor, 1206"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Specifications" "10V ±10% X7R 1206"
+				(at 2.032 -2.0462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Manufacturer" "Murata"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "MPN" "GCM31CR71A226KE02L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part" "GCM31CR71A226KE02L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "LCSC" "C126598"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "LCSC Part #" "C126598"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "JLCPCB Part #" "C126598"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "DigiKey Part #" "490-14439-1-ND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Voltage Rated" "10V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Capacitance" "22uF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Temperature Coefficient" "X7R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Qualification" "AEC-Q200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Class" "Extended"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Factory Packaging" "180 mm plastic tape W8P4; 2000 pieces"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_fp_filters" "C_Murata_GCM31_3216_RefReflow"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GCM31CR71A226KE02L_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0.635) (xy 1.27 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GCM31CR71A226KE02L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Yapogee:TPS7A8801QRTJRQ1"
+			(pin_names
+				(offset 0.5)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -10.16 20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPS7A8801QRTJRQ1"
+				(at 0 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Yapogee:TI_RTJ0020J_WQFN-20-1EP_4x4mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a88-q1.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Automotive dual 1 A adjustable low-noise LDO, WQFN-20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "EngineeringStatus" "working automotive AFE dual-LDO selection; not board-qualified"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPS7A8801QRTJRQ1_0_1"
+				(rectangle
+					(start -10.16 15.24)
+					(end 10.16 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS7A8801QRTJRQ1_1_1"
+				(pin power_in line
+					(at -12.7 12.7 0)
+					(length 2.54)
+					(name "IN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 10.16 0)
+					(length 2.54)
+					(name "IN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -22.86 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "IN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "IN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "EN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -12.7 0)
+					(length 2.54)
+					(name "NR/SS2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -10.16 0)
+					(length 2.54)
+					(name "SS_CTRL2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 12.7 -12.7 180)
+					(length 2.54)
+					(name "PG2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -10.16 180)
+					(length 2.54)
+					(name "FB2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "OUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "OUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -22.86 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 10.16 180)
+					(length 2.54)
+					(name "OUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 12.7 180)
+					(length 2.54)
+					(name "OUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "FB1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "PG1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "SS_CTRL1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "NR/SS1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 7.62 0)
+					(length 2.54)
+					(name "EN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -22.86 90)
+					(length 2.54)
+					(name "EP_GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+1V8"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+1V8"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+1V8\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+1V8_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1V8_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Normal SS charging Selected\n"
+		(exclude_from_sim no)
+		(at 143.51 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "135b3c30-563b-452c-a7f6-3dc1078f1981")
+	)
+	(text "AFE DUEL LDO CALCS"
+		(exclude_from_sim no)
+		(at 142.24 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "d1f7c24f-a441-430b-95a2-adba02120394")
+	)
+	(junction
+		(at 157.48 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ace784e-cad1-4296-914b-31d7fadac4c1")
+	)
+	(junction
+		(at 115.57 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d3151ac-a127-4e5c-a015-ee5864b9830d")
+	)
+	(junction
+		(at 163.83 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "177d6abb-7187-44af-8145-1da15b81bcad")
+	)
+	(junction
+		(at 121.92 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f425a01-3c90-444e-abf9-b6148bf3e29d")
+	)
+	(junction
+		(at 184.15 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fb62ff6-47eb-43a0-8ce8-fb16a03f1e4b")
+	)
+	(junction
+		(at 128.27 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "563c44a8-d10b-461d-888f-22684bff34a9")
+	)
+	(junction
+		(at 175.26 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5dd57ef7-33bc-4f72-a03d-e31680933867")
+	)
+	(junction
+		(at 115.57 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "770a3fc7-636e-4e56-8cef-5bc5b8d31336")
+	)
+	(junction
+		(at 157.48 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e30d393-b992-4f59-b636-6f11d56d043e")
+	)
+	(junction
+		(at 184.15 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a68c93f2-ed64-4e17-b7eb-a79db1cce94a")
+	)
+	(junction
+		(at 128.27 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a75d7fad-072a-4a29-ba09-0dc38593cd0e")
+	)
+	(junction
+		(at 128.27 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3340eb0-d167-4f36-9cde-cf31e8943df1")
+	)
+	(junction
+		(at 121.92 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5a171b4-901e-4c3d-b2bb-ffb043ca8117")
+	)
+	(junction
+		(at 163.83 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba7bad23-0bf6-449e-a7b6-8690a0459f46")
+	)
+	(junction
+		(at 175.26 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd71bdb3-738a-4ba9-8818-9c2ebc9b6bdd")
+	)
+	(junction
+		(at 128.27 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6632f47-77d9-497c-a191-9c56f486deac")
+	)
+	(junction
+		(at 143.51 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc22c6b6-1486-439c-94d6-a03497c31712")
+	)
+	(no_connect
+		(at 156.21 86.36)
+		(uuid "6ee9af44-a52f-4205-b33e-ee2952227ff2")
+	)
+	(wire
+		(pts
+			(xy 157.48 99.06) (xy 157.48 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03ee3108-0ba2-4c0a-893f-7beabc0574f0")
+	)
+	(wire
+		(pts
+			(xy 146.05 115.57) (xy 146.05 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "067fcea9-dc4f-4023-bae8-b93c79c43d0b")
+	)
+	(wire
+		(pts
+			(xy 121.92 104.14) (xy 123.19 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0883bc78-4cbc-421e-8fee-b00f20677a32")
+	)
+	(wire
+		(pts
+			(xy 163.83 109.22) (xy 163.83 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d1c4087-e1a2-4b7f-b16f-829600c4d735")
+	)
+	(wire
+		(pts
+			(xy 114.3 93.98) (xy 115.57 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1372dcad-ee52-4ae7-9b36-4423b6523f4f")
+	)
+	(wire
+		(pts
+			(xy 121.92 88.9) (xy 123.19 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "196def54-f71c-478e-b1f2-1ee330573428")
+	)
+	(wire
+		(pts
+			(xy 157.48 78.74) (xy 156.21 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19a432f0-169a-4efe-9440-abc57dc7cf78")
+	)
+	(wire
+		(pts
+			(xy 184.15 77.47) (xy 184.15 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b40a62b-ee86-4d19-bb80-d9950e1548cb")
+	)
+	(wire
+		(pts
+			(xy 175.26 96.52) (xy 175.26 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f63c20c-dae7-4750-8590-480634b98a64")
+	)
+	(wire
+		(pts
+			(xy 156.21 101.6) (xy 163.83 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35e2acba-92a8-4653-bb24-acc64f6c5557")
+	)
+	(wire
+		(pts
+			(xy 128.27 78.74) (xy 130.81 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c365536-5c48-4889-aa3f-015b25bf8d4d")
+	)
+	(wire
+		(pts
+			(xy 128.27 99.06) (xy 128.27 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3de82597-a29b-400e-b702-4e01c085f89c")
+	)
+	(wire
+		(pts
+			(xy 128.27 96.52) (xy 128.27 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e26945b-e832-4362-a5d3-d792078a2cfe")
+	)
+	(wire
+		(pts
+			(xy 121.92 90.17) (xy 121.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4539d2ad-b4c1-4e82-8664-d335b0fb7877")
+	)
+	(wire
+		(pts
+			(xy 157.48 96.52) (xy 175.26 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45a383f4-66c5-4073-9db9-f7c7a06920ee")
+	)
+	(wire
+		(pts
+			(xy 175.26 96.52) (xy 184.15 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47503348-22c2-4533-9b34-0eb54f0aabd2")
+	)
+	(wire
+		(pts
+			(xy 130.81 96.52) (xy 128.27 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48dc1a51-0f95-4e97-9541-8d7b36a67b7a")
+	)
+	(wire
+		(pts
+			(xy 140.97 115.57) (xy 143.51 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b831437-481c-4df4-8cc4-b6af8bf1bf9e")
+	)
+	(wire
+		(pts
+			(xy 156.21 96.52) (xy 157.48 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50f68fec-d4d4-42d8-bc5a-0e1df3b2b730")
+	)
+	(wire
+		(pts
+			(xy 121.92 86.36) (xy 130.81 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50fa6e79-20d7-4724-97c4-483dc72b861b")
+	)
+	(wire
+		(pts
+			(xy 184.15 105.41) (xy 184.15 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5341d3b0-155b-492a-9fb6-f2c0f5d6ee08")
+	)
+	(wire
+		(pts
+			(xy 156.21 81.28) (xy 157.48 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f57d2a3-d5cf-4419-a46c-5a96f5574fd8")
+	)
+	(wire
+		(pts
+			(xy 121.92 86.36) (xy 121.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fc83e07-fa4b-4c72-802e-19d6cd10c336")
+	)
+	(wire
+		(pts
+			(xy 121.92 105.41) (xy 121.92 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63c1184f-ee50-421f-b0bc-e6f4362ae1e9")
+	)
+	(wire
+		(pts
+			(xy 143.51 115.57) (xy 146.05 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66bb8e90-d0b2-4fa8-8f3f-3b56795f7e6c")
+	)
+	(wire
+		(pts
+			(xy 175.26 101.6) (xy 173.99 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69badf2b-8555-40c0-b629-72cd217465f4")
+	)
+	(wire
+		(pts
+			(xy 157.48 78.74) (xy 175.26 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "718496b8-c523-4786-ac1b-c672295826ce")
+	)
+	(wire
+		(pts
+			(xy 156.21 83.82) (xy 163.83 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77661804-b8bc-478f-a86c-723ec634b316")
+	)
+	(wire
+		(pts
+			(xy 184.15 95.25) (xy 184.15 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ffb08ce-fa37-46c2-bad3-fff216299576")
+	)
+	(wire
+		(pts
+			(xy 156.21 104.14) (xy 156.21 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "859223ef-8df7-47a3-9f02-504ad4bb4c6f")
+	)
+	(wire
+		(pts
+			(xy 128.27 83.82) (xy 128.27 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a19d51-4416-4d2f-bb15-8909d7025589")
+	)
+	(wire
+		(pts
+			(xy 143.51 115.57) (xy 143.51 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8973771d-428f-4ace-8a57-9ed9c4a31144")
+	)
+	(wire
+		(pts
+			(xy 175.26 78.74) (xy 175.26 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9348c4a5-a597-4354-b512-12177e247519")
+	)
+	(wire
+		(pts
+			(xy 128.27 93.98) (xy 130.81 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "936d2ac6-ce92-4ce4-9fdd-d4a358d36564")
+	)
+	(wire
+		(pts
+			(xy 130.81 99.06) (xy 128.27 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "956bcf66-9d21-432f-b856-3a6554361dd5")
+	)
+	(wire
+		(pts
+			(xy 121.92 101.6) (xy 130.81 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aecdc68b-88f7-4725-a9dd-08491b327871")
+	)
+	(wire
+		(pts
+			(xy 115.57 93.98) (xy 128.27 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4a8bc32-d4a6-4502-aeee-54e0c12f2363")
+	)
+	(wire
+		(pts
+			(xy 115.57 86.36) (xy 115.57 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7877dae-4123-47f6-8cdc-4e6d52160f0d")
+	)
+	(wire
+		(pts
+			(xy 130.81 81.28) (xy 128.27 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9d9837c-eeea-4914-bcc4-d084745d8e4a")
+	)
+	(wire
+		(pts
+			(xy 143.51 114.3) (xy 143.51 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdfd02a4-c2a7-4c93-b318-2b99a3ca7a3b")
+	)
+	(wire
+		(pts
+			(xy 175.26 78.74) (xy 184.15 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf15804c-db62-4677-8e86-5593a09e1f2c")
+	)
+	(wire
+		(pts
+			(xy 173.99 83.82) (xy 175.26 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf3bf304-cb9a-461e-b580-f8724fce9f22")
+	)
+	(wire
+		(pts
+			(xy 163.83 101.6) (xy 166.37 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1916b54-f322-427a-9512-ed32e0c45a95")
+	)
+	(wire
+		(pts
+			(xy 140.97 114.3) (xy 140.97 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccf5b5f1-1936-4aa6-ba16-a4a7515ec4b5")
+	)
+	(wire
+		(pts
+			(xy 156.21 99.06) (xy 157.48 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0f7bd4f-35f4-4dd2-a8f7-bb4c30bd5177")
+	)
+	(wire
+		(pts
+			(xy 157.48 81.28) (xy 157.48 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daadeba5-0360-4758-8b02-d703bdaafa62")
+	)
+	(wire
+		(pts
+			(xy 128.27 81.28) (xy 128.27 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1ae1cb1-8e56-4e00-802e-df24d197aada")
+	)
+	(wire
+		(pts
+			(xy 130.81 83.82) (xy 128.27 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3a53ec8-dfd7-46b4-8929-3cdaace1aff2")
+	)
+	(wire
+		(pts
+			(xy 115.57 102.87) (xy 115.57 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3cf5297-b29b-409a-befe-28997d7a8801")
+	)
+	(wire
+		(pts
+			(xy 156.21 118.11) (xy 157.48 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7ce34c5-d644-4dc3-a26f-a1a79109d914")
+	)
+	(wire
+		(pts
+			(xy 121.92 101.6) (xy 121.92 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efe1987e-8af0-4328-bd6c-a62ce3fdc7d3")
+	)
+	(wire
+		(pts
+			(xy 163.83 83.82) (xy 166.37 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f89b8d05-1314-4342-a581-7f7554bbb626")
+	)
+	(wire
+		(pts
+			(xy 115.57 78.74) (xy 128.27 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8f3757f-4023-4082-a9c9-cad40d29d535")
+	)
+	(wire
+		(pts
+			(xy 114.3 78.74) (xy 115.57 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd255431-9052-4a0f-97d8-a82bc9579f27")
+	)
+	(image
+		(at 81.28 140.97)
+		(scale 0.677997)
+		(uuid "b4392ae0-d887-4cdd-9e86-49495093fe73")
+		(data "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"
+			"iU984mMf+9jrXve697///WW3hbn++l//63/4h3/4qle96gUveEHxpWJcsKtHMS6IkilxIUtcyHJK"
+			"mfXZz3728ccfv3z58h/90R+V3Za1czhYu3jkjfM6ALBhn/jEJ8puAnlOTk5CCI8//njZDQFoonmF"
+			"+mtG0rt27373u7/oi77oy7/8yxda6sqVK8Ph8Nd+7de+8iu/ck0Nq5Af//Ef/1f/6l/1+/3v+Z7v"
+			"Kbst5bt69eqb3/zm7/iO7/iRH/mRstuyFe66665bb731d3/3d8tuyFb4B//gH/zH//gfH3nkkVe8"
+			"4hVlt6V8/+Jf/Iuf/umffs1rXlN2Q8jz4z/+43t7ey94wQue97znFV/qR3/0R3/mZ37mX/7Lf3nv"
+			"vfeur21V8f73v//7vu/7rly58kM/9ENlt6V8n//85+++++6v//qvf/jhh8tuy1Z4y1ve8pu/+Zu/"
+			"/uu/vui5aC392I/92E/91E/9s3/2z777u7+77LaUbzAYvP3tb7/nnnvKbsgmSHrX7g1veMMSS8XY"
+			"/+Vf/uVf9VVfteoWVc9f+St/JYTwJV/yJbZGCOGTn/xkCOH222+3NVI7Ozu2RhQPHS996UttkBDC"
+			"V3zFV4QQLl++XHZDyPO6171uiaVe9KIXxX/t6uHG1vjiL/5iWyOE8Gd/9mchhEuXLtka0S233BKc"
+			"Ut7glDIrjoR66UtfWnZDNsFwdirAzasAZP35n/952U2Aavhv/+2/ld0EKJ+kFwAAgNqS9AIAAFBb"
+			"kl4AAABqS9JLBZhNGgp6/vOfX3YTANgid9xxR9lNgPKp3ryl7rrrrjvvvLPsVmyR++677/j4uOxW"
+			"bIXPfe5z9913XyzGyMnJydve9rayW7FFXvziF993331x4lNCCPfdd5+rZrW0t7d33333ld2KbfHs"
+			"s8/aGqmTkxNRMuvy5ct/9a/+VXEh2tnZue+++46OjspuyFb4/Oc/35wfS8vZAAAAAHVleDMAAAC1"
+			"JekFAACgtiS9AAAA1JakFwAAgNqS9AIAAFBbkl4AAABqS9ILAABAbV0ouwHMkCRJCGE4HB4cHLTb"
+			"7ZJbU564HaY1Z5ukW+DMj5wkyXA4DCF0u901N6pMcYPM2xrzdpicRSoqPUSEEM48StT+eFJwazie"
+			"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"
+			"AAAAgNn6PyL8J2iAyUxpAAAAAElFTkSuQmCC"
+		)
+	)
+	(hierarchical_label "PG_AFE_1V8"
+		(shape output)
+		(at 157.48 118.11 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "1ec6ef4f-0d11-4e4c-934f-15bba80997b6")
+	)
+	(hierarchical_label "VSYS_IN"
+		(shape input)
+		(at 114.3 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e96b24e5-2977-444f-859e-0beebcca3985")
+	)
+	(hierarchical_label "2V5_IN"
+		(shape input)
+		(at 114.3 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f5435090-77fd-4166-9823-c99a0f976c6c")
+	)
+	(symbol
+		(lib_id "Yapogee:0402,24kΩ,0.1%")
+		(at 163.83 87.63 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0baf80b8-6a98-48a5-a43f-186496785111")
+		(property "Reference" "R10"
+			(at 166.37 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24kΩ"
+			(at 163.83 87.63 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Yapogee:R_Vishay_TNPW0402_RefReflow"
+			(at 165.608 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "24kΩ ±0.1% thin film resistor, 25 ppm/K, 0402"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TNPW040224K0BEED"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TNPW040224K0BEED"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "24kΩ"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±0.1%"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0402 (1005 metric)"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TCR" "±25 ppm/K"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "AEC-Q200"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" "0.070 W at 70°C, general mode"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "75 V"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf8206a6-b58f-4ae6-b90f-bdc2d30596db")
+		)
+		(pin "2"
+			(uuid "e47739fd-dfbe-490f-95cc-7a40028d03e4")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:GCM31CR71A226KE02L")
+		(at 115.57 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "104c5dad-6746-4be3-a07d-ddbb6e33d864")
+		(property "Reference" "C14"
+			(at 110.998 96.266 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 110.744 98.044 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Yapogee:C_Murata_GCM31_3216_RefReflow"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GCM31CR71A226KE02L"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "22 µF ±10% 10 V X7R ceramic capacitor, 1206"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Specifications" "10V ±10% X7R 1206"
+			(at 101.6 99.822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "GCM31CR71A226KE02L"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part" "GCM31CR71A226KE02L"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C126598"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part #" "C126598"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB Part #" "C126598"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "DigiKey Part #" "490-14439-1-ND"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage Rated" "10V"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Capacitance" "22uF"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Qualification" "AEC-Q200"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "Extended"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Factory Packaging" "180 mm plastic tape W8P4; 2000 pieces"
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "8153c36f-cdb3-4d88-909a-e01878100182")
+		)
+		(pin "1"
+			(uuid "5becebfa-e674-4d8d-8862-dd5a322de04d")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:TPS7A8801QRTJRQ1")
+		(at 143.51 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1189f525-1cb3-45e3-9ea9-33d4aba7968c")
+		(property "Reference" "U11"
+			(at 143.51 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS7A8801QRTJRQ1"
+			(at 143.51 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Yapogee:TI_RTJ0020J_WQFN-20-1EP_4x4mm"
+			(at 143.51 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a88-q1.pdf"
+			(at 143.51 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Automotive dual 1 A adjustable low-noise LDO, WQFN-20"
+			(at 143.51 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "working automotive AFE dual-LDO selection; not board-qualified"
+			(at 143.51 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "9f22352f-ed73-41ba-b822-4c3a3a4b4e0d")
+		)
+		(pin "9"
+			(uuid "b14b2bd7-7325-4df0-aa5a-5593803fa877")
+		)
+		(pin "5"
+			(uuid "8e384ee4-3f8e-4a2c-a3c8-5803aa7dafca")
+		)
+		(pin "1"
+			(uuid "bb74b70a-8447-4bde-a8ff-98b1ad4c371c")
+		)
+		(pin "14"
+			(uuid "a074df5e-c03b-4a2f-b879-8b925a520f4b")
+		)
+		(pin "6"
+			(uuid "50aac7ca-760b-4201-8d7d-3ec24c2348b9")
+		)
+		(pin "15"
+			(uuid "43fd7f38-d23c-4560-8c54-7cd49318312f")
+		)
+		(pin "16"
+			(uuid "fcea90b9-6353-4036-9b71-f2e69fa46e72")
+		)
+		(pin "17"
+			(uuid "a029b9db-8a70-4c6b-be22-ba32dada579c")
+		)
+		(pin "18"
+			(uuid "f26e0c4e-2b37-4c5c-bf95-c39b7639fd00")
+		)
+		(pin "19"
+			(uuid "04a3909e-1394-47e2-9adc-d3e74d9278f8")
+		)
+		(pin "20"
+			(uuid "98a9b3eb-e804-4cb8-9858-548f0f5519b6")
+		)
+		(pin "21"
+			(uuid "3a01ff00-6f2f-4771-9973-89c9efe9b98b")
+		)
+		(pin "2"
+			(uuid "e53526dd-7b24-4e79-93ba-82f122e4dea8")
+		)
+		(pin "10"
+			(uuid "fa5d19aa-f09f-4130-9ad8-c7458b25f7a3")
+		)
+		(pin "11"
+			(uuid "7373702d-0874-479a-9d46-385d80758845")
+		)
+		(pin "3"
+			(uuid "c1f0f820-3e8f-482b-8386-eab9bb6b5644")
+		)
+		(pin "13"
+			(uuid "5873f718-7dbb-4253-8e6d-a5148128aeec")
+		)
+		(pin "4"
+			(uuid "63a5dd6e-c2d7-4453-ae65-6e4f0311bbcf")
+		)
+		(pin "12"
+			(uuid "0269bcfb-464b-47f1-948c-9dd0b8dd99e2")
+		)
+		(pin "8"
+			(uuid "7cca55da-c21c-4865-8bb3-3b7e567c1455")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 163.83 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a249ad9-c21a-4e63-975d-bd452360218e")
+		(property "Reference" "#PWR023"
+			(at 163.83 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 114.3 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c15e38f-ba35-4e65-b924-9f081a634111")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 121.92 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ba0e82d-062c-420e-95cf-fa8533548566")
+		(property "Reference" "#PWR021"
+			(at 121.92 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.396 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c663af7a-739f-4942-9c3b-de7216de9e71")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:GCM155R71H104KE02D")
+		(at 127 104.14 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2aaad8ff-2b4d-468b-bcc9-97aea36187b4")
+		(property "Reference" "C16"
+			(at 124.206 105.664 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 130.302 105.918 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Yapogee:C_Murata_GCM15_1005_RefReflow"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H104KE02-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Main 100 nF pin-local bypass standard. Exact-part DC-bias characterization remains open."
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Specifications" "50V ±10% X7R 0402"
+			(at 127.254 106.426 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "GCM155R71H104KE02D"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part" "GCM155R71H104KE02D"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C85858"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part #" "C85858"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB Part #" "C85858"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "DigiKey Part #" "490-10672-1-ND"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage Rated" "50V"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Capacitance" "100nF"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Qualification" "AEC-Q200; no exact-part flight/radiation qualification established"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "Extended"
+			(at 127 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "abd96e6e-39a0-4b3b-b527-03f2d6189b00")
+		)
+		(pin "1"
+			(uuid "62488307-66bf-40da-ab5a-f33b17ea15bb")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 184.15 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "360934d7-1962-423d-88b2-7beffc08f26a")
+		(property "Reference" "#PWR028"
+			(at 184.15 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 184.15 109.22 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 184.15 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df1c60c8-8f41-4e5f-a2ad-7aec2323f080")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
+		(at 184.15 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "464a82da-2354-45ea-aa60-375e6a1fdb26")
+		(property "Reference" "#PWR025"
+			(at 184.15 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AFE_3V3"
+			(at 184.15 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 184.15 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "112be5c9-933c-4844-96d5-c75c66bd6e28")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:GCM31CR71A226KE02L")
+		(at 184.15 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5d6667c0-27a1-4747-9d3b-8fe1f5d92892")
+		(property "Reference" "C18"
+			(at 186.182 98.806 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 186.182 100.584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Yapogee:C_Murata_GCM31_3216_RefReflow"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GCM31CR71A226KE02L"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "22 µF ±10% 10 V X7R ceramic capacitor, 1206"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Specifications" "10V ±10% X7R 1206"
+			(at 186.182 102.362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "GCM31CR71A226KE02L"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part" "GCM31CR71A226KE02L"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C126598"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part #" "C126598"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB Part #" "C126598"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "DigiKey Part #" "490-14439-1-ND"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage Rated" "10V"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Capacitance" "22uF"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Qualification" "AEC-Q200"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "Extended"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Factory Packaging" "180 mm plastic tape W8P4; 2000 pieces"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "0f25cfe7-5b21-4c01-90bd-14d62b48dbfb")
+		)
+		(pin "1"
+			(uuid "beb5f6e7-cf74-442e-8da1-d79fe41fa0f6")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:GCM31CR71A226KE02L")
+		(at 184.15 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61e37f78-c41b-46d0-8cb8-04292e9c912d")
+		(property "Reference" "C17"
+			(at 186.182 81.026 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 186.436 82.804 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Yapogee:C_Murata_GCM31_3216_RefReflow"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GCM31CR71A226KE02L"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "22 µF ±10% 10 V X7R ceramic capacitor, 1206"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Specifications" "10V ±10% X7R 1206"
+			(at 186.182 84.582 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "GCM31CR71A226KE02L"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part" "GCM31CR71A226KE02L"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C126598"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part #" "C126598"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB Part #" "C126598"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "DigiKey Part #" "490-14439-1-ND"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage Rated" "10V"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Capacitance" "22uF"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Qualification" "AEC-Q200"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "Extended"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Factory Packaging" "180 mm plastic tape W8P4; 2000 pieces"
+			(at 184.15 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "084d6a5a-dd32-4611-9018-67e34bfdb591")
+		)
+		(pin "1"
+			(uuid "9963fdd5-c0c5-47f1-897b-6e6b620d4163")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:0402,24kΩ,0.1%")
+		(at 163.83 105.41 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "65cb531f-e7ac-4dae-aa72-f39a5c026d63")
+		(property "Reference" "R9"
+			(at 167.1407 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24kΩ"
+			(at 163.83 105.41 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Yapogee:R_Vishay_TNPW0402_RefReflow"
+			(at 165.608 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "24kΩ ±0.1% thin film resistor, 25 ppm/K, 0402"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TNPW040224K0BEED"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TNPW040224K0BEED"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "24kΩ"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±0.1%"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0402 (1005 metric)"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TCR" "±25 ppm/K"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "AEC-Q200"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" "0.070 W at 70°C, general mode"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "75 V"
+			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b408a0fb-c405-4261-9e99-91ed7d36f27f")
+		)
+		(pin "2"
+			(uuid "a4280af9-902b-4cd2-89c9-a267b703c722")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:GCM31CR71A226KE02L")
+		(at 115.57 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "88b2721f-42bc-46bb-b82b-c96a942cda74")
+		(property "Reference" "C13"
+			(at 110.998 81.026 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 110.744 82.804 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Yapogee:C_Murata_GCM31_3216_RefReflow"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GCM31CR71A226KE02L"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "22 µF ±10% 10 V X7R ceramic capacitor, 1206"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Specifications" "10V ±10% X7R 1206"
+			(at 101.6 84.582 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "GCM31CR71A226KE02L"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part" "GCM31CR71A226KE02L"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C126598"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part #" "C126598"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB Part #" "C126598"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "DigiKey Part #" "490-14439-1-ND"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage Rated" "10V"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Capacitance" "22uF"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Qualification" "AEC-Q200"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "Extended"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Factory Packaging" "180 mm plastic tape W8P4; 2000 pieces"
+			(at 115.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "fbdedaf3-d1a4-4cb7-b096-b61336ea0b8f")
+		)
+		(pin "1"
+			(uuid "2c650a6a-2972-4371-8246-a928db0f47c8")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
+		(at 184.15 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8df56f6b-34a0-440a-b34e-d7aa4ba1a554")
+		(property "Reference" "#PWR027"
+			(at 184.15 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AFE_1V8"
+			(at 184.15 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 184.15 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56f41b36-7cad-41ab-8f8a-c21bd2addc86")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:0402,30kΩ,0.1%")
+		(at 170.18 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "991eee3a-1b75-49c6-897d-89163522e71e")
+		(property "Reference" "R12"
+			(at 170.18 99.568 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30kΩ"
+			(at 170.18 101.6 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Yapogee:R_Vishay_TNPW0402_RefReflow"
+			(at 170.18 103.378 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30kΩ ±0.1% thin film resistor, 25 ppm/K, 0402"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TNPW040230K0BEED"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TNPW040230K0BEED"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "30kΩ"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±0.1%"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0402 (1005 metric)"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TCR" "±25 ppm/K"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "AEC-Q200"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" "0.070 W at 70°C, general mode"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "75 V"
+			(at 170.18 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9db7f093-d3a3-4bde-8c2e-4d84c93035a4")
+		)
+		(pin "1"
+			(uuid "a2aec917-11dc-4d76-8165-a676adc5cc72")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:GCM155R71H104KE02D")
+		(at 127 88.9 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a1b67d37-3114-443a-a2e5-2923c8da5bdd")
+		(property "Reference" "C15"
+			(at 126.492 91.186 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 130.302 90.424 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Yapogee:C_Murata_GCM15_1005_RefReflow"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H104KE02-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Main 100 nF pin-local bypass standard. Exact-part DC-bias characterization remains open."
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Specifications" "50V ±10% X7R 0402"
+			(at 127.254 91.186 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "GCM155R71H104KE02D"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part" "GCM155R71H104KE02D"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C85858"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part #" "C85858"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB Part #" "C85858"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "DigiKey Part #" "490-10672-1-ND"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage Rated" "50V"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Capacitance" "100nF"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Qualification" "AEC-Q200; no exact-part flight/radiation qualification established"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "Extended"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "4366d55c-bf7f-450b-813c-f77042b53a6b")
+		)
+		(pin "1"
+			(uuid "3f8b3247-777b-435e-a0a6-5587732a54cb")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 121.92 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aae51eb7-d9cf-4b2f-bbdf-97b222d64a26")
+		(property "Reference" "#PWR020"
+			(at 121.92 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.396 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df87ed0b-0978-4dea-b9a1-9e47737e4ac3")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Yapogee:0402,75kΩ,0.1%")
+		(at 170.18 83.82 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf0736ba-39fe-49ff-9a4b-65ea01660afa")
+		(property "Reference" "R11"
+			(at 170.18 81.788 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "75kΩ"
+			(at 170.18 83.82 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Yapogee:R_Vishay_TNPW0402_RefReflow"
+			(at 170.18 85.598 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75kΩ ±0.1% thin film resistor, 25 ppm/K, 0402"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "TNPW040275K0BEED"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TNPW040275K0BEED"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "75kΩ"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±0.1%"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0402 (1005 metric)"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TCR" "±25 ppm/K"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qualification" "AEC-Q200"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" "0.070 W at 70°C, general mode"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "75 V"
+			(at 170.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6dd9989f-8f2f-45ac-a43c-a84646af23f1")
+		)
+		(pin "1"
+			(uuid "2162344c-4694-4281-8550-b1741c835849")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 115.57 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c156ce8e-6c20-49eb-b261-9d833afd6f41")
+		(property "Reference" "#PWR019"
+			(at 115.57 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 106.68 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 115.57 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b856918-1e69-42d0-8615-10c64c2d4012")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 115.57 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf71048c-fa17-4583-b58c-2a7f3a3280f9")
+		(property "Reference" "#PWR018"
+			(at 115.57 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 91.44 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 115.57 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c047a649-95ca-4e60-9a46-50c9e340db41")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 163.83 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7235e42-03cc-4f21-85ce-b983f1cab66b")
+		(property "Reference" "#PWR024"
+			(at 163.83 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 95.25 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a260f4e-a8d9-4909-a08a-dc7e95be947c")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 184.15 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e7e4a1ee-011f-4787-bcd6-2fda73fcf8f2")
+		(property "Reference" "#PWR026"
+			(at 184.15 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.706 88.392 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 184.15 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a016183c-0c82-4ff2-9ec6-72857bd88d19")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:GND")
+		(at 143.51 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f50cf5ff-1ac1-4138-ba39-a27ee522ee07")
+		(property "Reference" "#PWR022"
+			(at 143.51 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 120.65 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e911ce3-1c74-4be2-9019-ba8ef8a2f6e6")
+		)
+		(instances
+			(project "Yapogee-Devboard"
+				(path "/111c3c71-9370-42b8-a37f-1eaf0b24b42b/39a25d9e-382f-45ff-b140-c90132db7ed1/17a615b2-b575-46b4-aee9-dc8e0dcf7345"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

@@ -9,5 +9,6 @@
  (fp_line (start -0.75 -1.05) (end 0.75 -1.05) (stroke (width 0.10) (type solid)) (layer "F.SilkS")) (fp_line (start -0.75 1.05) (end 0.75 1.05) (stroke (width 0.10) (type solid)) (layer "F.SilkS"))
  (pad "1" smd rect (at -1.475 0) (size 1.25 1.8) (layers "F.Cu" "F.Paste" "F.Mask"))
  (pad "2" smd rect (at 1.475 0) (size 1.25 1.8) (layers "F.Cu" "F.Paste" "F.Mask"))
- (model "${KIPRJMOD}/../../../libraries/3dmodels/Drawing_C_Samsung_CL31_3216_RefReflow_MaxBody.wrl" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+ (model "${KIPRJMOD}/../../../libraries/3dmodels/KiCad_Capacitor_SMD_C_1206_3216Metric.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+ (model "${KIPRJMOD}/../../../libraries/3dmodels/Drawing_C_Samsung_CL31_3216_RefReflow_MaxBody.wrl" (hide yes) (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

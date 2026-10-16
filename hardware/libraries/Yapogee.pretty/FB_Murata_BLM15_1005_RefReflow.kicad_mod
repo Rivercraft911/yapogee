@@ -1,0 +1,100 @@
+(footprint "FB_Murata_BLM15_1005_RefReflow"
+	(version 20240108)
+	(generator pcbnew)
+	(layer "F.Cu")
+	(descr "Murata BLM15_SH reflow lands, JENF243A_9103R-01 p8: gap0.4mm,outer span1.2mm,pad width0.5mm. Nonpolar. Route feed copper for actual current/copper thickness; local clock load uses the low-current row.")
+	(tags "Murata BLM15 ferrite bead 0402 1005")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size .8 .8)
+				(thickness .12)
+			)
+		)
+	)
+	(property "Value" "BLM15PX121SH1D"
+		(at 0 1 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size .8 .8)
+				(thickness .12)
+			)
+		)
+		(hide yes)
+	)
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -0.85 -0.55)
+		(end 0.85 0.55)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -.12 -0.45)
+		(end .12 -0.45)
+		(stroke
+			(width .1)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -.12 0.45)
+		(end .12 0.45)
+		(stroke
+			(width .1)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(pad "1" smd rect
+		(at -0.4 0)
+		(size .4 .5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "2" smd rect
+		(at 0.4 0)
+		(size .4 .5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(model "${KIPRJMOD}/../../../libraries/3dmodels/KiCad_Inductor_SMD_L_0402_1005Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/../../../libraries/3dmodels/Drawing_Murata_BLM15_MaxBody.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

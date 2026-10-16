@@ -1,0 +1,3 @@
+#VRML V2.0 utf8
+# Drawing-derived3.1x1.7x0.63mm maximum assembly envelope, units0.1inch; not manufacturer CAD.
+Transform { translation 0 0 0.1240157480 children [ Shape { appearance Appearance { material Material { diffuseColor 0.25 0.25 0.25 } } geometry Box { size 1.2204724409 0.6692913386 0.2480314961 } } ] }

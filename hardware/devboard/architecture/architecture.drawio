@@ -406,7 +406,7 @@
         <mxCell id="reference-clocks_28" parent="buffer" vertex="1" value="Clock driver" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#292d32;fontStyle=1;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="10" y="10" width="165" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="reference-clocks_29" parent="buffer" vertex="1" value="LMK1D1204P" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=16;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+        <mxCell id="reference-clocks_29" parent="buffer" vertex="1" value="SN65LVDM31DR" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=16;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="12" y="42" width="161" height="38" as="geometry" />
         </mxCell>
         <mxCell id="afe" parent="1" vertex="1" style="group;html=0;">
@@ -418,7 +418,7 @@
         <mxCell id="reference-clocks_32" parent="afe" vertex="1" value="AFE7071" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#292d32;fontStyle=1;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="10" y="10" width="180" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="reference-clocks_33" parent="afe" vertex="1" value="DACs / IQ modulator" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=16;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+        <mxCell id="reference-clocks_33" parent="afe" vertex="1" value="DACs / IQ modulator&#10;DDR · FIFO bypassed&#10;Rising I / falling Q" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=16;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="12" y="42" width="176" height="238" as="geometry" />
         </mxCell>
         <mxCell id="reference-clocks_34" parent="1" edge="1" style="edgeStyle=none;jettySize=0;rounded=0;html=0;strokeColor=#292d32;strokeWidth=2.2;endArrow=block;endSize=9;endFill=1;startArrow=none;dashed=0;exitX=1;exitY=0.7727;exitPerimeter=0;entryX=0;entryY=0.2778;entryPerimeter=0;" source="rp" target="buffer">
@@ -431,8 +431,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="reference-clocks_35" parent="1" vertex="1" value="GPIO28 · continuous PIO" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=14;fontColor=#292d32;fontStyle=0;align=left;verticalAlign=middle;spacing=0;">
-          <mxGeometry x="842" y="199" width="225" height="25" as="geometry" />
+        <mxCell id="reference-clocks_35" parent="1" vertex="1" value="GPIO28 · atomic PIO" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=14;fontColor=#292d32;fontStyle=0;align=left;verticalAlign=middle;spacing=0;">
+          <mxGeometry x="842" y="208" width="225" height="25" as="geometry" />
         </mxCell>
         <mxCell id="reference-clocks_36" parent="1" edge="1" style="edgeStyle=none;jettySize=0;rounded=0;html=0;strokeColor=#292d32;strokeWidth=2.2;endArrow=block;endSize=9;endFill=1;startArrow=none;dashed=0;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.6034;entryPerimeter=0;" source="buffer" target="afe">
           <mxGeometry relative="1" as="geometry">
@@ -443,17 +443,32 @@
         <mxCell id="reference-clocks_37" parent="1" vertex="1" value="DACCLK" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=14;fontColor=#292d32;fontStyle=0;align=left;verticalAlign=middle;spacing=0;">
           <mxGeometry x="1080" y="253" width="90" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="reference-clocks_38" parent="1" vertex="1" value="64/32/16 MHz" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=13;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+        <mxCell id="reference-clocks_38" parent="1" vertex="1" value="32 / 64 MHz" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=13;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="1068" y="293" width="110" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="reference-clocks_39" parent="1" edge="1" style="edgeStyle=none;jettySize=0;rounded=0;html=0;strokeColor=#292d32;strokeWidth=1.8;endArrow=block;endSize=9;endFill=1;startArrow=none;dashed=0;exitX=1;exitY=0.3636;exitPerimeter=0;entryX=0;entryY=0.1379;entryPerimeter=0;" source="rp" target="afe">
+        <mxCell id="reference-clocks_39" parent="1" vertex="1" value="8 / 16 Msym/s · N4" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=14;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+          <mxGeometry x="842" y="338" width="330" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="reference-clocks_40" parent="1" vertex="1" value="One SM · two words · no new hardware" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=13;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+          <mxGeometry x="842" y="367" width="330" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="reference-clocks_41" parent="1" edge="1" style="edgeStyle=none;jettySize=0;rounded=0;html=0;strokeColor=#292d32;strokeWidth=1.8;endArrow=block;endSize=9;endFill=1;startArrow=none;dashed=0;exitX=1;exitY=0.3636;exitPerimeter=0;entryX=0;entryY=0.1379;entryPerimeter=0;" source="rp" target="afe">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="790" y="148" as="sourcePoint" />
             <mxPoint x="1180" y="148" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="reference-clocks_40" parent="1" vertex="1" value="I/Q + CLK_IO" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=14;fontColor=#292d32;fontStyle=0;align=left;verticalAlign=middle;spacing=0;">
+        <mxCell id="reference-clocks_42" parent="1" vertex="1" value="I/Q data · DDR" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=14;fontColor=#292d32;fontStyle=0;align=left;verticalAlign=middle;spacing=0;">
           <mxGeometry x="900" y="118" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="reference-clocks_43" parent="1" edge="1" style="edgeStyle=none;jettySize=0;rounded=0;html=0;strokeColor=#292d32;strokeWidth=1.8;endArrow=block;endSize=9;endFill=1;startArrow=none;dashed=1;exitX=1;exitY=0.6364;exitPerimeter=0;entryX=0;entryY=0.2414;entryPerimeter=0;" source="rp" target="afe">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="178" as="sourcePoint" />
+            <mxPoint x="1180" y="178" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="reference-clocks_44" parent="1" vertex="1" value="GPIO16 · CLK_IO fallback" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=14;fontColor=#292d32;fontStyle=0;align=left;verticalAlign=middle;spacing=0;">
+          <mxGeometry x="842" y="180" width="330" height="24" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -490,7 +505,7 @@
         <mxCell id="power-interfaces_9" parent="efuse" vertex="1" value="eFuse" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#292d32;fontStyle=1;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="10" y="10" width="160" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="power-interfaces_10" parent="efuse" vertex="1" value="TPS259470A" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=15;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+        <mxCell id="power-interfaces_10" parent="efuse" vertex="1" value="TPS25940A" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=15;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="12" y="42" width="156" height="38" as="geometry" />
         </mxCell>
         <mxCell id="power-interfaces_11" parent="1" edge="1" style="edgeStyle=none;jettySize=0;rounded=0;html=0;strokeColor=#292d32;strokeWidth=2.5;endArrow=block;endSize=9;endFill=1;startArrow=none;dashed=0;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" source="power-interfaces_3" target="efuse">
@@ -612,7 +627,7 @@
         <mxCell id="power-interfaces_39" parent="afe1v8-load" vertex="1" value="AFE1V8" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#292d32;fontStyle=1;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="10" y="10" width="230" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="power-interfaces_40" parent="afe1v8-load" vertex="1" value="AFE + DAC clock driver" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=13;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+        <mxCell id="power-interfaces_40" parent="afe1v8-load" vertex="1" value="AFE" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=13;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="12" y="42" width="226" height="18" as="geometry" />
         </mxCell>
         <mxCell id="power-interfaces_41" parent="1" edge="1" style="edgeStyle=none;jettySize=0;rounded=0;html=0;strokeColor=#292d32;strokeWidth=2.5;endArrow=block;endSize=9;endFill=1;startArrow=none;dashed=0;exitX=1;exitY=0.2188;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" source="afe-ldo" target="afe1v8-load">
@@ -633,7 +648,7 @@
         <mxCell id="power-interfaces_45" parent="afe3v3-load" vertex="1" value="AFE3V3" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#292d32;fontStyle=1;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="10" y="10" width="230" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="power-interfaces_46" parent="afe3v3-load" vertex="1" value="AFE DACs + modulator" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=13;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+        <mxCell id="power-interfaces_46" parent="afe3v3-load" vertex="1" value="AFE + SN65LVDM31DR" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=13;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="12" y="42" width="226" height="18" as="geometry" />
         </mxCell>
         <mxCell id="power-interfaces_47" parent="1" edge="1" style="edgeStyle=none;jettySize=0;rounded=0;html=0;strokeColor=#292d32;strokeWidth=2.5;endArrow=block;endSize=9;endFill=1;startArrow=none;dashed=0;exitX=1;exitY=0.7812;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" source="afe-ldo" target="afe3v3-load">
@@ -738,7 +753,7 @@
         <mxCell id="power-interfaces_75" parent="driver-switch" vertex="1" value="Load switch" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#292d32;fontStyle=1;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="10" y="10" width="190" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="power-interfaces_76" parent="driver-switch" vertex="1" value="TPS22918" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=15;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
+        <mxCell id="power-interfaces_76" parent="driver-switch" vertex="1" value="TPS22810-Q1" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=15;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="12" y="42" width="186" height="28" as="geometry" />
         </mxCell>
         <mxCell id="driver-load" parent="1" vertex="1" style="group;html=0;">
@@ -747,7 +762,7 @@
         <mxCell id="power-interfaces_78" parent="driver-load" vertex="1" style="rounded=0;html=0;fillColor=white;strokeColor=#292d32;strokeWidth=1.5;dashed=1;">
           <mxGeometry x="0" y="0" width="250" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="power-interfaces_79" parent="driver-load" vertex="1" value="DRIVER_5V" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#292d32;fontStyle=1;align=center;verticalAlign=middle;spacing=0;">
+        <mxCell id="power-interfaces_79" parent="driver-load" vertex="1" value="DRV_5V" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#292d32;fontStyle=1;align=center;verticalAlign=middle;spacing=0;">
           <mxGeometry x="10" y="10" width="230" height="25" as="geometry" />
         </mxCell>
         <mxCell id="power-interfaces_80" parent="driver-load" vertex="1" value="GRF2013" style="text;html=0;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=14;fontColor=#292d32;fontStyle=0;align=center;verticalAlign=middle;spacing=0;">

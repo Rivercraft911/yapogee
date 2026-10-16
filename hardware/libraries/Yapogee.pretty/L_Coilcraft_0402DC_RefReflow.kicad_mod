@@ -1,0 +1,69 @@
+(footprint "L_Coilcraft_0402DC_RefReflow"
+	(version 20240108)
+	(generator pcbnew)
+	(layer "F.Cu")
+	(descr "Coilcraft Doc1153-1 recommended land: F0.36×H0.66mm, G0.61mm gap; centers±0.485mm. Pin1 convention only; nonpolar.")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -1.1300000000000001 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Coilcraft_0402DC_RefReflow"
+		(at 0 1.1300000000000001 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(hide yes)
+		)
+	)
+	(fp_rect
+		(start -0.555 -0.33)
+		(end 0.555 0.33)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -0.915 -0.5800000000000001)
+		(end 0.915 0.5800000000000001)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+	)
+	(pad "1" smd rect
+		(at -0.485 0)
+		(size 0.36 0.66)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "2" smd rect
+		(at 0.485 0)
+		(size 0.36 0.66)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(model "${KIPRJMOD}/../../../libraries/3dmodels/Drawing_Coilcraft_0402DC_MaxEnvelope.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

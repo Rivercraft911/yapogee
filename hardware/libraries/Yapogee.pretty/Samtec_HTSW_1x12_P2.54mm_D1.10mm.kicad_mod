@@ -1,0 +1,195 @@
+(footprint "Samtec_HTSW_1x12_P2.54mm_D1.10mm"
+	(version 20240108)
+	(generator pcbnew)
+	(layer "F.Cu")
+	(descr "Samtec HTSW-1NN-07-L-S vertical header: pitch2.54, nominal0.635 square post. Our1.10 finished holes/1.90 lands accommodate JLC tolerance; not unmodified manufacturer land pattern.")
+	(attr through_hole)
+	(property "Reference" "J"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Samtec_HTSW_1x12_P2.54mm_D1.10mm"
+		(at 0 -4.5 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(hide yes)
+		)
+	)
+	(fp_line
+		(start -1.2445 -1.27)
+		(end 1.2445 -1.27)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.2445 -1.27)
+		(end 1.2445 29.21)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 1.2445 29.21)
+		(end -1.2445 29.21)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.2445 29.21)
+		(end -1.2445 -1.27)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0.0)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.54)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "3" thru_hole circle
+		(at 0 5.08)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "4" thru_hole circle
+		(at 0 7.62)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "5" thru_hole circle
+		(at 0 10.16)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "6" thru_hole circle
+		(at 0 12.7)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "7" thru_hole circle
+		(at 0 15.24)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "8" thru_hole circle
+		(at 0 17.78)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "9" thru_hole circle
+		(at 0 20.32)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "10" thru_hole circle
+		(at 0 22.86)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "11" thru_hole circle
+		(at 0 25.4)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(pad "12" thru_hole circle
+		(at 0 27.94)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.05)
+	)
+	(fp_line
+		(start -1.55 -1.65)
+		(end 1.55 -1.65)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.55 -1.65)
+		(end 1.55 29.59)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start 1.55 29.59)
+		(end -1.55 29.59)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -1.55 29.59)
+		(end -1.55 -1.65)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+	)
+	(model "${KIPRJMOD}/../../../libraries/3dmodels/Samtec_HTSW_112_07_L_S_Nominal.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

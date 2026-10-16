@@ -10,5 +10,6 @@
  (fp_line (start -0.325 0.6) (end 0.325 0.6) (stroke (width 0.10) (type solid)) (layer "F.SilkS"))
  (pad "1" smd rect (at -0.875 0) (size 0.9 0.75) (layers "F.Cu" "F.Paste" "F.Mask"))
  (pad "2" smd rect (at 0.875 0) (size 0.9 0.75) (layers "F.Cu" "F.Paste" "F.Mask"))
- (model "${KIPRJMOD}/../../../libraries/3dmodels/Drawing_C_Kyocera_KAM15_1608_RefReflow_MaxBody.wrl" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+ (model "${KIPRJMOD}/../../../libraries/3dmodels/KiCad_Capacitor_SMD_C_0603_1608Metric.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+ (model "${KIPRJMOD}/../../../libraries/3dmodels/Drawing_C_Kyocera_KAM15_1608_RefReflow_MaxBody.wrl" (hide yes) (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

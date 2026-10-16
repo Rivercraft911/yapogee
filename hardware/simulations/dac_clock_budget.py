@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Nominal PIO timing and clock-drift arithmetic; no SI/jitter qualification.
+"""Retained dual-input SDR/FIFO timing model; not the intended DDR startup path.
 
-AFE7071 SLOS789C p.5: dual-input setup/hold >=1 ns, CLK_IO high >=3 ns.
+AFE7071 SLOS789C p.5: dual-input setup/hold >=1 ns; CLK_IO high 3 ns is TYP.
 Pages 25-26: equal-frequency CLK_IO/DACCLK, initial FIFO phase arbitrary,
 subsequent movement up to +/-4 clock cycles. https://www.ti.com/lit/gpn/AFE7071
 PIO launch convention: RP2350_IQ_Benchmark firmware/src/iqout.c at
@@ -53,7 +53,7 @@ def budget(sys_hz, cpw, differential_ppm):
         "nominal_hold_and_CLK_IO_high_ns": hold_ns,
         "max_setup_loss_to_1ns_requirement_ns": setup_ns - 1,
         "max_hold_loss_to_1ns_requirement_ns": hold_ns - 1,
-        "max_high_pulse_loss_to_3ns_requirement_ns": hold_ns - 3,
+        "max_high_pulse_loss_to_3ns_engineering_target_ns": hold_ns - 3,
         "max_setup_loss_to_3ns_engineering_target_ns": setup_ns - 3,
         "max_hold_loss_to_3ns_engineering_target_ns": hold_ns - 3,
         "four_clock_cycles_ns": 4e9 / clock_hz,
@@ -69,7 +69,7 @@ def main():
                         help="hypothetical clock mismatch (default: 0 for shared-SYS PIO)")
     args = parser.parse_args()
     print(json.dumps({
-        "status": "Nominal analytical budget; receiver timing and RF performance unverified",
+        "status": "Dual-input SDR/FIFO fallback model; not DDR startup or loaded timing qualification",
         "SYS_Hz": 128_000_000,
         "baseline_clock_source": "separate continuous PIO, shared SYS with CLK_IO",
         "differential_ppm_scenario": args.differential_ppm,
